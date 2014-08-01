@@ -1,5 +1,5 @@
 <?php
-	$titan = TitanFramework::getInstance( 'mira' );
+	$titan = TitanFramework::getInstance( 'lolly' );
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7 ]> <html class="ie6" <?php language_attributes(); ?>> <![endif]-->
@@ -53,13 +53,13 @@
 				border-color: <?php echo $titan->getOption( 'tab_0_color' ); ?>;
 			}
         	<?php
-        		$logo_src = mira_get_image_src($titan, "tab_1_logo");
+        		$logo_src = lolly_get_image_src($titan, "tab_1_logo");
         		if($logo_src != "") {
         	?>
         			.coming-soon .logo a { background-image: url(<?php echo $logo_src; ?>); }
         	<?php
         		}
-        		$logo_hover_src = mira_get_image_src($titan, "tab_1_logo_hover");
+        		$logo_hover_src = lolly_get_image_src($titan, "tab_1_logo_hover");
         		if($logo_hover_src != "") {
         	?>
         			.coming-soon .logo a:before { content: url(<?php echo $logo_hover_src; ?>); }
@@ -73,7 +73,7 @@
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
         <!-- Favicon -->
-        <link rel="shortcut icon" href="<?php echo mira_get_image_src($titan, "tab_0_favicon"); ?>">
+        <link rel="shortcut icon" href="<?php echo lolly_get_image_src($titan, "tab_0_favicon"); ?>">
         
         <?php wp_head(); ?>
 
@@ -85,7 +85,7 @@
 		<nav>
 			<a class="scroll-link" href="#top">Top</a>
 		<?php
-			foreach(mira_top_menu_items($titan) as $menu_item) {
+			foreach(lolly_top_menu_items($titan) as $menu_item) {
 			?>
 				<a class="scroll-link" href="#<?php echo $menu_item['section-container']; ?>"><?php echo $menu_item['menu-item-name']; ?></a>
 			<?php

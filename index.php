@@ -6,7 +6,7 @@
 get_header(); ?>
 
 <?php
-	$titan = TitanFramework::getInstance( 'mira' );
+	$titan = TitanFramework::getInstance( 'lolly' );
 ?>
 		<!--Lolly's Theme-->
         <!-- Coming Soon -->
@@ -15,28 +15,12 @@ get_header(); ?>
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12">
-                        	<div class="logo wow fadeInDown">
+                        	<div class="logo wow fadeInDown img-circle">
                         		<h1><a href=""><?php bloginfo( 'name' ); ?></a></h1>
                         	</div>
                             <h2 class="wow fadeInLeftBig"><?php echo $titan->getOption( 'tab_1_title' ); ?></h2>
                             <div class="wow fadeInLeftBig"><?php echo $titan->getOption( 'tab_1_description' ); ?></div>
-                            <div class="timer wow fadeInUp">
-                                <div class="days-wrapper">
-                                    <span class="days"></span> <br>days
-                                </div>
-                                <div class="hours-wrapper">
-                                    <span class="hours"></span> <br>hours
-                                </div>
-                                <div class="minutes-wrapper">
-                                    <span class="minutes"></span> <br>minutes
-                                </div>
-                                <div class="seconds-wrapper">
-                                    <span class="seconds"></span> <br>seconds
-                                </div>
                             </div>
-                            <p class="top-arrow wow fadeInUp">
-                            	<i class="fa fa-chevron-down"></i>
-                            </p>
                         </div>
                     </div>
                 </div>
@@ -44,7 +28,7 @@ get_header(); ?>
         </div>
         
         <?php
-        	foreach(mira_chosen_sections($titan) as $section) {
+        	foreach(lolly_chosen_sections($titan) as $section) {
         		include 'includes/sections/' . $section['section'] . '.php';
         	}
         ?>
