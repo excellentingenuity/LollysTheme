@@ -1,0 +1,19 @@
+/* --------------------------------------------------------------------------------------
+
+	Theme Name: LollysTheme
+	Theme URI: http://lollydaskal.com
+	Description: Child Theme of Mira
+	Version: 1.0
+	Author: James Johnson
+	Author URI: http://www.excellentingenuity.com
+	Template: mira-theme
+	All PHP code is released under the GNU General Public License version 3.0 http://www.gnu.org/licenses/gpl-3.0.html
+
+-------------------------------------------------------------------------------------- */
+
+@import "bootstrap/stylesheets/bootstrap/_variables.scss";
+@import "bootstrap/stylesheets/bootstrap.scss";
+
+html {
+	font-family: ProximaNova-Light,Arial,Verdana,Tahoma,"DejaVu Sans",sans-serif;
+}
