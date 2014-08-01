@@ -1,9 +1,14 @@
-<?php get_header(); ?>
+<?php 
+/**
+ * Template Name: index.php
+ */
+
+get_header(); ?>
 
 <?php
 	$titan = TitanFramework::getInstance( 'mira' );
 ?>
-		
+		<!--Lolly's Theme-->
         <!-- Coming Soon -->
         <div class="coming-soon">
             <div class="inner-bg">
