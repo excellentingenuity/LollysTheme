@@ -52,7 +52,7 @@ get_header(); ?>
         <div class="blog">
         	
         </div>
-        <div class="contact-us">
+        <div class="subscribe">
         	
         </div>
         <?php
