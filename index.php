@@ -15,16 +15,39 @@ get_header(); ?>
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12">
-                        	<div class="logo wow fadeInDown img-circle">
-                        		<h1><a href=""><?php bloginfo( 'name' ); ?></a></h1>
+                        	<div class="logo text-right">
+                        		<h1 class="sitename"><a href=""><?php bloginfo( 'name' ); ?></a></h1>
+                        		<h1 class="tagline"><a href="">Lead From Within</a></h1>
                         	</div>
-                            <h2 class="wow fadeInLeftBig"><?php echo $titan->getOption( 'tab_1_title' ); ?></h2>
-                            <div class="wow fadeInLeftBig"><?php echo $titan->getOption( 'tab_1_description' ); ?></div>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <?php //include('menu.php'); ?>
+        <div class="coach-consultant">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-md-offset-2 text-right">
+						<h2>Coach</h2>
+						<ul class="list-unstyled coach-consultant-list">
+							<li>Executive Coaching</li>
+							<li>Leadership Development</li>
+							<li>Interim CEO Coaching</li>
+							<li>Entrepreneurship Coaching</li>
+						</ul>
+					</div>
+					<div class="col-md-4 text-left">
+						<h2>Consultant</h2>
+						<ul class="list-unstyled coach-consultant-list">
+							<li>Leadership Development</li>
+							<li>Team Building Design</li>
+							<li>Cultural Transformation</li>
+							<li>Employee Engagement</li>
+						</ul>
+					</div>
+				</div>	
+			</div>
         </div>
         
         <?php
