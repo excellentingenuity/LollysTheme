@@ -49,10 +49,21 @@ get_header(); ?>
 				</div>	
 			</div>
         </div>
-        <div class="blog">
-        	
+        <div class="speaking">
+        	<div class="inner-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="subscribe">
+        	
+        </div>
+        <div class="blog">
         	
         </div>
         <?php
