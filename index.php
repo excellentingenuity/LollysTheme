@@ -49,7 +49,12 @@ get_header(); ?>
 				</div>	
 			</div>
         </div>
-        
+        <div class="blog">
+        	
+        </div>
+        <div class="contact-us">
+        	
+        </div>
         <?php
         	foreach(lolly_chosen_sections($titan) as $section) {
         		include 'includes/sections/' . $section['section'] . '.php';
