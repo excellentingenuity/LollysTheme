@@ -10,11 +10,8 @@
 
 -------------------------------------------------------------------------------------- */
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
-@import "bootstrap/stylesheets/bootstrap/_variables.scss";
-@import "bootstrap/stylesheets/bootstrap.scss";
-@import "partials/coming_soon.scss";
-@import "partials/coach-consultant.scss";
-//@import "_mira.scss";
+@import "bootstrap/variables.scss";
+@import "bootstrap.scss";
 
 body {
 	background: #fffff;

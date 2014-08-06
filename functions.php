@@ -1,12 +1,10 @@
 <?php
 
-/*
- * TITAN FRAMEWORK (ADMIN PANEL)
- * 
+ /*
  * When using the embedded framework, use it only if the framework
  * plugin isn't activated.
  */
-
+ 
 // Don't do anything when we're activating a plugin to prevent errors
 // on redeclaring Titan classes
 if ( ! empty( $_GET['action'] ) && ! empty( $_GET['plugin'] ) ) {
@@ -32,33 +30,16 @@ if ( $useEmbeddedFramework && ! class_exists( 'TitanFramework' ) ) {
     require_once( trailingslashit( dirname( __FILE__ ) ) . 'titan-framework/titan-framework.php' );
 }
 
+/** Titan Framework Configuration */
+$titan = TitanFramework::getinstance( 'lolly' );
 
-/*
- * Titan code
- */
+$panel = $titan->createAdminPanel(array("name" => "Lollys Theme Options"));
 
-$titan = TitanFramework::getInstance('lolly');
-
-// Create admin page & menu
-$panel = $titan->createAdminPanel(array('name' => 'Lollys Theme Options'));
+require_once('includes/tabs/general-options.php');
+require_once('includes/tabs/home-page.php');
 
 
-// include tabs
-require_once('includes/functions/tabs/general-tab.php');
-require_once('includes/functions/tabs/coming-soon-tab.php');
-require_once('includes/functions/tabs/subscribe-tab.php');
-require_once('includes/functions/tabs/the-project-tab.php');
-require_once('includes/functions/tabs/testimonials-tab.php');
-require_once('includes/functions/tabs/about-us-tab.php');
-require_once('includes/functions/tabs/contact-tab.php');
-require_once('includes/functions/tabs/footer-tab.php');
-
-// custom functions
-require_once('includes/functions/custom-functions.php');
-
-function child_template_directory()
-{
-    return dirname( get_bloginfo('stylesheet_url'));
-}
+// additional functions
+require_once('includes/theme-functions.php');
 
 ?>
