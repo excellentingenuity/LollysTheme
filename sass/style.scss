@@ -12,12 +12,14 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import "bootstrap/variables.scss";
 @import "bootstrap.scss";
+@import "partials/lollysthemevariables.scss";
+@import "partials/primary_menu.scss";
 
 body {
-	background: #fffff;
-	font-family: Monteserrat, Arial, Verdana, Tahoma, sans-serif;
-	font-weight: 300;
-	font-size: 16px;
+	background: $primary-color;
+	font-family: $font;
+	font-weight: $font-base-weight;
+	font-size: $font-size;
 	text-align: center;
 }
 h1 {

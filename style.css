@@ -8046,39 +8046,41 @@ button.close {
     display: none !important;
   }
 }
-/* line 16, sass/style.scss */
+/* fonts */
+/* colors */
+/* line 18, sass/style.scss */
 body {
-  background: #fffff;
+  background: white;
   font-family: Monteserrat, Arial, Verdana, Tahoma, sans-serif;
   font-weight: 300;
   font-size: 16px;
   text-align: center;
 }
 
-/* line 23, sass/style.scss */
+/* line 25, sass/style.scss */
 h1 {
   font-size: 2.5em;
 }
 
-/* line 26, sass/style.scss */
+/* line 28, sass/style.scss */
 h2 {
   font-size: 2.375em;
 }
 
 @media (max-width: 400px) {
-  /* line 31, sass/style.scss */
+  /* line 33, sass/style.scss */
   body {
     font-size: 10px;
   }
 }
 @media (max-width: 550px) {
-  /* line 37, sass/style.scss */
+  /* line 39, sass/style.scss */
   body {
     font-size: 11px;
   }
 }
 @media (max-width 767px) {
-  /* line 42, sass/style.scss */
+  /* line 44, sass/style.scss */
   body {
     font-size: 14px;
   }
