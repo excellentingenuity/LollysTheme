@@ -8048,7 +8048,77 @@ button.close {
 }
 /* fonts */
 /* colors */
-/* line 18, sass/style.scss */
+/* line 1, sass/partials/_page_structure.scss */
+.clear-padding, .container, .container-fluid, .header-bar {
+  padding: 0 0 0 0;
+}
+
+/* line 4, sass/partials/_page_structure.scss */
+.clear-margin, html {
+  margin: 0 0 0 0;
+}
+
+/* line 7, sass/partials/_page_structure.scss */
+.auto-center-margin, .header-bar-content {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 11, sass/partials/_page_structure.scss */
+.auto-vertical-center-margin {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/* line 15, sass/partials/_page_structure.scss */
+.onehundred-percent, .container, .container-fluid, .header-bar {
+  width: 100%;
+}
+
+/* line 1, sass/partials/_color_classes.scss */
+.orange-background, .header-bar {
+  background-color: #e84d0e;
+}
+
+/* line 4, sass/partials/_color_classes.scss */
+.white-backround {
+  background-color: white;
+}
+
+/* line 1, sass/partials/_typography.scss */
+.uppercase, h1 {
+  text-transform: uppercase;
+}
+
+/* line 4, sass/partials/_typography.scss */
+.no-decoration, .header-bar-link, .header-bar-link:hover {
+  text-decoration: none;
+}
+
+/* line 1, sass/partials/_header_bar.scss */
+.header-bar {
+  height: 4.5em;
+}
+
+/* line 7, sass/partials/_header_bar.scss */
+.header-bar-content {
+  text-align: center;
+  color: white;
+  font-size: 1.2em;
+  padding-top: 1.2%;
+}
+
+/* line 14, sass/partials/_header_bar.scss */
+.header-bar-link {
+  color: white;
+}
+
+/* line 18, sass/partials/_header_bar.scss */
+.header-bar-link:hover {
+  color: white;
+}
+
+/* line 22, sass/style.scss */
 body {
   background: white;
   font-family: Monteserrat, Arial, Verdana, Tahoma, sans-serif;
@@ -8057,30 +8127,30 @@ body {
   text-align: center;
 }
 
-/* line 25, sass/style.scss */
+/* line 29, sass/style.scss */
 h1 {
   font-size: 2.5em;
 }
 
-/* line 28, sass/style.scss */
+/* line 32, sass/style.scss */
 h2 {
   font-size: 2.375em;
 }
 
 @media (max-width: 400px) {
-  /* line 33, sass/style.scss */
+  /* line 37, sass/style.scss */
   body {
     font-size: 10px;
   }
 }
 @media (max-width: 550px) {
-  /* line 39, sass/style.scss */
+  /* line 43, sass/style.scss */
   body {
     font-size: 11px;
   }
 }
 @media (max-width 767px) {
-  /* line 44, sass/style.scss */
+  /* line 48, sass/style.scss */
   body {
     font-size: 14px;
   }

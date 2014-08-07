@@ -26,6 +26,24 @@
 		'desc' => 'Upload your favicon'
 	) );
 
+	// header text
+	$tab_0->createOption( array(
+		'name' => 'Header Bar Text',
+		'id' => 'header_text',
+		'type' => 'text',
+		'default' => '',
+		'desc' => 'Enter the text you want to appear in the header bar'
+	));
+
+	// header text link
+	$tab_0->createOption( array(
+		'name' => 'Header Bar Link',
+		'id' => 'header_text_link',
+		'type' => 'select-pages',
+		'default' => '',
+		'desc' => 'Enter the page for the header bar text should link to'
+	));
+
 	
 	$tab_0->createOption(array('type' => 'save'));
 

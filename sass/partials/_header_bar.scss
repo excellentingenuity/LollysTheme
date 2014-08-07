@@ -1,0 +1,21 @@
+.header-bar {
+	@extend .orange-background;
+	@extend .clear-padding;
+	@extend .onehundred-percent;
+	height: 4.5em;
+}
+.header-bar-content {
+	text-align: center;
+	color: $primary-color;
+	font-size: 1.2em;
+	padding-top: 1.2%;
+	@extend .auto-center-margin;
+}
+.header-bar-link {
+	@extend .no-decoration;
+	color: $primary-color;
+}
+.header-bar-link:hover {
+	@extend .no-decoration;
+	color: $primary-color;
+}
