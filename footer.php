@@ -26,10 +26,7 @@
 		<div class="row">
 			<div class="copyright-notices-bar">
 				<div class="col-sm-12 copyright">
-					&copy; <?php echo date("Y") ?>
-				</div>
-				<div class="col-sm-12 notices">
-					
+					&copy; Copyright <?php echo date("Y") ?>
 				</div>
 			</div>
 		</div>

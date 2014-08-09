@@ -33,4 +33,15 @@ function get_top_menu($menu_name)
 	);
 	return get_menu($args);
 }
+
+/** Register Menu Support in the theme */
+function register_my_menus() {
+  register_nav_menus(
+    array(
+      'top-menu' => __( 'Top Naviagition Menu' ),
+      'footer-menu' => __( 'Footer Menu' )
+    )
+  );
+}
+add_action( 'init', 'register_my_menus' );
 ?>

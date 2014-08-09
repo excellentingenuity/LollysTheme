@@ -21,7 +21,9 @@
 
 @import "partials/footer.scss";
 
-
+#wpstats {
+	display: none;
+}
 body {
 	background: $primary-color;
 	font-family: $font;
@@ -29,12 +31,7 @@ body {
 	font-size: $font-size;
 	text-align: center;
 }
-h1 {
-	font-size: 2.5em;
-}
-h2 {
-	font-size: 2.375em;
-}
+
 
 @media (max-width: 400px) {
 	body {

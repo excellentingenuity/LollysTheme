@@ -42,31 +42,33 @@ $colHighlight   : #e84d1c;
 	border-top-color: $bgHighlight;
 	.navbar-brand {
 		color: $colDefault;
-		&:hover, &:focus { 
-			color: $colDefault;
-			background-color: $colHighlight; }}
+		&:hover { 
+			color: $colHighlight;
+			background-color: $bgDefault; }}
 	.navbar-text {
 		color: $colDefault; }
 	.navbar-nav {
 		> li {
 			> a {
 				color: $colDefault;
-				&:hover,  &:focus {
-					color: $primary-color;
-					background-color: $highlight-color;
+				&:hover {
+					color: $colHighlight;
+					background-color: $bgDefault;
 					 }}}
 		> .active {
-			> a, > a:hover, > a:focus {
+			> a, > a:hover {
 				background-color: $bgDefault;
 				color: $bgHighlight; }}
 		> .open {
-			> a, > a:hover, > a:focus {
+			> a, > a:hover {
 				color: $colHighlight;
-				background-color: $bgHighlight; }}}
+				background-color: $bgDefault; }}}
 	.navbar-toggle {
 		border-color: $bgHighlight;
-		&:hover, &:focus {
-			background-color: $bgHighlight; }
+		&:hover {
+			background-color: $bgDefault; 
+			color: $bgHighlight;
+			}
 		.icon-bar {
 			background-color: $colDefault; }}
 	.navbar-collapse,
@@ -75,15 +77,29 @@ $colHighlight   : #e84d1c;
 	.navbar-link {
 		color: $colDefault;
 		&:hover {
-			color: $colHighlight; }}}
+			color: $colHighlight;
+			background-color: bgDefault;
+			 }}}
+	 // Open dropdowns
+  .dropdown-toggle, .dropdown .open > a {
+    &,
+    &:hover,
+    &:focus {
+      background-color: $bgDefault;
+      border-color: $link-color;
+    }
+  }
 @media (max-width: 767px) {
 	.navbar-default .navbar-nav .open .dropdown-menu {
 		> li > a {
 			color: $colDefault;
-			&:hover, &:focus {
-				color: $colHighlight; }}
-		> .active {
-			> a, > a:hover, > a:focus, {
+			background-color: bgDefault;
+			&:hover {
 				color: $colHighlight;
-				background-color: $bgHighlight; }}}
+				background-color: bgDefault;
+				 }}
+		> .active {
+			> a, > a:hover {
+				color: $colHighlight;
+				background-color: $bgDefault; }}}
 }

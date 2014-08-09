@@ -8,6 +8,8 @@
     	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     	<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title><?php echo $titan->getOption('site_name'); ?></title>
+		<link rel="profile" href="http://gmpg.org/xfn/11">
+		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 		<!-- Bootstrap -->
 	    <link href="<?php echo get_template_directory_uri(); ?>/style.css" rel="stylesheet">
