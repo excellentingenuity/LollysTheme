@@ -13,10 +13,11 @@
 	));
 
 	//Header Slideshow
-	$tab_1->createOption( array('name' => 'Header Slideshow Image 1', 'id' => 'header_slideer_image_1', 'type' => 'upload', 'desc' => 'Upload your image') );
-	$tab_1->createOption( array('name' => 'Header Slideshow Image 2', 'id' => 'header_slideer_image_2', 'type' => 'upload', 'desc' => 'Upload your image') );
-	$tab_1->createOption( array('name' => 'Header Slideshow Image 3', 'id' => 'header_slideer_image_3', 'type' => 'upload', 'desc' => 'Upload your image') );
-	$tab_1->createOption( array('name' => 'Header Slideshow Image 4', 'id' => 'header_slideer_image_4', 'type' => 'upload', 'desc' => 'Upload your image') );
-	$tab_1->createOption( array('name' => 'Header Slideshow Image 5', 'id' => 'header_slideer_image_5', 'type' => 'upload', 'desc' => 'Upload your image') );
+	$tab_1->createOption( array('name' => 'Header Slideshow Image 1', 'id' => 'header_slider_image_1', 'type' => 'upload', 'desc' => 'Upload your image') );
+	$tab_1->createOption( array('name' => 'Header Slideshow Image 2', 'id' => 'header_slider_image_2', 'type' => 'upload', 'desc' => 'Upload your image') );
+	$tab_1->createOption( array('name' => 'Header Slideshow Image 3', 'id' => 'header_slider_image_3', 'type' => 'upload', 'desc' => 'Upload your image') );
+	$tab_1->createOption( array('name' => 'Header Slideshow Image 4', 'id' => 'header_slider_image_4', 'type' => 'upload', 'desc' => 'Upload your image') );
+	$tab_1->createOption( array('name' => 'Header Slideshow Image 5', 'id' => 'header_slider_image_5', 'type' => 'upload', 'desc' => 'Upload your image') );
 
+	$tab_1->createOption(array('type' => 'save'));
 ?>

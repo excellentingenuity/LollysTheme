@@ -7,8 +7,8 @@ include("header.php");
 	<?php include('includes/page-partials/page-header.php'); ?>
 	<div class="row">
 		<div class="col-sm-12">
-			<div class="wow fadeInDown featured-fade-slideshow">
-				Featured Area
+			<div class="featured-fade-slideshow">
+				
 			</div>
 		</div>
 	</div>
