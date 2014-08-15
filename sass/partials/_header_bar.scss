@@ -19,3 +19,15 @@
 	@extend .no-decoration;
 	color: $primary-color;
 }
+.header-logo {
+	overflow: visible;
+	height: 4.5em;
+}
+.header-logo-img {
+	height: 7em;
+	@extend .img-responsive;
+	@extend .img-circle;
+	margin: auto;
+	position: relative;
+	z-index: 2
+}

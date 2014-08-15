@@ -1,5 +1,6 @@
 <?php 
 require_once('wp_bootstrap_navwalker.php');
+require_once('top_menu_walker.php');
 /**
  * Get source of image uploaded to titan option
  */
@@ -29,7 +30,7 @@ function get_top_menu($menu_name)
 		'menu_class' => 'nav navbar-nav',
 		'fallback_cb' => 'wp_page_menu',
 		//Process nav menu using our custom nav walker
-		'walker' => new wp_bootstrap_navwalker()
+		'walker' => new top_menu_walker()
 	);
 	return get_menu($args);
 }
