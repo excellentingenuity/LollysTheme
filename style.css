@@ -8293,27 +8293,42 @@ li.menu-item .active > a:focus {
 /* line 6, sass/pages/_home.scss */
 .home-page .commitment {
   padding-top: 3em;
+  padding-bottom: 3em;
+}
+/* line 14, sass/pages/_home.scss */
+.home-page .commitment .coach-block {
+  right: -3em;
 }
 @media (max-width: 768px) {
-  /* line 13, sass/pages/_home.scss */
+  /* line 14, sass/pages/_home.scss */
   .home-page .commitment .coach-block {
     text-align: center;
+    right: 0em;
   }
+}
+/* line 25, sass/pages/_home.scss */
+.home-page .commitment .consultant-block {
+  left: -3em;
 }
 @media (max-width: 768px) {
-  /* line 22, sass/pages/_home.scss */
+  /* line 25, sass/pages/_home.scss */
   .home-page .commitment .consultant-block {
     text-align: center;
+    left: 0em;
   }
 }
-/* line 32, sass/pages/_home.scss */
+/* line 36, sass/pages/_home.scss */
 .home-page .commitment .commitment-amperstand-p {
-  width: 1.3em;
-  font-size: 2.3em;
+  width: 1.6em;
+  font-size: 1.9em;
   color: white;
   background-color: #e84d0e;
   border-radius: 50%;
   margin: auto;
+}
+/* line 46, sass/pages/_home.scss */
+.home-page .speaker-with-heart {
+  height: 25em;
 }
 
 /* line 1, sass/partials/_footer.scss */

@@ -51,7 +51,7 @@ include("header.php");
 		</div>
 	</div>
 	<div class="row">
-		<div class="speaker-with-heart">
+		<div class="col-sm-12 speaker-with-heart">
 			
 		</div>
 	</div>
