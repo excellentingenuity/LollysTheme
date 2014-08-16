@@ -1,0 +1,42 @@
+.home-page {
+	.featured-fade-slideshow {
+		height: 25em;
+	}
+
+	.commitment {
+
+		padding-top: 3em;
+
+		.commitment-text-header {
+			@extend .text-center;
+		}
+		.coach-block {
+			@extend .text-right;
+			@media (max-width: $screen-sm-min){
+				text-align: center;
+			}
+		}
+		.coach-list, .consultant-list {
+			@extend .list-unstyled;
+		}
+		.consultant-block {
+			@extend .text-left;
+
+			@media (max-width: $screen-sm-min){
+				text-align: center;
+			}
+		}
+		.commitment-amperstand {
+			@extend .text-center;
+		}
+		.commitment-amperstand-p {
+			@extend .text-center;
+			width: 1.3em;
+			font-size: 2.3em;
+			color: $primary-color;
+			background-color: $highlight-color;
+			border-radius: 50%;
+			margin: auto;
+		}
+	}
+}

@@ -4,6 +4,7 @@
 .top-navigation {
 	@extend .base_menu;
 	@extend .navbar-default;
+	margin-bottom: 0px;
 }
 .top-navigation-menu {
 	text-align: center;
