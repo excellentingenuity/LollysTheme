@@ -19,5 +19,10 @@
 	$tab_1->createOption( array('name' => 'Header Slideshow Image 4', 'id' => 'header_slider_image_4', 'type' => 'upload', 'desc' => 'Upload your image') );
 	$tab_1->createOption( array('name' => 'Header Slideshow Image 5', 'id' => 'header_slider_image_5', 'type' => 'upload', 'desc' => 'Upload your image') );
 
+	$tab_1->createOption( array('name' => 'Background', 'id' => 'speaker-background', 'type' => 'select',
+							'desc' => 'Choose the type of background for this section',
+							'options' => array('white' => 'White', 'image' => 'Fullscreen image'), 'default' => 'white') );
+	$tab_1->createOption( array('name' => 'Speaker With Heart Image', 'id' => 'speaker_with_heart_background', 'type' => 'upload', 'desc' => 'Upload your image'));
+
 	$tab_1->createOption(array('type' => 'save'));
 ?>

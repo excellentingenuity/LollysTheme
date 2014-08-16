@@ -52,7 +52,13 @@ include("header.php");
 	</div>
 	<div class="row">
 		<div class="col-sm-12 speaker-with-heart">
-			
+			<div class="row speaker-services-subrow">
+				<div class="col-sm-3 col-sm-offset-6">
+					<a href="" class="all-services-link">
+						All Services
+					</a>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div class="row">
