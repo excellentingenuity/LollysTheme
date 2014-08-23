@@ -8,7 +8,7 @@ include("header.php");
 	<div class="row">
 		<div class="col-sm-12">
 			<div class="featured-fade-slideshow">
-				
+				<a href="#" class="header_slideshow_link"><h2 class="header_slideshow_text"><?php echo $titan->getOption('header_slider_text')?></h2></a>
 			</div>
 		</div>
 	</div>
@@ -53,11 +53,15 @@ include("header.php");
 	<div class="row">
 		<div class="col-sm-12 speaker-with-heart">
 			<div class="row speaker-services-subrow">
-				<div class="col-sm-3 col-sm-offset-6">
-					<a href="" class="all-services-link">
-						All Services
-					</a>
+				<div class="col-sm-12">
+					<div class="all-services-link-div">
+						<a href="" class="all-services-link">
+						Show All Services<br /><span class="all-services-link-greater-than">&gt;</span>
+						</a>
+					</div>
+					
 				</div>
+				<a href="<?php echo $titan->getOption('speaker_text_link')?>" class="speaker_with_heart_link"><h2 class="speaker_with_heart_text"><?php echo $titan->getOption('speaker_text')?></h2></a>
 			</div>
 		</div>
 	</div>
