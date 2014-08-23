@@ -4,14 +4,16 @@
 .white-backround {
 	background-color: $primary-color;
 }
-<<<<<<< HEAD
 .grey-background {
 	-webkit-box-shadow: rgb(207, 207, 207) 0px -80px 200px 1px inset;
 	background-color: rgb(245, 245, 245); 
 	box-shadow: rgb(207, 207, 207) 0px -80px 200px 1px inset;
-=======
+}
 .white-text {
 	color: $primary-color;
+}
+.black-text {
+	color: #000000;
 }
 .text-black-shadow {
     color: white;
@@ -28,5 +30,4 @@
     3px -3px 0 #000,
     -3px 3px 0 #000,
     3px 3px 0 #000;  
->>>>>>> 55033fb0e2085f864d0ea6891f0d95ab2e73fd84
 }
