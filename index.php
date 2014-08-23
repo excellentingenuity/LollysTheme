@@ -57,16 +57,27 @@ include("header.php");
 	</div>
 	<div class="row">
 		<div class="about-lolly">
+			<h2 class="about-lolly-h2">
+				Leadership Coach. Consultant. Facilitator. Speaker. Author.
+			</h2>
+			<div class="col-sm-12 about-link-container-div">
+				<div class="about-link-boundry">
+					<a href="about" class="home-about-link">
+						<h4 class="home-about-link-text">
+							
+						</h4>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="lollys-values">
 			
 		</div>
 	</div>
 	<div class="row">
 		<div class="testimonials">
-			
-		</div>
-	</div>
-	<div class="row">
-		<div class="lollys-values">
 			
 		</div>
 	</div>

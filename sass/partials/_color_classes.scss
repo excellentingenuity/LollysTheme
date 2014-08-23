@@ -4,3 +4,8 @@
 .white-backround {
 	background-color: $primary-color;
 }
+.grey-background {
+	-webkit-box-shadow: rgb(207, 207, 207) 0px -80px 200px 1px inset;
+	background-color: rgb(245, 245, 245); 
+	box-shadow: rgb(207, 207, 207) 0px -80px 200px 1px inset;
+}

@@ -46,4 +46,8 @@
 	.speaker-with-heart {
 		height: 25em;
 	}
+	.about-lolly {
+		@extend .grey-background;
+		
+	}
 }
