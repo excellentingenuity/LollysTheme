@@ -1667,12 +1667,12 @@ mark,
 }
 
 /* line 96, sass/bootstrap/_type.scss */
-.text-right, .home-page .commitment .coach-block {
+.text-right, .home-page .header_slideshow_text, .home-page .speaker-with-heart .speaker_with_heart_text, .home-page .commitment .coach-block {
   text-align: right;
 }
 
 /* line 97, sass/bootstrap/_type.scss */
-.text-center, .home-page .commitment .commitment-text-header, .home-page .commitment .commitment-amperstand, .home-page .commitment .commitment-amperstand-p {
+.text-center, .home-page .commitment .commitment-text-header, .home-page .commitment .commitment-amperstand, .home-page .commitment .commitment-amperstand-p, .home-page .speaker-with-heart .all-services-link-div {
   text-align: center;
 }
 
@@ -8086,6 +8086,23 @@ button.close {
   background-color: white;
 }
 
+/* line 7, sass/partials/_color_classes.scss */
+.white-text, .home-page .header_slideshow_text, .home-page .speaker-with-heart .speaker_with_heart_text, .home-page .header_slideshow_link, .home-page .speaker-with-heart .speaker_with_heart_link, .home-page .header_slideshow_link :hover, .home-page .speaker-with-heart .speaker_with_heart_link :hover, .home-page .header_slideshow_link :visited, .home-page .speaker-with-heart .speaker_with_heart_link :visited {
+  color: white;
+}
+
+/* line 10, sass/partials/_color_classes.scss */
+.text-black-shadow, .home-page .header_slideshow_text, .home-page .speaker-with-heart .speaker_with_heart_text {
+  color: white;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+/* line 18, sass/partials/_color_classes.scss */
+.text-black-shadow-bold {
+  color: white;
+  text-shadow: -3px -3px 0 black, 3px -3px 0 black, -3px 3px 0 black, 3px 3px 0 black;
+}
+
 /* line 1, sass/partials/_typography.scss */
 .uppercase, h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
@@ -8290,34 +8307,59 @@ li.menu-item .active > a:focus {
 .home-page .featured-fade-slideshow {
   height: 25em;
 }
-/* line 6, sass/pages/_home.scss */
+/* line 5, sass/pages/_home.scss */
+.home-page .header_slideshow_text, .home-page .speaker-with-heart .speaker_with_heart_text {
+  .position: relative;
+  margin-top: 0px;
+  padding-top: 2.8em;
+  padding-right: 22%;
+}
+@media (max-width: 768px) {
+  /* line 5, sass/pages/_home.scss */
+  .home-page .header_slideshow_text, .home-page .speaker-with-heart .speaker_with_heart_text {
+    text-align: center;
+  }
+}
+/* line 17, sass/pages/_home.scss */
+.home-page .header_slideshow_link, .home-page .speaker-with-heart .speaker_with_heart_link {
+  text-decoration: none;
+}
+/* line 21, sass/pages/_home.scss */
+.home-page .header_slideshow_link :hover, .home-page .speaker-with-heart .speaker_with_heart_link :hover {
+  text-decoration: none;
+}
+/* line 26, sass/pages/_home.scss */
+.home-page .header_slideshow_link :visited, .home-page .speaker-with-heart .speaker_with_heart_link :visited {
+  text-decoration: none;
+}
+/* line 31, sass/pages/_home.scss */
 .home-page .commitment {
   padding-top: 3em;
   padding-bottom: 3em;
 }
-/* line 14, sass/pages/_home.scss */
+/* line 39, sass/pages/_home.scss */
 .home-page .commitment .coach-block {
   right: -3em;
 }
 @media (max-width: 768px) {
-  /* line 14, sass/pages/_home.scss */
+  /* line 39, sass/pages/_home.scss */
   .home-page .commitment .coach-block {
     text-align: center;
     right: 0em;
   }
 }
-/* line 25, sass/pages/_home.scss */
+/* line 50, sass/pages/_home.scss */
 .home-page .commitment .consultant-block {
   left: -3em;
 }
 @media (max-width: 768px) {
-  /* line 25, sass/pages/_home.scss */
+  /* line 50, sass/pages/_home.scss */
   .home-page .commitment .consultant-block {
     text-align: center;
     left: 0em;
   }
 }
-/* line 36, sass/pages/_home.scss */
+/* line 61, sass/pages/_home.scss */
 .home-page .commitment .commitment-amperstand-p {
   width: 1.6em;
   font-size: 1.9em;
@@ -8326,9 +8368,42 @@ li.menu-item .active > a:focus {
   border-radius: 50%;
   margin: auto;
 }
-/* line 46, sass/pages/_home.scss */
+/* line 71, sass/pages/_home.scss */
 .home-page .speaker-with-heart {
   height: 25em;
+}
+/* line 79, sass/pages/_home.scss */
+.home-page .speaker-with-heart .all-services-link-div {
+  font-size: 1.6em;
+  line-height: 1.8em;
+  color: white;
+  background-color: #e84d0e;
+  margin: auto;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+  top: -3em;
+  height: 7em;
+  width: 6.6em;
+  padding-top: 2%;
+}
+/* line 94, sass/pages/_home.scss */
+.home-page .speaker-with-heart .all-services-link-div .all-services-link {
+  color: white;
+}
+/* line 97, sass/pages/_home.scss */
+.home-page .speaker-with-heart .all-services-link-div .all-services-link:hover {
+  color: white;
+  text-decoration: none;
+}
+/* line 102, sass/pages/_home.scss */
+.home-page .speaker-with-heart .all-services-link-div .all-services-link:visited {
+  color: white;
+  text-decoration: none;
+}
+/* line 107, sass/pages/_home.scss */
+.home-page .speaker-with-heart .all-services-link-div .all-services-link-greater-than {
+  font-size: 1.8m;
 }
 
 /* line 1, sass/partials/_footer.scss */

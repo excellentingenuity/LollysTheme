@@ -100,6 +100,7 @@ function lolly_load_scripts() {
 	wp_localize_script('lolly-scripts-js', 'lolly_scripts_js_vars', array(
 			'coming_soon_bg'       => lolly_coming_soon_slideshow($titan, 'header_slider_image_'),
 			'ajaxurl'              => admin_url('admin-ajax.php'),
+			'speaker_with_heart_bg'=> array('bg_type' => $titan->getOption('speaker-background'), 'image_src' => get_image_source_from_titan_option($titan, 'speaker_with_heart_background')),
 		)
     );
 }
