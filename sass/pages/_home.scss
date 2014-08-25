@@ -5,40 +5,48 @@
 	.header_slideshow_text {
 		.position: relative;
 		margin-top: 0px;
-		padding-top:2.8em;
+		padding-top:2.6em;
 		@extend .text-right;
 		padding-right:22%;
-		@extend .white-text;
-		@extend .text-black-shadow;
+		font-weight: 900;
+		font-size: 2em;
+		@extend .black-text;
 		@media (max-width: $screen-sm-min){
 			text-align: center;
+			padding-right: 0px;
 		}
 	}
 	.header_slideshow_link {
-		@extend .white-text;
+		@extend .black-text;
 		text-decoration: none;
 	}
 	.header_slideshow_link :hover {
 		text-decoration: none;
-		@extend .white-text;
+		@extend .black-text;
 	}
 
 	.header_slideshow_link :visited {
 		text-decoration: none;
-		@extend .white-text;
+		@extend .black-text;
 	}
 
 	.commitment {
 
-		padding-top: 3em;
-		padding-bottom: 3em;
+		padding-top: 5em;
+		padding-bottom: 5em;
 
 		.commitment-text-header {
 			@extend .text-center;
+			font-size: 1.4em;
+			font-weight: 500;
 		}
 		.coach-block {
 			@extend .text-right;
 			right: -3em;
+			font-size: 1.4em;
+			@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+				padding-right:1em;
+			}
 			@media (max-width: $screen-sm-min){
 				text-align: center;
 				right: 0em;
@@ -49,7 +57,11 @@
 		}
 		.consultant-block {
 			@extend .text-left;
+			font-size: 1.4em;
 			left: -3em;
+			@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+				padding-left:1em;
+			}
 			@media (max-width: $screen-sm-min){
 				text-align: center;
 				left: 0em;
@@ -57,15 +69,25 @@
 		}
 		.commitment-amperstand {
 			@extend .text-center;
+			top:1em;
+			@media (max-width: $screen-sm-min){
+				top:0px;
+			}
 		}
 		.commitment-amperstand-p {
 			@extend .text-center;
 			width: 1.6em;
-			font-size: 1.9em;
+			font-size: 2em;
 			color: $primary-color;
 			background-color: $highlight-color;
 			border-radius: 50%;
 			margin: auto;
+			font-weight: 800;
+
+		}
+		.coach-header, .consultant-header {
+			font-size: 1.6em;
+			font-weight: 900;
 		}
 	}
 	.speaker-with-heart {
@@ -78,17 +100,17 @@
 		}
 		.all-services-link-div{
 			@extend .text-center;
-			font-size: 1.6em;
-			line-height: 1.8em;
+			font-size: 1em;
+			line-height: 1.1em;
 			color: $primary-color;
 			background-color: $highlight-color;
 			margin: auto;
 			border-radius: 50%;
 			position:relative;
 			z-index:1;
-			top:-3em;
-			height: 7em;
-			width: 6.6em;
+			top:-2em;
+			height: 6em;
+			width: 6em;
 			padding-top: 2%;
 
 			.all-services-link {
@@ -105,7 +127,7 @@
 				
 			}
 			.all-services-link-greater-than {
-				font-size: 1.8m;
+				font-size: 1em;
 			}
 		}
 

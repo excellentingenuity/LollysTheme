@@ -1,4 +1,7 @@
 .base_menu {
-	color: #000000;
+	color: $primary-font-color;
+	font-family: "proxima-nova-alt-n1",Arial,Verdana,Tahoma,"DejaVu Sans",sans-serif;
+	font-style: normal;
+	font-weight: 100;
 	background-color: $primary-color;
 }

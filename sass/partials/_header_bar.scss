@@ -2,12 +2,12 @@
 	@extend .orange-background;
 	@extend .clear-padding;
 	@extend .onehundred-percent;
-	height: 4.5em;
+	height: 4em;
 }
 .header-bar-content {
 	text-align: center;
 	color: $primary-color;
-	font-size: 1.2em;
+	font-size: 1em;
 	padding-top: 1.2%;
 	@extend .auto-center-margin;
 }
@@ -21,10 +21,10 @@
 }
 .header-logo {
 	overflow: visible;
-	height: 4.5em;
+	height: 4em;
 }
 .header-logo-img {
-	height: 7em;
+	height: 3em;
 	@extend .img-responsive;
 	@extend .img-circle;
 	margin: auto;

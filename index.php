@@ -16,11 +16,11 @@ include("header.php");
 		<div class="col-sm-12 commitment">
 			<div class="commitment-text-div">
 				<h4 class="commitment-text-header">
-					I Am Committed
+					I Am A Committed
 				</h4>
 			</div>
 			<div class="row commitment-subrow">
-				<div class="col-sm-4 col-sm-offset-1 coach-block">
+				<div class="col-sm-4 col-md-4 col-sm-offset-1 col-md-offset-0 coach-block">
 					<h3 class="coach-header">
 						Coach
 					</h3>
@@ -31,10 +31,10 @@ include("header.php");
 						<li class="coach-list-item">Entrepreneurship Coaching</li>
 					</ul>
 				</div>
-				<div class="col-sm-2 comitment-subrow-center commitment-amperstand">
+				<div class="col-sm-2 col-md-3 comitment-subrow-center commitment-amperstand">
 					<p class="commitment-amperstand-p">&amp;</p>
 				</div>
-				<div class="col-sm-4 consultant-block">
+				<div class="col-sm-4 col-md-4 consultant-block">
 					<h3 class="consultant-header">
 						Consultant
 					</h3>
@@ -67,9 +67,9 @@ include("header.php");
 	</div>
 	<div class="row">
 		<div class="about-lolly">
-			<h2 class="about-lolly-h2">
+			<h3 class="about-lolly-h3">
 				Leadership Coach. Consultant. Facilitator. Speaker. Author.
-			</h2>
+			</h3>
 			<div class="col-sm-12 about-link-container-div">
 				<div class="about-link-boundry">
 					<a href="about" class="home-about-link">
