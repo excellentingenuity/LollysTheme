@@ -8328,7 +8328,7 @@ li.menu-item .active > a:focus {
 
 /* line 2, sass/pages/_home.scss */
 .home-page .featured-fade-slideshow {
-  height: 25em;
+  min-height: 29em;
 }
 /* line 5, sass/pages/_home.scss */
 .home-page .header_slideshow_text, .home-page .speaker-with-heart .speaker_with_heart_text {
@@ -8360,63 +8360,64 @@ li.menu-item .active > a:focus {
 }
 /* line 33, sass/pages/_home.scss */
 .home-page .commitment {
-  padding-top: 5em;
-  padding-bottom: 5em;
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
+  min-height: 20em;
 }
-/* line 38, sass/pages/_home.scss */
+/* line 39, sass/pages/_home.scss */
 .home-page .commitment .commitment-text-header {
-  font-size: 1.4em;
+  font-size: 1.1em;
   font-weight: 500;
 }
-/* line 43, sass/pages/_home.scss */
+/* line 44, sass/pages/_home.scss */
 .home-page .commitment .coach-block {
-  right: -3em;
-  font-size: 1.4em;
+  right: -2.8em;
+  font-size: 1.1em;
 }
-@media (min-width: 992px) and (max-width: 1199px) {
-  /* line 43, sass/pages/_home.scss */
+@media (min-width: 1200px) {
+  /* line 44, sass/pages/_home.scss */
   .home-page .commitment .coach-block {
-    padding-right: 1em;
+    right: -5%;
   }
 }
 @media (max-width: 768px) {
-  /* line 43, sass/pages/_home.scss */
+  /* line 44, sass/pages/_home.scss */
   .home-page .commitment .coach-block {
     text-align: center;
     right: 0em;
   }
 }
-/* line 58, sass/pages/_home.scss */
+/* line 59, sass/pages/_home.scss */
 .home-page .commitment .consultant-block {
-  font-size: 1.4em;
-  left: -3em;
+  font-size: 1.1em;
+  left: -2.8em;
 }
-@media (min-width: 992px) and (max-width: 1199px) {
-  /* line 58, sass/pages/_home.scss */
+@media (min-width: 1200px) {
+  /* line 59, sass/pages/_home.scss */
   .home-page .commitment .consultant-block {
-    padding-left: 1em;
+    left: -5%;
   }
 }
 @media (max-width: 768px) {
-  /* line 58, sass/pages/_home.scss */
+  /* line 59, sass/pages/_home.scss */
   .home-page .commitment .consultant-block {
     text-align: center;
     left: 0em;
   }
 }
-/* line 70, sass/pages/_home.scss */
+/* line 71, sass/pages/_home.scss */
 .home-page .commitment .commitment-amperstand {
-  top: 1em;
+  top: .8em;
 }
 @media (max-width: 768px) {
-  /* line 70, sass/pages/_home.scss */
+  /* line 71, sass/pages/_home.scss */
   .home-page .commitment .commitment-amperstand {
     top: 0px;
   }
 }
-/* line 77, sass/pages/_home.scss */
+/* line 78, sass/pages/_home.scss */
 .home-page .commitment .commitment-amperstand-p {
-  width: 1.6em;
+  width: 1.4em;
   font-size: 2em;
   color: white;
   background-color: #e84d0e;
@@ -8424,16 +8425,16 @@ li.menu-item .active > a:focus {
   margin: auto;
   font-weight: 800;
 }
-/* line 88, sass/pages/_home.scss */
+/* line 89, sass/pages/_home.scss */
 .home-page .commitment .coach-header, .home-page .commitment .consultant-header {
   font-size: 1.6em;
   font-weight: 900;
 }
-/* line 93, sass/pages/_home.scss */
+/* line 94, sass/pages/_home.scss */
 .home-page .speaker-with-heart {
-  height: 25em;
+  min-height: 25em;
 }
-/* line 101, sass/pages/_home.scss */
+/* line 102, sass/pages/_home.scss */
 .home-page .speaker-with-heart .all-services-link-div {
   font-size: 1em;
   line-height: 1.1em;
@@ -8443,26 +8444,26 @@ li.menu-item .active > a:focus {
   border-radius: 50%;
   position: relative;
   z-index: 1;
-  top: -2em;
+  top: -2.8em;
   height: 6em;
   width: 6em;
-  padding-top: 2%;
+  padding-top: 2.2%;
 }
-/* line 116, sass/pages/_home.scss */
+/* line 117, sass/pages/_home.scss */
 .home-page .speaker-with-heart .all-services-link-div .all-services-link {
   color: white;
 }
-/* line 119, sass/pages/_home.scss */
+/* line 120, sass/pages/_home.scss */
 .home-page .speaker-with-heart .all-services-link-div .all-services-link:hover {
   color: white;
   text-decoration: none;
 }
-/* line 124, sass/pages/_home.scss */
+/* line 125, sass/pages/_home.scss */
 .home-page .speaker-with-heart .all-services-link-div .all-services-link:visited {
   color: white;
   text-decoration: none;
 }
-/* line 129, sass/pages/_home.scss */
+/* line 130, sass/pages/_home.scss */
 .home-page .speaker-with-heart .all-services-link-div .all-services-link-greater-than {
   font-size: 1em;
 }

@@ -20,7 +20,7 @@ include("header.php");
 				</h4>
 			</div>
 			<div class="row commitment-subrow">
-				<div class="col-sm-4 col-md-4 col-sm-offset-1 col-md-offset-0 coach-block">
+				<div class="col-sm-4 col-md-4 col-sm-offset-1 col-md-offset-1 coach-block">
 					<h3 class="coach-header">
 						Coach
 					</h3>
@@ -31,7 +31,7 @@ include("header.php");
 						<li class="coach-list-item">Entrepreneurship Coaching</li>
 					</ul>
 				</div>
-				<div class="col-sm-2 col-md-3 comitment-subrow-center commitment-amperstand">
+				<div class="col-sm-2 col-md-2 comitment-subrow-center commitment-amperstand">
 					<p class="commitment-amperstand-p">&amp;</p>
 				</div>
 				<div class="col-sm-4 col-md-4 consultant-block">
