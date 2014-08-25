@@ -8088,7 +8088,7 @@ button.close {
 }
 
 /* line 7, sass/partials/_color_classes.scss */
-.grey-background, .home-page .about-lolly {
+.grey-background {
   -webkit-box-shadow: #cfcfcf 0px -80px 200px 1px inset;
   background-color: whitesmoke;
   box-shadow: #cfcfcf 0px -80px 200px 1px inset;
@@ -8362,76 +8362,76 @@ li.menu-item .active > a:focus {
 .home-page .commitment {
   padding-top: 2.5em;
   padding-bottom: 2.5em;
-  min-height: 20em;
+  min-height: 28em;
 }
 /* line 39, sass/pages/_home.scss */
 .home-page .commitment .commitment-text-header {
   font-size: 1em;
   font-weight: 200;
-  font-style: italic;
-  margin-bottom: 1.5em;
+  margin-bottom: 2em;
 }
-/* line 46, sass/pages/_home.scss */
+/* line 45, sass/pages/_home.scss */
 .home-page .commitment .coach-block {
   right: -2.8em;
   font-size: 1.1em;
-  line-height: 1.4em;
+  line-height: 1.6em;
 }
 @media (min-width: 1200px) {
-  /* line 46, sass/pages/_home.scss */
+  /* line 45, sass/pages/_home.scss */
   .home-page .commitment .coach-block {
     right: -5%;
   }
 }
 @media (max-width: 768px) {
-  /* line 46, sass/pages/_home.scss */
+  /* line 45, sass/pages/_home.scss */
   .home-page .commitment .coach-block {
     text-align: center;
     right: 0em;
   }
 }
-/* line 62, sass/pages/_home.scss */
+/* line 61, sass/pages/_home.scss */
 .home-page .commitment .consultant-block {
   font-size: 1.1em;
-  line-height: 1.4em;
+  line-height: 1.6em;
   left: -2.8em;
 }
 @media (min-width: 1200px) {
-  /* line 62, sass/pages/_home.scss */
+  /* line 61, sass/pages/_home.scss */
   .home-page .commitment .consultant-block {
     left: -5%;
   }
 }
 @media (max-width: 768px) {
-  /* line 62, sass/pages/_home.scss */
+  /* line 61, sass/pages/_home.scss */
   .home-page .commitment .consultant-block {
     text-align: center;
     left: 0em;
   }
 }
-/* line 75, sass/pages/_home.scss */
+/* line 74, sass/pages/_home.scss */
 .home-page .commitment .commitment-amperstand {
-  top: 1em;
+  top: .8em;
 }
 @media (max-width: 768px) {
-  /* line 75, sass/pages/_home.scss */
+  /* line 74, sass/pages/_home.scss */
   .home-page .commitment .commitment-amperstand {
     top: 0px;
   }
 }
-/* line 82, sass/pages/_home.scss */
+/* line 81, sass/pages/_home.scss */
 .home-page .commitment .commitment-amperstand-p {
-  width: 1.4em;
-  font-size: 2em;
+  width: 1.7em;
+  font-size: 2.4em;
   color: white;
   background-color: #e84d0e;
   border-radius: 50%;
   margin: auto;
   font-weight: 800;
 }
-/* line 93, sass/pages/_home.scss */
+/* line 92, sass/pages/_home.scss */
 .home-page .commitment .coach-header, .home-page .commitment .consultant-header {
   font-size: 2.2em;
+  margin-bottom: .9em;
   font-weight: 900;
 }
 /* line 98, sass/pages/_home.scss */
@@ -8448,10 +8448,10 @@ li.menu-item .active > a:focus {
   border-radius: 50%;
   position: relative;
   z-index: 1;
-  top: -2.8em;
-  height: 6em;
-  width: 6em;
-  padding-top: 2.2%;
+  top: -3em;
+  height: 7em;
+  width: 7em;
+  padding-top: 2.6%;
 }
 /* line 121, sass/pages/_home.scss */
 .home-page .speaker-with-heart .all-services-link-div .all-services-link {
@@ -8470,6 +8470,31 @@ li.menu-item .active > a:focus {
 /* line 134, sass/pages/_home.scss */
 .home-page .speaker-with-heart .all-services-link-div .all-services-link-greater-than {
   font-size: 1em;
+}
+/* line 142, sass/pages/_home.scss */
+.home-page .about-lolly .about-lolly-header {
+  padding-bottom: 3em;
+}
+/* line 146, sass/pages/_home.scss */
+.home-page .about-lolly .about-lolly-h3 {
+  text-align: center;
+}
+/* line 150, sass/pages/_home.scss */
+.home-page .about-lolly .values-subrow {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+/* line 154, sass/pages/_home.scss */
+.home-page .about-lolly .values-block {
+  min-height: 12em;
+}
+/* line 156, sass/pages/_home.scss */
+.home-page .about-lolly .values-block .values-inner {
+  background-color: #e84d0e;
+  color: white;
+  padding: 2em;
+  min-height: 12em;
+  width: 20em;
 }
 
 /* line 1, sass/partials/_footer.scss */

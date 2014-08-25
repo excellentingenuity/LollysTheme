@@ -34,20 +34,19 @@
 
 		padding-top: 2.5em;
 		padding-bottom: 2.5em;
-		min-height: 20em;
+		min-height: 28em;
 
 		.commitment-text-header {
 			@extend .text-center;
 			font-size: 1em;
 			font-weight: 200;
-			font-style: italic;
-			margin-bottom:1.5em; 
+			margin-bottom:2em; 
 		}
 		.coach-block {
 			@extend .text-right;
 			right: -2.8em;
 			font-size: 1.1em;
-			line-height: 1.4em;
+			line-height: 1.6em;
 			@media (min-width: $screen-lg-min){
 				right:-5%;
 			}
@@ -62,7 +61,7 @@
 		.consultant-block {
 			@extend .text-left;
 			font-size: 1.1em;
-			line-height: 1.4em;
+			line-height: 1.6em;
 			left: -2.8em;
 			@media (min-width: $screen-lg-min){
 				left:-5%;
@@ -74,15 +73,15 @@
 		}
 		.commitment-amperstand {
 			@extend .text-center;
-			top:1em;
+			top:.8em;
 			@media (max-width: $screen-sm-min){
 				top:0px;
 			}
 		}
 		.commitment-amperstand-p {
 			@extend .text-center;
-			width: 1.4em;
-			font-size: 2em;
+			width: 1.7em;
+			font-size: 2.4em;
 			color: $primary-color;
 			background-color: $highlight-color;
 			border-radius: 50%;
@@ -92,6 +91,7 @@
 		}
 		.coach-header, .consultant-header {
 			font-size: 2.2em;
+			margin-bottom: .9em;
 			font-weight: 900;
 		}
 	}
@@ -113,10 +113,10 @@
 			border-radius: 50%;
 			position:relative;
 			z-index:1;
-			top:-2.8em;
-			height: 6em;
-			width: 6em;
-			padding-top: 2.2%;
+			top:-3em;
+			height: 7em;
+			width: 7em;
+			padding-top: 2.6%;
 
 			.all-services-link {
 				color:$primary-color;
@@ -139,7 +139,29 @@
 
 	}
 	.about-lolly {
-		@extend .grey-background;
+		.about-lolly-header {
+			padding-bottom: 3em;
+		}
+
+		.about-lolly-h3 {
+			text-align: center;
+		}
+
+		.values-subrow {
+			padding-top: 3em;
+			padding-bottom: 3em;
+		}
+		.values-block {
+			min-height: 12em;
+			.values-inner {
+				background-color: $highlight-color;
+				color: $primary-color;
+				padding:2em;
+				min-height: 12em;
+				width: 20em;
+			}
+			
+		}
 		
 	}
 }

@@ -61,15 +61,27 @@ include("header.php");
 					</div>
 					
 				</div>
-				<a href="<?php echo get_site_url() . $titan->getOption('speaker_text_link')?>" class="speaker_with_heart_link"><h2 class="speaker_with_heart_text"><?php echo $titan->getOption('speaker_text')?></h2></a>
+				<a href="<?php echo get_site_url() . '/' . $titan->getOption('speaker_text_link')?>" class="speaker_with_heart_link"><h2 class="speaker_with_heart_text"><?php echo $titan->getOption('speaker_text')?></h2></a>
 			</div>
 		</div>
 	</div>
 	<div class="row">
 		<div class="about-lolly">
-			<h3 class="about-lolly-h3">
-				Leadership Coach. Consultant. Facilitator. Speaker. Author.
-			</h3>
+			<div class="about-lolly-header col-sm-12">
+				<h3 class="about-lolly-h3">
+					Lolly As A Leadership Coach. Consultant. Facilitator. Speaker. Author.
+				</h3>
+			</div>
+			<div class="row lollys-values-subrow">
+				<div class="col-sm-6 values-block">
+					<div class="values-inner pull-right">Passion</div>
+				</div>
+				<div class="col-sm-6 values-block">
+					<div class="values-inner pull-left">Reliability</div>
+				</div>
+				
+			</div>
+			
 			<div class="col-sm-12 about-link-container-div">
 				<div class="about-link-boundry">
 					<a href="about" class="home-about-link">
@@ -79,11 +91,6 @@ include("header.php");
 					</a>
 				</div>
 			</div>
-		</div>
-	</div>
-	<div class="row">
-		<div class="lollys-values">
-			
 		</div>
 	</div>
 	<div class="row">
