@@ -129,7 +129,7 @@ include("header.php");
 				<div class="col-sm-12 about-link-container-div">
 					<div class="about-link-boundry">
 						<a href="about" class="home-about-link">
-								About me<br /><span class="all-services-link-greater-than">&gt;</span>
+								More<br />about<br />me<br /><span class="all-services-link-greater-than">&gt;</span>
 						</a>
 					</div>
 				</div>

@@ -163,6 +163,9 @@
 
 		.about-lolly-h3 {
 			text-align: center;
+			text-transform: none;
+			max-width: 90%;
+			margin: auto;
 		}
 
 		.values-subrow {
@@ -247,7 +250,7 @@
 			top:1.8em;
 			height: 7em;
 			width: 7em;
-			padding-top: 2.6%;
+			padding-top: 2%;
 
 			.home-about-link {
 				color:$primary-color;

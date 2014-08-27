@@ -8503,13 +8503,16 @@ li.menu-item .active > a:focus {
 /* line 164, sass/pages/_home.scss */
 .home-page .about-lolly .about-lolly-h3 {
   text-align: center;
+  text-transform: none;
+  max-width: 90%;
+  margin: auto;
 }
-/* line 168, sass/pages/_home.scss */
+/* line 171, sass/pages/_home.scss */
 .home-page .about-lolly .values-subrow {
   padding-top: 3em;
   padding-bottom: 3em;
 }
-/* line 172, sass/pages/_home.scss */
+/* line 175, sass/pages/_home.scss */
 .home-page .about-lolly .values-inner-header {
   font-family: "proxima-nova-n9","proxima-nova",sans-serif;
   font-style: normal;
@@ -8519,25 +8522,25 @@ li.menu-item .active > a:focus {
   padding-bottom: .3em;
   top: 0;
 }
-/* line 181, sass/pages/_home.scss */
+/* line 184, sass/pages/_home.scss */
 .home-page .about-lolly .values-block {
   min-height: 12em;
   padding-bottom: 4em;
 }
-/* line 184, sass/pages/_home.scss */
+/* line 187, sass/pages/_home.scss */
 .home-page .about-lolly .values-block .values-inner {
   background-color: #e84d0e;
   color: white;
   min-height: 14em;
   width: 24em;
 }
-/* line 189, sass/pages/_home.scss */
+/* line 192, sass/pages/_home.scss */
 .home-page .about-lolly .values-block .values-inner .values-elipses {
   padding-top: 1.4em;
   color: #000000;
   font-weight: 200;
 }
-/* line 194, sass/pages/_home.scss */
+/* line 197, sass/pages/_home.scss */
 .home-page .about-lolly .values-block .values-inner i {
   color: #e84d0e;
   font-size: 2.8em;
@@ -8548,7 +8551,7 @@ li.menu-item .active > a:focus {
   padding-bottom: .2em;
   width: 1.4em;
 }
-/* line 204, sass/pages/_home.scss */
+/* line 207, sass/pages/_home.scss */
 .home-page .about-lolly .values-block .values-inner i.fa-angle-down {
   color: #000000;
   font-size: 1em;
@@ -8556,14 +8559,14 @@ li.menu-item .active > a:focus {
   border: none;
   padding: 0px;
 }
-/* line 211, sass/pages/_home.scss */
+/* line 214, sass/pages/_home.scss */
 .home-page .about-lolly .values-block .values-inner .values-content-wrapper {
   height: 5em;
   position: absolute;
   overflow: hidden;
   bottom: 4em;
 }
-/* line 217, sass/pages/_home.scss */
+/* line 220, sass/pages/_home.scss */
 .home-page .about-lolly .values-block .values-inner .values-content {
   padding: .6em;
   background-color: #EBEBEB;
@@ -8575,15 +8578,15 @@ li.menu-item .active > a:focus {
   width: 24em;
   text-align: left;
 }
-/* line 231, sass/pages/_home.scss */
+/* line 234, sass/pages/_home.scss */
 .home-page .about-lolly .about-link-subrow {
   height: 1px;
 }
-/* line 234, sass/pages/_home.scss */
+/* line 237, sass/pages/_home.scss */
 .home-page .about-lolly .about-link-container-div {
   height: 5em;
 }
-/* line 237, sass/pages/_home.scss */
+/* line 240, sass/pages/_home.scss */
 .home-page .about-lolly .about-link-boundry {
   font-size: 1em;
   line-height: 1.1em;
@@ -8596,36 +8599,36 @@ li.menu-item .active > a:focus {
   top: 1.8em;
   height: 7em;
   width: 7em;
-  padding-top: 2.6%;
+  padding-top: 2%;
 }
-/* line 252, sass/pages/_home.scss */
+/* line 255, sass/pages/_home.scss */
 .home-page .about-lolly .about-link-boundry .home-about-link {
   color: white;
   text-transform: none;
 }
-/* line 256, sass/pages/_home.scss */
+/* line 259, sass/pages/_home.scss */
 .home-page .about-lolly .about-link-boundry .home-about-link:hover {
   color: white;
   text-decoration: none;
 }
-/* line 261, sass/pages/_home.scss */
+/* line 264, sass/pages/_home.scss */
 .home-page .about-lolly .about-link-boundry .home-about-link:visited {
   color: white;
   text-decoration: none;
 }
-/* line 269, sass/pages/_home.scss */
+/* line 272, sass/pages/_home.scss */
 .home-page .testimonials-row {
   min-height: 20em;
 }
-/* line 273, sass/pages/_home.scss */
+/* line 276, sass/pages/_home.scss */
 .home-page .testimonialst-link-subrow {
   height: 1px;
 }
-/* line 276, sass/pages/_home.scss */
+/* line 279, sass/pages/_home.scss */
 .home-page .all-testimonials-container {
   height: 5em;
 }
-/* line 279, sass/pages/_home.scss */
+/* line 282, sass/pages/_home.scss */
 .home-page .all-testimonials-link-div {
   font-size: 1em;
   line-height: 1.1em;
@@ -8640,40 +8643,40 @@ li.menu-item .active > a:focus {
   width: 7em;
   padding-top: 2.6%;
 }
-/* line 294, sass/pages/_home.scss */
+/* line 297, sass/pages/_home.scss */
 .home-page .all-testimonials-link-div .all-testimonials-link {
   color: white;
 }
-/* line 297, sass/pages/_home.scss */
+/* line 300, sass/pages/_home.scss */
 .home-page .all-testimonials-link-div .all-testimonials-link:hover {
   color: white;
   text-decoration: none;
 }
-/* line 302, sass/pages/_home.scss */
+/* line 305, sass/pages/_home.scss */
 .home-page .all-testimonials-link-div .all-testimonials-link:visited {
   color: white;
   text-decoration: none;
 }
-/* line 308, sass/pages/_home.scss */
+/* line 311, sass/pages/_home.scss */
 .home-page .lower-navigation {
   min-height: 15em;
 }
-/* line 310, sass/pages/_home.scss */
+/* line 313, sass/pages/_home.scss */
 .home-page .lower-navigation .lower-nav-item {
   border: thin solid #ebebeb;
   padding: 1em;
   color: #e84d0e;
   background-color: white;
 }
-/* line 316, sass/pages/_home.scss */
+/* line 319, sass/pages/_home.scss */
 .home-page .lower-navigation .lower-nav-item .lower-outer-nav-item-left {
   border-left: none;
 }
-/* line 319, sass/pages/_home.scss */
+/* line 322, sass/pages/_home.scss */
 .home-page .lower-navigation .lower-nav-item .lower-outer-nav-item-right {
   border-right: none;
 }
-/* line 324, sass/pages/_home.scss */
+/* line 327, sass/pages/_home.scss */
 .home-page .awards-and-mentions {
   min-height: 25em;
 }
@@ -8681,46 +8684,56 @@ li.menu-item .active > a:focus {
 /**widgets scss*/
 /* line 3, sass/partials/_widgets.scss */
 .subscribe {
-  padding-bottom: 2em;
+  padding-bottom: 4em;
+  padding-top: 2em;
 }
-/* line 5, sass/partials/_widgets.scss */
-.subscribe .subscription-form {
+/* line 6, sass/partials/_widgets.scss */
+.subscribe .subscribe-header {
+  text-transform: none;
   padding-bottom: 1em;
+}
+/* line 10, sass/partials/_widgets.scss */
+.subscribe .subscription-form {
+  padding-bottom: 2em;
   text-align: center;
 }
-/* line 9, sass/partials/_widgets.scss */
+/* line 14, sass/partials/_widgets.scss */
 .subscribe .subscription-form .subscription-email-field {
   text-align: left;
   margin-right: .4em;
   width: 20em;
 }
 @media (max-width: 768px) {
-  /* line 9, sass/partials/_widgets.scss */
+  /* line 14, sass/partials/_widgets.scss */
   .subscribe .subscription-form .subscription-email-field {
     margin: auto;
     margin-bottom: .8em;
   }
 }
-/* line 21, sass/partials/_widgets.scss */
+/* line 26, sass/partials/_widgets.scss */
 .subscribe .subscription-form .subscription-submit {
   color: white;
   background-color: #e84d0e;
 }
+/* line 31, sass/partials/_widgets.scss */
+.subscribe .subscription-privacy-statement {
+  padding-top: 2em;
+}
 
-/* line 27, sass/partials/_widgets.scss */
+/* line 35, sass/partials/_widgets.scss */
 .cscfBlock {
   margin: 1em;
 }
-/* line 29, sass/partials/_widgets.scss */
+/* line 37, sass/partials/_widgets.scss */
 .cscfBlock .cscfForm {
   font-size: .8em;
 }
-/* line 31, sass/partials/_widgets.scss */
+/* line 39, sass/partials/_widgets.scss */
 .cscfBlock .cscfForm input[type="submit"] {
   color: white;
   background-color: #e84d0e;
 }
-/* line 35, sass/partials/_widgets.scss */
+/* line 43, sass/partials/_widgets.scss */
 .cscfBlock .cscfForm label {
   display: none;
 }
