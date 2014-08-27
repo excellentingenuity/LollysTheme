@@ -1667,12 +1667,12 @@ mark,
 }
 
 /* line 96, sass/bootstrap/_type.scss */
-.text-right, .home-page .header_slideshow_text, .home-page .speaker-with-heart .speaker_with_heart_text, .home-page .commitment .coach-block {
+.text-right, .home-page .header_slideshow_text, .home-page .speaker-with-heart .speaker_with_heart_text, .home-page .header_slideshow_text2, .home-page .speaker-with-heart .speaker_with_heart_text2, .home-page .commitment .coach-block {
   text-align: right;
 }
 
 /* line 97, sass/bootstrap/_type.scss */
-.text-center, .home-page .commitment .commitment-text-header, .home-page .commitment .commitment-amperstand, .home-page .commitment .commitment-amperstand-p, .home-page .speaker-with-heart .all-services-link-div {
+.text-center, .home-page .commitment .commitment-text-header, .home-page .commitment .commitment-amperstand, .home-page .commitment .commitment-amperstand-p, .home-page .speaker-with-heart .all-services-link-div, .home-page .about-lolly .about-link-boundry, .home-page .all-testimonials-link-div {
   text-align: center;
 }
 
@@ -8088,7 +8088,7 @@ button.close {
 }
 
 /* line 7, sass/partials/_color_classes.scss */
-.grey-background {
+.grey-background, .home-page .testimonials-row {
   -webkit-box-shadow: #cfcfcf 0px -80px 200px 1px inset;
   background-color: whitesmoke;
   box-shadow: #cfcfcf 0px -80px 200px 1px inset;
@@ -8100,17 +8100,27 @@ button.close {
 }
 
 /* line 15, sass/partials/_color_classes.scss */
-.black-text, .home-page .header_slideshow_text, .home-page .speaker-with-heart .speaker_with_heart_text, .home-page .header_slideshow_link, .home-page .speaker-with-heart .speaker_with_heart_link, .home-page .header_slideshow_link :hover, .home-page .speaker-with-heart .speaker_with_heart_link :hover, .home-page .header_slideshow_link :visited, .home-page .speaker-with-heart .speaker_with_heart_link :visited {
+.black-text, .home-page .header_slideshow_text, .home-page .speaker-with-heart .speaker_with_heart_text, .home-page .header_slideshow_text2, .home-page .speaker-with-heart .speaker_with_heart_text2, .home-page .header_slideshow_link, .home-page .speaker-with-heart .speaker_with_heart_link, .home-page .header_slideshow_link :hover, .home-page .speaker-with-heart .speaker_with_heart_link :hover, .home-page .header_slideshow_link :visited, .home-page .speaker-with-heart .speaker_with_heart_link :visited {
   color: #000000;
 }
 
 /* line 18, sass/partials/_color_classes.scss */
+.grey-text, .subscribe .subscription-form .subscription-email-field {
+  color: #EBEBEB;
+}
+
+/* line 21, sass/partials/_color_classes.scss */
+.solid-grey-background {
+  background-color: #EBEBEB;
+}
+
+/* line 24, sass/partials/_color_classes.scss */
 .text-black-shadow {
   color: white;
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 
-/* line 26, sass/partials/_color_classes.scss */
+/* line 32, sass/partials/_color_classes.scss */
 .text-black-shadow-bold {
   color: white;
   text-shadow: -3px -3px 0 black, 3px -3px 0 black, -3px 3px 0 black, 3px 3px 0 black;
@@ -8181,7 +8191,6 @@ h3 {
 /* line 1, sass/partials/_base_menu.scss */
 .base_menu, .top-navigation {
   color: black;
-  font-family: "proxima-nova-alt-n1",Arial,Verdana,Tahoma,"DejaVu Sans",sans-serif;
   font-style: normal;
   font-weight: 100;
   background-color: white;
@@ -8337,7 +8346,7 @@ li.menu-item .active > a:focus {
   padding-top: 2.6em;
   padding-right: 22%;
   font-weight: 900;
-  font-size: 2em;
+  font-size: 2.6em;
 }
 @media (max-width: 768px) {
   /* line 5, sass/pages/_home.scss */
@@ -8347,78 +8356,94 @@ li.menu-item .active > a:focus {
   }
 }
 /* line 19, sass/pages/_home.scss */
+.home-page .header_slideshow_text2, .home-page .speaker-with-heart .speaker_with_heart_text2 {
+  .position: relative;
+  margin-top: 0px;
+  padding-right: 22%;
+  font-weight: 900;
+  font-size: 2.6em;
+}
+@media (max-width: 768px) {
+  /* line 19, sass/pages/_home.scss */
+  .home-page .header_slideshow_text2, .home-page .speaker-with-heart .speaker_with_heart_text2 {
+    text-align: center;
+    padding-right: 0px;
+  }
+}
+/* line 32, sass/pages/_home.scss */
 .home-page .header_slideshow_link, .home-page .speaker-with-heart .speaker_with_heart_link {
   text-decoration: none;
 }
-/* line 23, sass/pages/_home.scss */
+/* line 36, sass/pages/_home.scss */
 .home-page .header_slideshow_link :hover, .home-page .speaker-with-heart .speaker_with_heart_link :hover {
   text-decoration: none;
 }
-/* line 28, sass/pages/_home.scss */
+/* line 41, sass/pages/_home.scss */
 .home-page .header_slideshow_link :visited, .home-page .speaker-with-heart .speaker_with_heart_link :visited {
   text-decoration: none;
 }
-/* line 33, sass/pages/_home.scss */
+/* line 46, sass/pages/_home.scss */
 .home-page .commitment {
   padding-top: 2.5em;
   padding-bottom: 2.5em;
   min-height: 28em;
 }
-/* line 39, sass/pages/_home.scss */
+/* line 52, sass/pages/_home.scss */
 .home-page .commitment .commitment-text-header {
   font-size: 1em;
   font-weight: 200;
   margin-bottom: 2em;
+  text-transform: none;
 }
-/* line 45, sass/pages/_home.scss */
+/* line 59, sass/pages/_home.scss */
 .home-page .commitment .coach-block {
   right: -2.8em;
   font-size: 1.1em;
   line-height: 1.6em;
 }
 @media (min-width: 1200px) {
-  /* line 45, sass/pages/_home.scss */
+  /* line 59, sass/pages/_home.scss */
   .home-page .commitment .coach-block {
     right: -5%;
   }
 }
 @media (max-width: 768px) {
-  /* line 45, sass/pages/_home.scss */
+  /* line 59, sass/pages/_home.scss */
   .home-page .commitment .coach-block {
     text-align: center;
     right: 0em;
   }
 }
-/* line 61, sass/pages/_home.scss */
+/* line 75, sass/pages/_home.scss */
 .home-page .commitment .consultant-block {
   font-size: 1.1em;
   line-height: 1.6em;
   left: -2.8em;
 }
 @media (min-width: 1200px) {
-  /* line 61, sass/pages/_home.scss */
+  /* line 75, sass/pages/_home.scss */
   .home-page .commitment .consultant-block {
     left: -5%;
   }
 }
 @media (max-width: 768px) {
-  /* line 61, sass/pages/_home.scss */
+  /* line 75, sass/pages/_home.scss */
   .home-page .commitment .consultant-block {
     text-align: center;
     left: 0em;
   }
 }
-/* line 74, sass/pages/_home.scss */
+/* line 88, sass/pages/_home.scss */
 .home-page .commitment .commitment-amperstand {
   top: .8em;
 }
 @media (max-width: 768px) {
-  /* line 74, sass/pages/_home.scss */
+  /* line 88, sass/pages/_home.scss */
   .home-page .commitment .commitment-amperstand {
     top: 0px;
   }
 }
-/* line 81, sass/pages/_home.scss */
+/* line 95, sass/pages/_home.scss */
 .home-page .commitment .commitment-amperstand-p {
   width: 1.7em;
   font-size: 2.4em;
@@ -8428,17 +8453,17 @@ li.menu-item .active > a:focus {
   margin: auto;
   font-weight: 800;
 }
-/* line 92, sass/pages/_home.scss */
+/* line 106, sass/pages/_home.scss */
 .home-page .commitment .coach-header, .home-page .commitment .consultant-header {
   font-size: 2.2em;
   margin-bottom: .9em;
   font-weight: 900;
 }
-/* line 98, sass/pages/_home.scss */
+/* line 112, sass/pages/_home.scss */
 .home-page .speaker-with-heart {
   min-height: 25em;
 }
-/* line 106, sass/pages/_home.scss */
+/* line 123, sass/pages/_home.scss */
 .home-page .speaker-with-heart .all-services-link-div {
   font-size: 1em;
   line-height: 1.1em;
@@ -8453,48 +8478,252 @@ li.menu-item .active > a:focus {
   width: 7em;
   padding-top: 2.6%;
 }
-/* line 121, sass/pages/_home.scss */
+/* line 138, sass/pages/_home.scss */
 .home-page .speaker-with-heart .all-services-link-div .all-services-link {
   color: white;
 }
-/* line 124, sass/pages/_home.scss */
+/* line 141, sass/pages/_home.scss */
 .home-page .speaker-with-heart .all-services-link-div .all-services-link:hover {
   color: white;
   text-decoration: none;
 }
-/* line 129, sass/pages/_home.scss */
+/* line 146, sass/pages/_home.scss */
 .home-page .speaker-with-heart .all-services-link-div .all-services-link:visited {
   color: white;
   text-decoration: none;
 }
-/* line 134, sass/pages/_home.scss */
+/* line 151, sass/pages/_home.scss */
 .home-page .speaker-with-heart .all-services-link-div .all-services-link-greater-than {
   font-size: 1em;
 }
-/* line 142, sass/pages/_home.scss */
+/* line 159, sass/pages/_home.scss */
 .home-page .about-lolly .about-lolly-header {
   padding-bottom: 3em;
+  padding-top: 4em;
 }
-/* line 146, sass/pages/_home.scss */
+/* line 164, sass/pages/_home.scss */
 .home-page .about-lolly .about-lolly-h3 {
   text-align: center;
 }
-/* line 150, sass/pages/_home.scss */
+/* line 168, sass/pages/_home.scss */
 .home-page .about-lolly .values-subrow {
   padding-top: 3em;
   padding-bottom: 3em;
 }
-/* line 154, sass/pages/_home.scss */
+/* line 172, sass/pages/_home.scss */
+.home-page .about-lolly .values-inner-header {
+  font-family: "proxima-nova-n9","proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2.6em;
+  line-height: 1em;
+  padding-bottom: .3em;
+  top: 0;
+}
+/* line 181, sass/pages/_home.scss */
 .home-page .about-lolly .values-block {
   min-height: 12em;
+  padding-bottom: 4em;
 }
-/* line 156, sass/pages/_home.scss */
+/* line 184, sass/pages/_home.scss */
 .home-page .about-lolly .values-block .values-inner {
   background-color: #e84d0e;
   color: white;
-  padding: 2em;
-  min-height: 12em;
+  min-height: 14em;
+  width: 24em;
+}
+/* line 189, sass/pages/_home.scss */
+.home-page .about-lolly .values-block .values-inner .values-elipses {
+  padding-top: 1.4em;
+  color: #000000;
+  font-weight: 200;
+}
+/* line 194, sass/pages/_home.scss */
+.home-page .about-lolly .values-block .values-inner i {
+  color: #e84d0e;
+  font-size: 2.8em;
+  background-color: white;
+  border-radius: 50%;
+  top: -0.5em;
+  position: relative;
+  padding-bottom: .2em;
+  width: 1.4em;
+}
+/* line 204, sass/pages/_home.scss */
+.home-page .about-lolly .values-block .values-inner i.fa-angle-down {
+  color: #000000;
+  font-size: 1em;
+  background-color: #e84d0e;
+  border: none;
+  padding: 0px;
+}
+/* line 211, sass/pages/_home.scss */
+.home-page .about-lolly .values-block .values-inner .values-content-wrapper {
+  height: 5em;
+  position: absolute;
+  overflow: hidden;
+  bottom: 4em;
+}
+/* line 217, sass/pages/_home.scss */
+.home-page .about-lolly .values-block .values-inner .values-content {
+  padding: .6em;
+  background-color: #EBEBEB;
+  color: #000000;
+  font-size: 1em;
+  top: 5em;
+  height: 5em;
+  position: relative;
+  width: 24em;
+  text-align: left;
+}
+/* line 231, sass/pages/_home.scss */
+.home-page .about-lolly .about-link-subrow {
+  height: 1px;
+}
+/* line 234, sass/pages/_home.scss */
+.home-page .about-lolly .about-link-container-div {
+  height: 5em;
+}
+/* line 237, sass/pages/_home.scss */
+.home-page .about-lolly .about-link-boundry {
+  font-size: 1em;
+  line-height: 1.1em;
+  color: white;
+  background-color: #e84d0e;
+  margin: auto;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+  top: 1.8em;
+  height: 7em;
+  width: 7em;
+  padding-top: 2.6%;
+}
+/* line 252, sass/pages/_home.scss */
+.home-page .about-lolly .about-link-boundry .home-about-link {
+  color: white;
+  text-transform: none;
+}
+/* line 256, sass/pages/_home.scss */
+.home-page .about-lolly .about-link-boundry .home-about-link:hover {
+  color: white;
+  text-decoration: none;
+}
+/* line 261, sass/pages/_home.scss */
+.home-page .about-lolly .about-link-boundry .home-about-link:visited {
+  color: white;
+  text-decoration: none;
+}
+/* line 269, sass/pages/_home.scss */
+.home-page .testimonials-row {
+  min-height: 20em;
+}
+/* line 273, sass/pages/_home.scss */
+.home-page .testimonialst-link-subrow {
+  height: 1px;
+}
+/* line 276, sass/pages/_home.scss */
+.home-page .all-testimonials-container {
+  height: 5em;
+}
+/* line 279, sass/pages/_home.scss */
+.home-page .all-testimonials-link-div {
+  font-size: 1em;
+  line-height: 1.1em;
+  color: white;
+  background-color: #e84d0e;
+  margin: auto;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+  top: -3.5em;
+  height: 7em;
+  width: 7em;
+  padding-top: 2.6%;
+}
+/* line 294, sass/pages/_home.scss */
+.home-page .all-testimonials-link-div .all-testimonials-link {
+  color: white;
+}
+/* line 297, sass/pages/_home.scss */
+.home-page .all-testimonials-link-div .all-testimonials-link:hover {
+  color: white;
+  text-decoration: none;
+}
+/* line 302, sass/pages/_home.scss */
+.home-page .all-testimonials-link-div .all-testimonials-link:visited {
+  color: white;
+  text-decoration: none;
+}
+/* line 308, sass/pages/_home.scss */
+.home-page .lower-navigation {
+  min-height: 15em;
+}
+/* line 310, sass/pages/_home.scss */
+.home-page .lower-navigation .lower-nav-item {
+  border: thin solid #ebebeb;
+  padding: 1em;
+  color: #e84d0e;
+  background-color: white;
+}
+/* line 316, sass/pages/_home.scss */
+.home-page .lower-navigation .lower-nav-item .lower-outer-nav-item-left {
+  border-left: none;
+}
+/* line 319, sass/pages/_home.scss */
+.home-page .lower-navigation .lower-nav-item .lower-outer-nav-item-right {
+  border-right: none;
+}
+/* line 324, sass/pages/_home.scss */
+.home-page .awards-and-mentions {
+  min-height: 25em;
+}
+
+/**widgets scss*/
+/* line 3, sass/partials/_widgets.scss */
+.subscribe {
+  padding-bottom: 2em;
+}
+/* line 5, sass/partials/_widgets.scss */
+.subscribe .subscription-form {
+  padding-bottom: 1em;
+  text-align: center;
+}
+/* line 9, sass/partials/_widgets.scss */
+.subscribe .subscription-form .subscription-email-field {
+  text-align: left;
+  margin-right: .4em;
   width: 20em;
+}
+@media (max-width: 768px) {
+  /* line 9, sass/partials/_widgets.scss */
+  .subscribe .subscription-form .subscription-email-field {
+    margin: auto;
+    margin-bottom: .8em;
+  }
+}
+/* line 21, sass/partials/_widgets.scss */
+.subscribe .subscription-form .subscription-submit {
+  color: white;
+  background-color: #e84d0e;
+}
+
+/* line 27, sass/partials/_widgets.scss */
+.cscfBlock {
+  margin: 1em;
+}
+/* line 29, sass/partials/_widgets.scss */
+.cscfBlock .cscfForm {
+  font-size: .8em;
+}
+/* line 31, sass/partials/_widgets.scss */
+.cscfBlock .cscfForm input[type="submit"] {
+  color: white;
+  background-color: #e84d0e;
+}
+/* line 35, sass/partials/_widgets.scss */
+.cscfBlock .cscfForm label {
+  display: none;
 }
 
 /* line 1, sass/partials/_footer.scss */
@@ -8511,12 +8740,12 @@ li.menu-item .active > a:focus {
   vertical-align: middle;
 }
 
-/* line 26, sass/style.scss */
+/* line 27, sass/style.scss */
 #wpstats {
   display: none;
 }
 
-/* line 29, sass/style.scss */
+/* line 30, sass/style.scss */
 body {
   background: white;
   font-family: "Proxima-Nova", sans-serif;
@@ -8527,25 +8756,25 @@ body {
 }
 
 @media (max-width: 400px) {
-  /* line 40, sass/style.scss */
+  /* line 41, sass/style.scss */
   body {
     font-size: 10px;
   }
 }
 @media (max-width: 550px) {
-  /* line 46, sass/style.scss */
+  /* line 47, sass/style.scss */
   body {
     font-size: 12px;
   }
 }
 @media (max-width: 767px) {
-  /* line 51, sass/style.scss */
+  /* line 52, sass/style.scss */
   body {
     font-size: 14px;
   }
 }
 @media (min-width: 768px) {
-  /* line 56, sass/style.scss */
+  /* line 57, sass/style.scss */
   body {
     font-size: 18px;
   }

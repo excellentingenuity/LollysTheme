@@ -44,6 +44,15 @@
 		'desc' => 'Enter the page for the header bar text should link to'
 	));
 
+	// Menu
+	$tab_0->createOption(array(
+		'name' => 'Top Menu',
+		'id' => 'top-menu',
+		'type' => 'text',
+		'desc' => 'Enter the name of the menu you wish to be used for the Top Menu',
+		'default' => 'Primary'
+	));
+
 	
 	$tab_0->createOption(array('type' => 'save'));
 
