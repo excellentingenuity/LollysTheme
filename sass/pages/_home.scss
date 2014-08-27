@@ -229,7 +229,10 @@
 					text-align: left;
 				}
 			}
-			
+			@media (max-width: $screen-sm-min){
+				width: 100%;
+				padding: 3em;
+			}
 		}
 		.about-link-subrow{
 			height:1px;
@@ -272,6 +275,24 @@
 	.testimonials-row {
 		@extend .grey-background;
 		min-height: 20em;
+		.testimonials {
+			padding-top: 7em;
+			font-size: 1.1em;
+			.testimonial-text {
+				text-align: center;
+				padding-left: 5em;
+				padding-right: 5em;
+			}
+			.testimonial-author {
+				text-align: right;
+				padding-left: 5em;
+				padding-right: 5em;
+			}
+			.flex-control-nav {
+				position: relative;
+				bottom: -3em;
+			}
+		}
 	}
 	.testimonialst-link-subrow{
 			height:1px;
