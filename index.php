@@ -92,7 +92,7 @@ include("header.php");
 				</div>
 				<div class="col-sm-6 values-block">
 					<div class="values-inner pull-left">
-						<i class="fa fa-user"></i>
+						<i class="icon-keyhole"></i>
 						<div class="values-elipses"><?php echo $titan->getOption('home_value_2_elipsis_text')?></div>
 						<h1 class="values-inner-header"><?php echo $titan->getOption('home_value_2')?></h1>
 						<i class="fa fa-angle-down"></i>
@@ -103,7 +103,7 @@ include("header.php");
 				</div>
 				<div class="col-sm-6 values-block">
 					<div class="values-inner pull-right">
-						<i class="fa fa-check"></i>
+						<i class="icon-shield"></i>
 						<div class="values-elipses"><?php echo $titan->getOption('home_value_3_elipsis_text')?></div>
 						<h1 class="values-inner-header"><?php echo $titan->getOption('home_value_3')?></h1>
 						<i class="fa fa-angle-down"></i>

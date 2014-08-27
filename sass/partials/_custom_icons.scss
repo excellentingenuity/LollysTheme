@@ -1,0 +1,94 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?-u5ubdl');
+	src:url('fonts/icomoon.eot?#iefix-u5ubdl') format('embedded-opentype'),
+		url('fonts/icomoon.woff?-u5ubdl') format('woff'),
+		url('fonts/icomoon.ttf?-u5ubdl') format('truetype'),
+		url('fonts/icomoon.svg?-u5ubdl#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-articles:before {
+	content: "\e600";
+}
+.icon-author:before {
+	content: "\e601";
+}
+.icon-book:before {
+	content: "\e602";
+}
+.icon-coaching:before {
+	content: "\e603";
+}
+.icon-consulting:before {
+	content: "\e604";
+}
+.icon-culture:before {
+	content: "\e605";
+}
+.icon-development:before {
+	content: "\e606";
+}
+.icon-employee:before {
+	content: "\e607";
+}
+.icon-empower:before {
+	content: "\e608";
+}
+.icon-engagement:before {
+	content: "\e609";
+}
+.icon-events:before {
+	content: "\e60a";
+}
+.icon-facilitation:before {
+	content: "\e60b";
+}
+.icon-hammer:before {
+	content: "\e60c";
+}
+.icon-impact:before {
+	content: "\e60d";
+}
+.icon-keyhole:before {
+	content: "\e60e";
+}
+.icon-media:before {
+	content: "\e60f";
+}
+.icon-programs:before {
+	content: "\e610";
+}
+.icon-resources:before {
+	content: "\e611";
+}
+.icon-shield:before {
+	content: "\e612";
+}
+.icon-speaking:before {
+	content: "\e613";
+}
+.icon-training:before {
+	content: "\e614";
+}
+.icon-woman:before {
+	content: "\e615";
+}
+.icon-workshop:before {
+	content: "\e616";
+}
