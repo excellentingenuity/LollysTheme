@@ -1,0 +1,39 @@
+/**widgets scss*/
+
+.subscribe {
+	padding-bottom: 2em;
+	.subscription-form {
+		padding-bottom:1em;
+		text-align: center;
+
+		.subscription-email-field {
+			@extend .grey-text;
+			//height: 2.2em;
+			//width: 45% !important;
+			text-align: left;
+			margin-right:.4em;
+			width:20em;
+			@media (max-width: $screen-sm-min){
+				margin:auto;
+				margin-bottom: .8em;
+			}
+		}
+		.subscription-submit {
+			color: $primary-color;
+			background-color: $highlight-color;
+		}
+	}
+}
+.cscfBlock {
+	margin:1em;
+	.cscfForm {
+		font-size: .8em;
+		input[type="submit"] {
+			color: $primary-color;
+			background-color: $highlight-color;
+		}
+		label {
+			display: none;
+		}
+	}
+}
