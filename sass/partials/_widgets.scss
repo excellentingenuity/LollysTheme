@@ -1,9 +1,14 @@
 /**widgets scss*/
 
 .subscribe {
-	padding-bottom: 2em;
+	padding-bottom: 4em;
+	padding-top: 2em;
+	.subscribe-header {
+		text-transform: none;
+		padding-bottom: 1em;
+	}
 	.subscription-form {
-		padding-bottom:1em;
+		padding-bottom:2em;
 		text-align: center;
 
 		.subscription-email-field {
@@ -22,6 +27,9 @@
 			color: $primary-color;
 			background-color: $highlight-color;
 		}
+	}
+	.subscription-privacy-statement {
+			padding-top: 2em;
 	}
 }
 .cscfBlock {

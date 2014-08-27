@@ -156,6 +156,9 @@
 
 	}
 	.about-lolly {
+		@media (max-width: $screen-sm-min){
+			padding-bottom: 5em;
+		}
 		.about-lolly-header {
 			padding-bottom: 3em;
 			padding-top:4em;
@@ -163,6 +166,9 @@
 
 		.about-lolly-h3 {
 			text-align: center;
+			text-transform: none;
+			max-width: 90%;
+			margin: auto;
 		}
 
 		.values-subrow {
@@ -226,7 +232,16 @@
 					text-align: left;
 				}
 			}
-			
+			@media (max-width: $screen-sm-min){
+				width: 100%;
+				padding: 1em;
+				.values-inner {
+					float:none !important;
+					margin-left: auto;
+					margin-right: auto;
+
+				}
+			}
 		}
 		.about-link-subrow{
 			height:1px;
@@ -247,7 +262,7 @@
 			top:1.8em;
 			height: 7em;
 			width: 7em;
-			padding-top: 2.6%;
+			padding-top: 2%;
 
 			.home-about-link {
 				color:$primary-color;
@@ -269,6 +284,24 @@
 	.testimonials-row {
 		@extend .grey-background;
 		min-height: 20em;
+		.testimonials {
+			padding-top: 7em;
+			font-size: 1.1em;
+			.testimonial-text {
+				text-align: center;
+				padding-left: 5em;
+				padding-right: 5em;
+			}
+			.testimonial-author {
+				text-align: right;
+				padding-left: 5em;
+				padding-right: 5em;
+			}
+			.flex-control-nav {
+				position: relative;
+				bottom: -3em;
+			}
+		}
 	}
 	.testimonialst-link-subrow{
 			height:1px;

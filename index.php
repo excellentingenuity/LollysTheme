@@ -129,7 +129,7 @@ include("header.php");
 				<div class="col-sm-12 about-link-container-div">
 					<div class="about-link-boundry">
 						<a href="about" class="home-about-link">
-								About me<br /><span class="all-services-link-greater-than">&gt;</span>
+								More<br />about<br />me<br /><span class="all-services-link-greater-than">&gt;</span>
 						</a>
 					</div>
 				</div>
@@ -139,23 +139,36 @@ include("header.php");
 	<div class="row">
 		<div class="testimonials-row">
 			<div class="col-sm-12 testimonials">
-				<?php
-					//this is normally where the WP Loop would be. Instead we add a loop to get pods stuff 
- 					 $params = array(     
-					    'limit' => 3 
-					    ); 
- 					 $mypod = pods('testimonial');
- 					 $mypod->find($params);      
-				?>
-				 <?php while ( $mypod->fetch() ) : ?>
- 
-			    <?php
-			      // set our variables
-			      $author = $mypod->field('testimonial_author');
-			      echo $author;
-			    ?>
-			    <?php endwhile; ?> 
-
+				<div class="testimonials-flexslider">
+  					<ul class="slides">
+    					<?php
+							//this is normally where the WP Loop would be. Instead we add a loop to get pods stuff 
+		 					 $params = array(     
+							    'limit' => 3 
+							    ); 
+		 					 $mypod = pods('testimonial');
+		 					 $mypod->find($params);      
+						?>
+						 <?php while ( $mypod->fetch() ) : ?>
+		 
+					    <?php
+					      // set our variables
+					      $text = $mypod->field('testimonial_text');
+					      $author = $mypod->field('testimonial_author');
+					      echo '<li>
+					      			<div class="testimonial-slide-container">
+					      				<div class="testimonial-text">"' .
+					      					$text .
+					      				'"</div><div class="testimonial-author">-' .
+					      					$author . 
+					      				'</div>
+					      			</div>
+					      		</li>';	
+					    ?>
+					    <?php endwhile; ?> 
+     
+					</ul>
+				</div>
 			</div>
 		</div>
 		<div class="row testimonials-link-subrow">
@@ -206,7 +219,6 @@ include("header.php");
 		</div>
 	</div>
 </div> <!-- closing container-fluid div -->
-
 <!-- body tag closed in footer -->
 <?php
 include("footer.php");
