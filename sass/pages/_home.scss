@@ -156,6 +156,9 @@
 
 	}
 	.about-lolly {
+		@media (max-width: $screen-sm-min){
+			padding-bottom: 5em;
+		}
 		.about-lolly-header {
 			padding-bottom: 3em;
 			padding-top:4em;
@@ -231,7 +234,13 @@
 			}
 			@media (max-width: $screen-sm-min){
 				width: 100%;
-				padding: 3em;
+				padding: 1em;
+				.values-inner {
+					float:none !important;
+					margin-left: auto;
+					margin-right: auto;
+
+				}
 			}
 		}
 		.about-link-subrow{
