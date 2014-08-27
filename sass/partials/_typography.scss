@@ -1,0 +1,27 @@
+.uppercase {
+	text-transform: uppercase;
+}
+.no-decoration {
+	text-decoration: none;
+}
+h1 {
+	font-size: 1.8em;
+	@extend .uppercase;
+}
+h2 {
+	font-size: 1.6em;
+	@extend .uppercase;
+}
+h3 {
+	@extend .uppercase;
+	font-size: 1.4
+}
+h4 {
+	@extend .uppercase;
+}
+h5 {
+	@extend .uppercase;
+}
+h6 {
+	@extend .uppercase;
+}

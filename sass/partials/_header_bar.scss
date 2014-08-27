@@ -1,0 +1,33 @@
+.header-bar {
+	@extend .orange-background;
+	@extend .clear-padding;
+	@extend .onehundred-percent;
+	height: 4em;
+}
+.header-bar-content {
+	text-align: center;
+	color: $primary-color;
+	font-size: 1em;
+	padding-top: 1.2%;
+	@extend .auto-center-margin;
+}
+.header-bar-link {
+	@extend .no-decoration;
+	color: $primary-color;
+}
+.header-bar-link:hover {
+	@extend .no-decoration;
+	color: $primary-color;
+}
+.header-logo {
+	overflow: visible;
+	height: 4em;
+}
+.header-logo-img {
+	height: 3em;
+	@extend .img-responsive;
+	@extend .img-circle;
+	margin: auto;
+	position: relative;
+	z-index: 2
+}

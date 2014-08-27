@@ -1,0 +1,28 @@
+.clear-padding {
+	padding: 0 0 0 0;
+}
+.clear-margin{
+	margin: 0 0 0 0;
+}
+.auto-center-margin {
+	margin-left: auto;
+	margin-right: auto;
+}
+.auto-vertical-center-margin {
+	margin-top: auto;
+	margin-bottom: auto;
+}
+.onehundred-percent {
+	width: 100%;
+}
+.container {
+	@extend .clear-padding;
+	@extend .onehundred-percent;
+}
+.container-fluid {
+	@extend .clear-padding;
+	@extend .onehundred-percent;
+}
+html {
+	@extend .clear-margin;
+}

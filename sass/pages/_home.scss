@@ -1,0 +1,327 @@
+.home-page {
+	.featured-fade-slideshow {
+		min-height: 29em;
+	}
+	.header_slideshow_text {
+		.position: relative;
+		margin-top: 0px;
+		padding-top:2.6em;
+		@extend .text-right;
+		padding-right:22%;
+		font-weight: 900;
+		font-size: 2.6em;
+		@extend .black-text;
+		@media (max-width: $screen-sm-min){
+			text-align: center;
+			padding-right: 0px;
+		}
+	}
+	.header_slideshow_text2 {
+		.position: relative;
+		margin-top: 0px;
+		@extend .text-right;
+		padding-right:22%;
+		font-weight: 900;
+		font-size: 2.6em;
+		@extend .black-text;
+		@media (max-width: $screen-sm-min){
+			text-align: center;
+			padding-right: 0px;
+		}
+	}
+	.header_slideshow_link {
+		@extend .black-text;
+		text-decoration: none;
+	}
+	.header_slideshow_link :hover {
+		text-decoration: none;
+		@extend .black-text;
+	}
+
+	.header_slideshow_link :visited {
+		text-decoration: none;
+		@extend .black-text;
+	}
+
+	.commitment {
+
+		padding-top: 2.5em;
+		padding-bottom: 2.5em;
+		min-height: 28em;
+
+		.commitment-text-header {
+			@extend .text-center;
+			font-size: 1em;
+			font-weight: 200;
+			margin-bottom:2em;
+			text-transform: none; 
+		}
+		.coach-block {
+			@extend .text-right;
+			right: -2.8em;
+			font-size: 1.1em;
+			line-height: 1.6em;
+			@media (min-width: $screen-lg-min){
+				right:-5%;
+			}
+			@media (max-width: $screen-sm-min){
+				text-align: center;
+				right: 0em;
+			}
+		}
+		.coach-list, .consultant-list {
+			@extend .list-unstyled;
+		}
+		.consultant-block {
+			@extend .text-left;
+			font-size: 1.1em;
+			line-height: 1.6em;
+			left: -2.8em;
+			@media (min-width: $screen-lg-min){
+				left:-5%;
+			}
+			@media (max-width: $screen-sm-min){
+				text-align: center;
+				left: 0em;
+			}
+		}
+		.commitment-amperstand {
+			@extend .text-center;
+			top:.8em;
+			@media (max-width: $screen-sm-min){
+				top:0px;
+			}
+		}
+		.commitment-amperstand-p {
+			@extend .text-center;
+			width: 1.7em;
+			font-size: 2.4em;
+			color: $primary-color;
+			background-color: $highlight-color;
+			border-radius: 50%;
+			margin: auto;
+			font-weight: 800;
+
+		}
+		.coach-header, .consultant-header {
+			font-size: 2.2em;
+			margin-bottom: .9em;
+			font-weight: 900;
+		}
+	}
+	.speaker-with-heart {
+		min-height: 25em;
+		.speaker_with_heart_link {
+			@extend .header_slideshow_link;
+		}
+		.speaker_with_heart_text {
+			@extend .header_slideshow_text;
+		}
+		.speaker_with_heart_text2 {
+			@extend .header_slideshow_text2;
+		}
+		.all-services-link-div{
+			@extend .text-center;
+			font-size: 1em;
+			line-height: 1.1em;
+			color: $primary-color;
+			background-color: $highlight-color;
+			margin: auto;
+			border-radius: 50%;
+			position:relative;
+			z-index:1;
+			top:-3em;
+			height: 7em;
+			width: 7em;
+			padding-top: 2.6%;
+
+			.all-services-link {
+				color:$primary-color;
+			}
+			.all-services-link:hover {
+				color:$primary-color;
+				text-decoration: none;
+				
+			}
+			.all-services-link:visited {
+				color:$primary-color;
+				text-decoration: none;
+				
+			}
+			.all-services-link-greater-than {
+				font-size: 1em;
+			}
+		}
+
+
+	}
+	.about-lolly {
+		.about-lolly-header {
+			padding-bottom: 3em;
+			padding-top:4em;
+		}
+
+		.about-lolly-h3 {
+			text-align: center;
+		}
+
+		.values-subrow {
+			padding-top: 3em;
+			padding-bottom: 3em;
+		}
+		.values-inner-header {
+			font-family: "proxima-nova-n9","proxima-nova",sans-serif;
+			font-style: normal;
+			font-weight: 900;
+			font-size: 2.6em;
+			line-height: 1em;
+			padding-bottom: .3em;
+			top:0;
+		}
+		.values-block {
+			min-height: 12em;
+			padding-bottom:4em;
+			.values-inner {
+				background-color: $highlight-color;
+				color: $primary-color;
+				min-height: 14em;
+				width: 24em;
+				.values-elipses {
+					padding-top:1.4em;
+					color: #000000;
+					font-weight: 200;
+				}
+				i {
+					color: $highlight-color;
+					font-size: 2.8em;
+					background-color: $primary-color;
+					border-radius: 50%;
+					top: -.5em;
+					position: relative;
+					padding-bottom: .2em;
+					width: 1.4em;
+				}
+				i.fa-angle-down {
+					color:#000000;
+					font-size: 1em;
+					background-color: $highlight-color;
+					border: none;
+					padding: 0px;
+				}
+				.values-content-wrapper {
+					height: 5em;
+					position: absolute;
+					overflow: hidden;
+					bottom: 4em;
+				}
+				.values-content {
+					padding: .6em;
+					background-color: #EBEBEB;
+					color: #000000;
+					font-size: 1em;
+					top:5em;
+					height:5em;
+					position: relative;
+					width: 24em;
+					text-align: left;
+				}
+			}
+			
+		}
+		.about-link-subrow{
+			height:1px;
+		}
+		.about-link-container-div {
+			height: 5em;
+		}
+		.about-link-boundry {
+			@extend .text-center;
+			font-size: 1em;
+			line-height: 1.1em;
+			color: $primary-color;
+			background-color: $highlight-color;
+			margin: auto;
+			border-radius: 50%;
+			position:relative;
+			z-index:1;
+			top:1.8em;
+			height: 7em;
+			width: 7em;
+			padding-top: 2.6%;
+
+			.home-about-link {
+				color:$primary-color;
+				text-transform: none;
+			}
+			.home-about-link:hover {
+				color:$primary-color;
+				text-decoration: none;
+				
+			}
+			.home-about-link:visited {
+				color:$primary-color;
+				text-decoration: none;
+				
+			}
+		}
+		
+	}
+	.testimonials-row {
+		@extend .grey-background;
+		min-height: 20em;
+	}
+	.testimonialst-link-subrow{
+			height:1px;
+	}
+	.all-testimonials-container {
+		height: 5em;
+	}
+	.all-testimonials-link-div {
+		@extend .text-center;
+		font-size: 1em;
+		line-height: 1.1em;
+		color: $primary-color;
+		background-color: $highlight-color;
+		margin: auto;
+		border-radius: 50%;
+		position:relative;
+		z-index:1;
+		top:-3.5em;
+		height: 7em;
+		width: 7em;
+		padding-top: 2.6%;
+
+		.all-testimonials-link {
+			color:$primary-color;
+		}
+		.all-testimonials-link:hover {
+			color:$primary-color;
+			text-decoration: none;
+			
+		}
+		.all-testimonials-link:visited {
+			color:$primary-color;
+			text-decoration: none;
+			
+		}
+	}
+	.lower-navigation {
+		min-height: 15em;
+		.lower-nav-item {
+			border: thin solid $grey-accent;
+			padding: 1em;
+			color: $highlight-color;
+			background-color: $primary-color;
+
+			.lower-outer-nav-item-left {
+				border-left: none;
+			}
+			.lower-outer-nav-item-right {
+				border-right: none;
+			}
+		}
+	}
+	.awards-and-mentions {
+		min-height: 25em;
+	}
+}
