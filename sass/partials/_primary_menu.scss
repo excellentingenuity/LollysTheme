@@ -14,8 +14,10 @@
 	float: none;
 }
 li.menu-item > a {
-	font-size: 1.4em;
-	font-weight: 500;
+	font-size: 1.2em;
+	font-family: "proxima-nova-alt-n1","proxima-nova-alt",sans-serif;
+	font-style: normal;
+	font-weight: 100;
 	color: #000000;
 }
 li.menu-item > a:hover {
@@ -106,6 +108,6 @@ $colHighlight   : #e84d1c;
 }
 .top-navigation {
 	.menu-spacer {
-		width: 4.5em;
+		width: 4em;
 	}
 }

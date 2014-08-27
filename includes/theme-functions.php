@@ -90,6 +90,43 @@ function register_my_menus() {
 }
 add_action( 'init', 'register_my_menus' );
 
+function register_widgets() {
+	register_sidebar( array(
+		'name' => 'Subscribe Area',
+		'id' => 'subscription_1',
+		'before_widget' => '<div class="subscribe-container">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="subscribe-header">',
+		'after_title' => '</h3>',
+	) );
+	register_sidebar( array(
+		'name' => 'Footer Left',
+		'id' => 'footer_left_1',
+		'before_widget' => '<div class="footer-left">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="footer-left-title">',
+		'after_title' => '</h3>',
+	) );
+	register_sidebar( array(
+		'name' => 'Footer Center',
+		'id' => 'footer_center_1',
+		'before_widget' => '<div class="footer-center">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="footer-center-title">',
+		'after_title' => '</h3>',
+	) );	
+	register_sidebar( array(
+		'name' => 'Footer Right',
+		'id' => 'footer_right_1',
+		'before_widget' => '<div class="footer-right">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="footer-right-title">',
+		'after_title' => '</h3>',
+	) );
+	
+}
+add_action( 'widgets_init', 'register_widgets' );
+
 function lolly_load_scripts() {
 	$titan = TitanFramework::getInstance('lolly');
 	wp_enqueue_script('lolly-backstretch-js', get_template_directory_uri() . '/js/jquery.backstretch.min.js', array('jquery'), '2.0.4', true);

@@ -12,4 +12,24 @@ jQuery(document).ready(function( $ ) {
 	if(lolly_scripts_js_vars.speaker_with_heart_bg.bg_type == 'image' && lolly_scripts_js_vars.speaker_with_heart_bg.image_src !== '') {
 		jQuery('.speaker-with-heart').backstretch(lolly_scripts_js_vars.speaker_with_heart_bg.image_src);
 	}
+
+
+	//values boxes
+	$('.values-inner').hover(function() {
+		$(this).find('.values-content').animate({
+			top: 0,
+		}, 450);
+		$(this).find('.values-inner-header').animate({
+			top: '-.8em',
+			lineHeight: '0.1em'
+		}, 200);
+	}, function() {
+		$(this).find('.values-content').animate({
+			top: '5em',
+		}, 450);
+		$(this).find('.values-inner-header').animate({
+			top: 0,
+			lineHeight:'1em'
+		}, 200);
+	});
 });

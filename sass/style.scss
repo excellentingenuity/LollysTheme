@@ -18,7 +18,9 @@
 @import "partials/typography.scss";
 @import "partials/header_bar.scss";
 @import "partials/primary_menu.scss";
+
 @import "pages/home.scss";
+@import "partials/widgets.scss";
 
 @import "partials/footer.scss";
 
@@ -31,22 +33,28 @@ body {
 	font-weight: $font-base-weight;
 	font-size: $font-size;
 	text-align: center;
+	color: $primary-font-color;
 }
 
 
 @media (max-width: 400px) {
 	body {
-		font-size: 10px;
+		font-size: ($font-size - 8);
 	}
 }
 
 @media (max-width: 550px) {
 	body {
-		font-size: 11px;
+		font-size: ($font-size - 6);
 	}
 }
-@media (max-width 767px) {
+@media (max-width: 767px) {
 	body {
-		font-size: 14px;
+		font-size: ($font-size - 4);
+	}
+}
+@media (min-width: 768px){
+	body {
+		font-size: $font-size;
 	}
 }

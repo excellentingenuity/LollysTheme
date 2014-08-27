@@ -5,15 +5,16 @@
 	text-decoration: none;
 }
 h1 {
-	font-size: 2.5em;
+	font-size: 1.8em;
 	@extend .uppercase;
 }
 h2 {
-	font-size: 2.375em;
+	font-size: 1.6em;
 	@extend .uppercase;
 }
 h3 {
 	@extend .uppercase;
+	font-size: 1.4
 }
 h4 {
 	@extend .uppercase;

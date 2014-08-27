@@ -34,6 +34,7 @@ if ( $useEmbeddedFramework && ! class_exists( 'TitanFramework' ) ) {
 $titan = TitanFramework::getinstance( 'lolly' );
 
 $panel = $titan->createAdminPanel(array("name" => "Lollys Theme Options"));
+$homepanel = $panel->createAdminPanel(array("name" => "HomePage Options"));
 
 require_once('includes/tabs/general-options.php');
 require_once('includes/tabs/home-page.php');

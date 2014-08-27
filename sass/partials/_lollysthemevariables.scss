@@ -1,10 +1,15 @@
 
 /* fonts */
-$font: Monteserrat, Arial, Verdana, Tahoma, sans-serif;
-$font-size: 16px;
-$font-base-weight: 300;
+$font: "Proxima-Nova", sans-serif;
+$font-size: 18px;
+$font-base-weight: 400;
+
 
 /* colors */
 $primary-color: #ffffff;
 //$primary-accent-color: grey; //grey gradiant
 $highlight-color: rgb(232, 77, 14); //orange to match nico
+/*primary font color */
+$primary-font-color: #000000;
+
+$grey-accent: #EBEBEB;
