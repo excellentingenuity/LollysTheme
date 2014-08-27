@@ -23,7 +23,6 @@
 	    <![endif]-->
 	    <!-- Favicon -->
         <link rel="shortcut icon" href="<?php echo get_image_source_from_titan_option($titan, 'favicon'); ?>">
-		
 		<?php wp_head(); ?>
 	</head>
 	<body>
