@@ -6,55 +6,14 @@
 	Version: 1.0
 	Author: James Johnson
 	Author URI: http://www.excellentingenuity.com
+	Template: mira-theme
 	All PHP code is released under the GNU General Public License version 3.0 http://www.gnu.org/licenses/gpl-3.0.html
 
 -------------------------------------------------------------------------------------- */
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
-@import "bootstrap/variables.scss";
-@import "bootstrap.scss";
-@import "partials/lollysthemevariables.scss";
-@import "partials/page_structure.scss";
-@import "partials/color_classes.scss";
-@import "partials/typography.scss";
-@import "partials/header_bar.scss";
-@import "partials/primary_menu.scss";
 
-@import "pages/home.scss";
-@import "partials/widgets.scss";
+@import "bootstrap/stylesheets/bootstrap/_variables.scss";
+@import "bootstrap/stylesheets/bootstrap.scss";
 
-@import "partials/footer.scss";
-
-#wpstats {
-	display: none;
-}
-body {
-	background: $primary-color;
-	font-family: $font;
-	font-weight: $font-base-weight;
-	font-size: $font-size;
-	text-align: center;
-	color: $primary-font-color;
-}
-
-
-@media (max-width: 400px) {
-	body {
-		font-size: ($font-size - 8);
-	}
-}
-
-@media (max-width: 550px) {
-	body {
-		font-size: ($font-size - 6);
-	}
-}
-@media (max-width: 767px) {
-	body {
-		font-size: ($font-size - 4);
-	}
-}
-@media (min-width: 768px){
-	body {
-		font-size: $font-size;
-	}
+html {
+	font-family: ProximaNova-Light,Arial,Verdana,Tahoma,"DejaVu Sans",sans-serif;
 }
