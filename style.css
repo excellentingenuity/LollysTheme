@@ -354,8 +354,9 @@ th {
   }
 
   /* line 83, sass/bootstrap/_print.scss */
-  .btn > .caret,
-  .dropup > .btn > .caret {
+  .btn > .caret, .footer-left .wpcf7-form .home-contact-submit > .caret,
+  .dropup > .btn > .caret,
+  .footer-left .wpcf7-form .dropup > .home-contact-submit > .caret {
     border-top-color: #000 !important;
   }
 
@@ -3502,7 +3503,7 @@ output {
 }
 
 /* line 115, sass/bootstrap/_forms.scss */
-.form-control {
+.form-control, .footer-left .wpcf7-form .home-contact-name, .footer-left .wpcf7-form .home-contact-email, .footer-left .wpcf7-form .home-contact-message {
   display: block;
   width: 100%;
   height: 34px;
@@ -3521,34 +3522,34 @@ output {
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
 /* line 53, sass/bootstrap/mixins/_forms.scss */
-.form-control:focus {
+.form-control:focus, .footer-left .wpcf7-form .home-contact-name:focus, .footer-left .wpcf7-form .home-contact-email:focus, .footer-left .wpcf7-form .home-contact-message:focus {
   border-color: #66afe9;
   outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
 }
 /* line 102, sass/bootstrap/mixins/_vendor-prefixes.scss */
-.form-control::-moz-placeholder {
+.form-control::-moz-placeholder, .footer-left .wpcf7-form .home-contact-name::-moz-placeholder, .footer-left .wpcf7-form .home-contact-email::-moz-placeholder, .footer-left .wpcf7-form .home-contact-message::-moz-placeholder {
   color: #777777;
   opacity: 1;
 }
 /* line 104, sass/bootstrap/mixins/_vendor-prefixes.scss */
-.form-control:-ms-input-placeholder {
+.form-control:-ms-input-placeholder, .footer-left .wpcf7-form .home-contact-name:-ms-input-placeholder, .footer-left .wpcf7-form .home-contact-email:-ms-input-placeholder, .footer-left .wpcf7-form .home-contact-message:-ms-input-placeholder {
   color: #777777;
 }
 /* line 105, sass/bootstrap/mixins/_vendor-prefixes.scss */
-.form-control::-webkit-input-placeholder {
+.form-control::-webkit-input-placeholder, .footer-left .wpcf7-form .home-contact-name::-webkit-input-placeholder, .footer-left .wpcf7-form .home-contact-email::-webkit-input-placeholder, .footer-left .wpcf7-form .home-contact-message::-webkit-input-placeholder {
   color: #777777;
 }
 /* line 143, sass/bootstrap/_forms.scss */
-.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+.form-control[disabled], .footer-left .wpcf7-form [disabled].home-contact-name, .footer-left .wpcf7-form [disabled].home-contact-email, .footer-left .wpcf7-form [disabled].home-contact-message, .form-control[readonly], .footer-left .wpcf7-form [readonly].home-contact-name, .footer-left .wpcf7-form [readonly].home-contact-email, .footer-left .wpcf7-form [readonly].home-contact-message, fieldset[disabled] .form-control, fieldset[disabled] .footer-left .wpcf7-form .home-contact-name, .footer-left .wpcf7-form fieldset[disabled] .home-contact-name, fieldset[disabled] .footer-left .wpcf7-form .home-contact-email, .footer-left .wpcf7-form fieldset[disabled] .home-contact-email, fieldset[disabled] .footer-left .wpcf7-form .home-contact-message, .footer-left .wpcf7-form fieldset[disabled] .home-contact-message {
   cursor: not-allowed;
   background-color: #eeeeee;
   opacity: 1;
 }
 
 /* line 153, sass/bootstrap/_forms.scss */
-textarea.form-control {
+textarea.form-control, .footer-left .wpcf7-form textarea.home-contact-name, .footer-left .wpcf7-form textarea.home-contact-email, .footer-left .wpcf7-form textarea.home-contact-message {
   height: auto;
 }
 
@@ -3566,45 +3567,107 @@ input[type="month"] {
   line-height: 1.42857 \0;
 }
 /* line 186, sass/bootstrap/_forms.scss */
-input[type="date"].input-sm, .form-horizontal .form-group-sm input[type="date"].form-control, .input-group-sm > input[type="date"].form-control,
+input[type="date"].input-sm, .form-horizontal .form-group-sm input[type="date"].form-control, .form-horizontal .form-group-sm .footer-left .wpcf7-form input[type="date"].home-contact-name, .footer-left .wpcf7-form .form-horizontal .form-group-sm input[type="date"].home-contact-name, .form-horizontal .form-group-sm .footer-left .wpcf7-form input[type="date"].home-contact-email, .footer-left .wpcf7-form .form-horizontal .form-group-sm input[type="date"].home-contact-email, .form-horizontal .form-group-sm .footer-left .wpcf7-form input[type="date"].home-contact-message, .footer-left .wpcf7-form .form-horizontal .form-group-sm input[type="date"].home-contact-message, .input-group-sm > input[type="date"].form-control, .footer-left .wpcf7-form .input-group-sm > input[type="date"].home-contact-name, .footer-left .wpcf7-form .input-group-sm > input[type="date"].home-contact-email, .footer-left .wpcf7-form .input-group-sm > input[type="date"].home-contact-message,
 .input-group-sm > input[type="date"].input-group-addon,
 .input-group-sm > .input-group-btn > input[type="date"].btn,
+.footer-left .wpcf7-form .input-group-sm > .input-group-btn > input[type="date"].home-contact-submit,
 input[type="time"].input-sm,
 .form-horizontal .form-group-sm input[type="time"].form-control,
+.form-horizontal .form-group-sm .footer-left .wpcf7-form input[type="time"].home-contact-name,
+.footer-left .wpcf7-form .form-horizontal .form-group-sm input[type="time"].home-contact-name,
+.form-horizontal .form-group-sm .footer-left .wpcf7-form input[type="time"].home-contact-email,
+.footer-left .wpcf7-form .form-horizontal .form-group-sm input[type="time"].home-contact-email,
+.form-horizontal .form-group-sm .footer-left .wpcf7-form input[type="time"].home-contact-message,
+.footer-left .wpcf7-form .form-horizontal .form-group-sm input[type="time"].home-contact-message,
 .input-group-sm > input[type="time"].form-control,
+.footer-left .wpcf7-form .input-group-sm > input[type="time"].home-contact-name,
+.footer-left .wpcf7-form .input-group-sm > input[type="time"].home-contact-email,
+.footer-left .wpcf7-form .input-group-sm > input[type="time"].home-contact-message,
 .input-group-sm > input[type="time"].input-group-addon,
 .input-group-sm > .input-group-btn > input[type="time"].btn,
+.footer-left .wpcf7-form .input-group-sm > .input-group-btn > input[type="time"].home-contact-submit,
 input[type="datetime-local"].input-sm,
 .form-horizontal .form-group-sm input[type="datetime-local"].form-control,
+.form-horizontal .form-group-sm .footer-left .wpcf7-form input[type="datetime-local"].home-contact-name,
+.footer-left .wpcf7-form .form-horizontal .form-group-sm input[type="datetime-local"].home-contact-name,
+.form-horizontal .form-group-sm .footer-left .wpcf7-form input[type="datetime-local"].home-contact-email,
+.footer-left .wpcf7-form .form-horizontal .form-group-sm input[type="datetime-local"].home-contact-email,
+.form-horizontal .form-group-sm .footer-left .wpcf7-form input[type="datetime-local"].home-contact-message,
+.footer-left .wpcf7-form .form-horizontal .form-group-sm input[type="datetime-local"].home-contact-message,
 .input-group-sm > input[type="datetime-local"].form-control,
+.footer-left .wpcf7-form .input-group-sm > input[type="datetime-local"].home-contact-name,
+.footer-left .wpcf7-form .input-group-sm > input[type="datetime-local"].home-contact-email,
+.footer-left .wpcf7-form .input-group-sm > input[type="datetime-local"].home-contact-message,
 .input-group-sm > input[type="datetime-local"].input-group-addon,
 .input-group-sm > .input-group-btn > input[type="datetime-local"].btn,
+.footer-left .wpcf7-form .input-group-sm > .input-group-btn > input[type="datetime-local"].home-contact-submit,
 input[type="month"].input-sm,
 .form-horizontal .form-group-sm input[type="month"].form-control,
+.form-horizontal .form-group-sm .footer-left .wpcf7-form input[type="month"].home-contact-name,
+.footer-left .wpcf7-form .form-horizontal .form-group-sm input[type="month"].home-contact-name,
+.form-horizontal .form-group-sm .footer-left .wpcf7-form input[type="month"].home-contact-email,
+.footer-left .wpcf7-form .form-horizontal .form-group-sm input[type="month"].home-contact-email,
+.form-horizontal .form-group-sm .footer-left .wpcf7-form input[type="month"].home-contact-message,
+.footer-left .wpcf7-form .form-horizontal .form-group-sm input[type="month"].home-contact-message,
 .input-group-sm > input[type="month"].form-control,
+.footer-left .wpcf7-form .input-group-sm > input[type="month"].home-contact-name,
+.footer-left .wpcf7-form .input-group-sm > input[type="month"].home-contact-email,
+.footer-left .wpcf7-form .input-group-sm > input[type="month"].home-contact-message,
 .input-group-sm > input[type="month"].input-group-addon,
-.input-group-sm > .input-group-btn > input[type="month"].btn {
+.input-group-sm > .input-group-btn > input[type="month"].btn,
+.footer-left .wpcf7-form .input-group-sm > .input-group-btn > input[type="month"].home-contact-submit {
   line-height: 30px;
 }
 /* line 189, sass/bootstrap/_forms.scss */
-input[type="date"].input-lg, .form-horizontal .form-group-lg input[type="date"].form-control, .input-group-lg > input[type="date"].form-control,
+input[type="date"].input-lg, .form-horizontal .form-group-lg input[type="date"].form-control, .form-horizontal .form-group-lg .footer-left .wpcf7-form input[type="date"].home-contact-name, .footer-left .wpcf7-form .form-horizontal .form-group-lg input[type="date"].home-contact-name, .form-horizontal .form-group-lg .footer-left .wpcf7-form input[type="date"].home-contact-email, .footer-left .wpcf7-form .form-horizontal .form-group-lg input[type="date"].home-contact-email, .form-horizontal .form-group-lg .footer-left .wpcf7-form input[type="date"].home-contact-message, .footer-left .wpcf7-form .form-horizontal .form-group-lg input[type="date"].home-contact-message, .input-group-lg > input[type="date"].form-control, .footer-left .wpcf7-form .input-group-lg > input[type="date"].home-contact-name, .footer-left .wpcf7-form .input-group-lg > input[type="date"].home-contact-email, .footer-left .wpcf7-form .input-group-lg > input[type="date"].home-contact-message,
 .input-group-lg > input[type="date"].input-group-addon,
 .input-group-lg > .input-group-btn > input[type="date"].btn,
+.footer-left .wpcf7-form .input-group-lg > .input-group-btn > input[type="date"].home-contact-submit,
 input[type="time"].input-lg,
 .form-horizontal .form-group-lg input[type="time"].form-control,
+.form-horizontal .form-group-lg .footer-left .wpcf7-form input[type="time"].home-contact-name,
+.footer-left .wpcf7-form .form-horizontal .form-group-lg input[type="time"].home-contact-name,
+.form-horizontal .form-group-lg .footer-left .wpcf7-form input[type="time"].home-contact-email,
+.footer-left .wpcf7-form .form-horizontal .form-group-lg input[type="time"].home-contact-email,
+.form-horizontal .form-group-lg .footer-left .wpcf7-form input[type="time"].home-contact-message,
+.footer-left .wpcf7-form .form-horizontal .form-group-lg input[type="time"].home-contact-message,
 .input-group-lg > input[type="time"].form-control,
+.footer-left .wpcf7-form .input-group-lg > input[type="time"].home-contact-name,
+.footer-left .wpcf7-form .input-group-lg > input[type="time"].home-contact-email,
+.footer-left .wpcf7-form .input-group-lg > input[type="time"].home-contact-message,
 .input-group-lg > input[type="time"].input-group-addon,
 .input-group-lg > .input-group-btn > input[type="time"].btn,
+.footer-left .wpcf7-form .input-group-lg > .input-group-btn > input[type="time"].home-contact-submit,
 input[type="datetime-local"].input-lg,
 .form-horizontal .form-group-lg input[type="datetime-local"].form-control,
+.form-horizontal .form-group-lg .footer-left .wpcf7-form input[type="datetime-local"].home-contact-name,
+.footer-left .wpcf7-form .form-horizontal .form-group-lg input[type="datetime-local"].home-contact-name,
+.form-horizontal .form-group-lg .footer-left .wpcf7-form input[type="datetime-local"].home-contact-email,
+.footer-left .wpcf7-form .form-horizontal .form-group-lg input[type="datetime-local"].home-contact-email,
+.form-horizontal .form-group-lg .footer-left .wpcf7-form input[type="datetime-local"].home-contact-message,
+.footer-left .wpcf7-form .form-horizontal .form-group-lg input[type="datetime-local"].home-contact-message,
 .input-group-lg > input[type="datetime-local"].form-control,
+.footer-left .wpcf7-form .input-group-lg > input[type="datetime-local"].home-contact-name,
+.footer-left .wpcf7-form .input-group-lg > input[type="datetime-local"].home-contact-email,
+.footer-left .wpcf7-form .input-group-lg > input[type="datetime-local"].home-contact-message,
 .input-group-lg > input[type="datetime-local"].input-group-addon,
 .input-group-lg > .input-group-btn > input[type="datetime-local"].btn,
+.footer-left .wpcf7-form .input-group-lg > .input-group-btn > input[type="datetime-local"].home-contact-submit,
 input[type="month"].input-lg,
 .form-horizontal .form-group-lg input[type="month"].form-control,
+.form-horizontal .form-group-lg .footer-left .wpcf7-form input[type="month"].home-contact-name,
+.footer-left .wpcf7-form .form-horizontal .form-group-lg input[type="month"].home-contact-name,
+.form-horizontal .form-group-lg .footer-left .wpcf7-form input[type="month"].home-contact-email,
+.footer-left .wpcf7-form .form-horizontal .form-group-lg input[type="month"].home-contact-email,
+.form-horizontal .form-group-lg .footer-left .wpcf7-form input[type="month"].home-contact-message,
+.footer-left .wpcf7-form .form-horizontal .form-group-lg input[type="month"].home-contact-message,
 .input-group-lg > input[type="month"].form-control,
+.footer-left .wpcf7-form .input-group-lg > input[type="month"].home-contact-name,
+.footer-left .wpcf7-form .input-group-lg > input[type="month"].home-contact-email,
+.footer-left .wpcf7-form .input-group-lg > input[type="month"].home-contact-message,
 .input-group-lg > input[type="month"].input-group-addon,
-.input-group-lg > .input-group-btn > input[type="month"].btn {
+.input-group-lg > .input-group-btn > input[type="month"].btn,
+.footer-left .wpcf7-form .input-group-lg > .input-group-btn > input[type="month"].home-contact-submit {
   line-height: 46px;
 }
 
@@ -3694,19 +3757,22 @@ input[type="checkbox"] {
   margin-bottom: 0;
 }
 /* line 299, sass/bootstrap/_forms.scss */
-.form-control-static.input-lg, .form-horizontal .form-group-lg .form-control-static.form-control, .input-group-lg > .form-control-static.form-control,
+.form-control-static.input-lg, .form-horizontal .form-group-lg .form-control-static.form-control, .form-horizontal .form-group-lg .footer-left .wpcf7-form .form-control-static.home-contact-name, .footer-left .wpcf7-form .form-horizontal .form-group-lg .form-control-static.home-contact-name, .form-horizontal .form-group-lg .footer-left .wpcf7-form .form-control-static.home-contact-email, .footer-left .wpcf7-form .form-horizontal .form-group-lg .form-control-static.home-contact-email, .form-horizontal .form-group-lg .footer-left .wpcf7-form .form-control-static.home-contact-message, .footer-left .wpcf7-form .form-horizontal .form-group-lg .form-control-static.home-contact-message, .input-group-lg > .form-control-static.form-control, .footer-left .wpcf7-form .input-group-lg > .form-control-static.home-contact-name, .footer-left .wpcf7-form .input-group-lg > .form-control-static.home-contact-email, .footer-left .wpcf7-form .input-group-lg > .form-control-static.home-contact-message,
 .input-group-lg > .form-control-static.input-group-addon,
-.input-group-lg > .input-group-btn > .form-control-static.btn, .form-control-static.input-sm, .form-horizontal .form-group-sm .form-control-static.form-control, .input-group-sm > .form-control-static.form-control,
+.input-group-lg > .input-group-btn > .form-control-static.btn,
+.footer-left .wpcf7-form .input-group-lg > .input-group-btn > .form-control-static.home-contact-submit, .form-control-static.input-sm, .form-horizontal .form-group-sm .form-control-static.form-control, .form-horizontal .form-group-sm .footer-left .wpcf7-form .form-control-static.home-contact-name, .footer-left .wpcf7-form .form-horizontal .form-group-sm .form-control-static.home-contact-name, .form-horizontal .form-group-sm .footer-left .wpcf7-form .form-control-static.home-contact-email, .footer-left .wpcf7-form .form-horizontal .form-group-sm .form-control-static.home-contact-email, .form-horizontal .form-group-sm .footer-left .wpcf7-form .form-control-static.home-contact-message, .footer-left .wpcf7-form .form-horizontal .form-group-sm .form-control-static.home-contact-message, .input-group-sm > .form-control-static.form-control, .footer-left .wpcf7-form .input-group-sm > .form-control-static.home-contact-name, .footer-left .wpcf7-form .input-group-sm > .form-control-static.home-contact-email, .footer-left .wpcf7-form .input-group-sm > .form-control-static.home-contact-message,
 .input-group-sm > .form-control-static.input-group-addon,
-.input-group-sm > .input-group-btn > .form-control-static.btn {
+.input-group-sm > .input-group-btn > .form-control-static.btn,
+.footer-left .wpcf7-form .input-group-sm > .input-group-btn > .form-control-static.home-contact-submit {
   padding-left: 0;
   padding-right: 0;
 }
 
 /* line 67, sass/bootstrap/mixins/_forms.scss */
-.input-sm, .form-horizontal .form-group-sm .form-control, .input-group-sm > .form-control,
+.input-sm, .form-horizontal .form-group-sm .form-control, .form-horizontal .form-group-sm .footer-left .wpcf7-form .home-contact-name, .footer-left .wpcf7-form .form-horizontal .form-group-sm .home-contact-name, .form-horizontal .form-group-sm .footer-left .wpcf7-form .home-contact-email, .footer-left .wpcf7-form .form-horizontal .form-group-sm .home-contact-email, .form-horizontal .form-group-sm .footer-left .wpcf7-form .home-contact-message, .footer-left .wpcf7-form .form-horizontal .form-group-sm .home-contact-message, .input-group-sm > .form-control, .footer-left .wpcf7-form .input-group-sm > .home-contact-name, .footer-left .wpcf7-form .input-group-sm > .home-contact-email, .footer-left .wpcf7-form .input-group-sm > .home-contact-message,
 .input-group-sm > .input-group-addon,
-.input-group-sm > .input-group-btn > .btn {
+.input-group-sm > .input-group-btn > .btn,
+.footer-left .wpcf7-form .input-group-sm > .input-group-btn > .home-contact-submit {
   height: 30px;
   padding: 5px 10px;
   font-size: 12px;
@@ -3715,29 +3781,42 @@ input[type="checkbox"] {
 }
 
 /* line 75, sass/bootstrap/mixins/_forms.scss */
-select.input-sm, .form-horizontal .form-group-sm select.form-control, .input-group-sm > select.form-control,
+select.input-sm, .form-horizontal .form-group-sm select.form-control, .form-horizontal .form-group-sm .footer-left .wpcf7-form select.home-contact-name, .footer-left .wpcf7-form .form-horizontal .form-group-sm select.home-contact-name, .form-horizontal .form-group-sm .footer-left .wpcf7-form select.home-contact-email, .footer-left .wpcf7-form .form-horizontal .form-group-sm select.home-contact-email, .form-horizontal .form-group-sm .footer-left .wpcf7-form select.home-contact-message, .footer-left .wpcf7-form .form-horizontal .form-group-sm select.home-contact-message, .input-group-sm > select.form-control, .footer-left .wpcf7-form .input-group-sm > select.home-contact-name, .footer-left .wpcf7-form .input-group-sm > select.home-contact-email, .footer-left .wpcf7-form .input-group-sm > select.home-contact-message,
 .input-group-sm > select.input-group-addon,
-.input-group-sm > .input-group-btn > select.btn {
+.input-group-sm > .input-group-btn > select.btn,
+.footer-left .wpcf7-form .input-group-sm > .input-group-btn > select.home-contact-submit {
   height: 30px;
   line-height: 30px;
 }
 
 /* line 81, sass/bootstrap/mixins/_forms.scss */
-textarea.input-sm, .form-horizontal .form-group-sm textarea.form-control, .input-group-sm > textarea.form-control,
+textarea.input-sm, .form-horizontal .form-group-sm textarea.form-control, .form-horizontal .form-group-sm .footer-left .wpcf7-form textarea.home-contact-name, .footer-left .wpcf7-form .form-horizontal .form-group-sm textarea.home-contact-name, .form-horizontal .form-group-sm .footer-left .wpcf7-form textarea.home-contact-email, .footer-left .wpcf7-form .form-horizontal .form-group-sm textarea.home-contact-email, .form-horizontal .form-group-sm .footer-left .wpcf7-form textarea.home-contact-message, .footer-left .wpcf7-form .form-horizontal .form-group-sm textarea.home-contact-message, .input-group-sm > textarea.form-control, .footer-left .wpcf7-form .input-group-sm > textarea.home-contact-name, .footer-left .wpcf7-form .input-group-sm > textarea.home-contact-email, .footer-left .wpcf7-form .input-group-sm > textarea.home-contact-message,
 .input-group-sm > textarea.input-group-addon,
 .input-group-sm > .input-group-btn > textarea.btn,
+.footer-left .wpcf7-form .input-group-sm > .input-group-btn > textarea.home-contact-submit,
 select[multiple].input-sm,
 .form-horizontal .form-group-sm select[multiple].form-control,
+.form-horizontal .form-group-sm .footer-left .wpcf7-form select[multiple].home-contact-name,
+.footer-left .wpcf7-form .form-horizontal .form-group-sm select[multiple].home-contact-name,
+.form-horizontal .form-group-sm .footer-left .wpcf7-form select[multiple].home-contact-email,
+.footer-left .wpcf7-form .form-horizontal .form-group-sm select[multiple].home-contact-email,
+.form-horizontal .form-group-sm .footer-left .wpcf7-form select[multiple].home-contact-message,
+.footer-left .wpcf7-form .form-horizontal .form-group-sm select[multiple].home-contact-message,
 .input-group-sm > select[multiple].form-control,
+.footer-left .wpcf7-form .input-group-sm > select[multiple].home-contact-name,
+.footer-left .wpcf7-form .input-group-sm > select[multiple].home-contact-email,
+.footer-left .wpcf7-form .input-group-sm > select[multiple].home-contact-message,
 .input-group-sm > select[multiple].input-group-addon,
-.input-group-sm > .input-group-btn > select[multiple].btn {
+.input-group-sm > .input-group-btn > select[multiple].btn,
+.footer-left .wpcf7-form .input-group-sm > .input-group-btn > select[multiple].home-contact-submit {
   height: auto;
 }
 
 /* line 67, sass/bootstrap/mixins/_forms.scss */
-.input-lg, .form-horizontal .form-group-lg .form-control, .input-group-lg > .form-control,
+.input-lg, .form-horizontal .form-group-lg .form-control, .form-horizontal .form-group-lg .footer-left .wpcf7-form .home-contact-name, .footer-left .wpcf7-form .form-horizontal .form-group-lg .home-contact-name, .form-horizontal .form-group-lg .footer-left .wpcf7-form .home-contact-email, .footer-left .wpcf7-form .form-horizontal .form-group-lg .home-contact-email, .form-horizontal .form-group-lg .footer-left .wpcf7-form .home-contact-message, .footer-left .wpcf7-form .form-horizontal .form-group-lg .home-contact-message, .input-group-lg > .form-control, .footer-left .wpcf7-form .input-group-lg > .home-contact-name, .footer-left .wpcf7-form .input-group-lg > .home-contact-email, .footer-left .wpcf7-form .input-group-lg > .home-contact-message,
 .input-group-lg > .input-group-addon,
-.input-group-lg > .input-group-btn > .btn {
+.input-group-lg > .input-group-btn > .btn,
+.footer-left .wpcf7-form .input-group-lg > .input-group-btn > .home-contact-submit {
   height: 46px;
   padding: 10px 16px;
   font-size: 18px;
@@ -3746,22 +3825,34 @@ select[multiple].input-sm,
 }
 
 /* line 75, sass/bootstrap/mixins/_forms.scss */
-select.input-lg, .form-horizontal .form-group-lg select.form-control, .input-group-lg > select.form-control,
+select.input-lg, .form-horizontal .form-group-lg select.form-control, .form-horizontal .form-group-lg .footer-left .wpcf7-form select.home-contact-name, .footer-left .wpcf7-form .form-horizontal .form-group-lg select.home-contact-name, .form-horizontal .form-group-lg .footer-left .wpcf7-form select.home-contact-email, .footer-left .wpcf7-form .form-horizontal .form-group-lg select.home-contact-email, .form-horizontal .form-group-lg .footer-left .wpcf7-form select.home-contact-message, .footer-left .wpcf7-form .form-horizontal .form-group-lg select.home-contact-message, .input-group-lg > select.form-control, .footer-left .wpcf7-form .input-group-lg > select.home-contact-name, .footer-left .wpcf7-form .input-group-lg > select.home-contact-email, .footer-left .wpcf7-form .input-group-lg > select.home-contact-message,
 .input-group-lg > select.input-group-addon,
-.input-group-lg > .input-group-btn > select.btn {
+.input-group-lg > .input-group-btn > select.btn,
+.footer-left .wpcf7-form .input-group-lg > .input-group-btn > select.home-contact-submit {
   height: 46px;
   line-height: 46px;
 }
 
 /* line 81, sass/bootstrap/mixins/_forms.scss */
-textarea.input-lg, .form-horizontal .form-group-lg textarea.form-control, .input-group-lg > textarea.form-control,
+textarea.input-lg, .form-horizontal .form-group-lg textarea.form-control, .form-horizontal .form-group-lg .footer-left .wpcf7-form textarea.home-contact-name, .footer-left .wpcf7-form .form-horizontal .form-group-lg textarea.home-contact-name, .form-horizontal .form-group-lg .footer-left .wpcf7-form textarea.home-contact-email, .footer-left .wpcf7-form .form-horizontal .form-group-lg textarea.home-contact-email, .form-horizontal .form-group-lg .footer-left .wpcf7-form textarea.home-contact-message, .footer-left .wpcf7-form .form-horizontal .form-group-lg textarea.home-contact-message, .input-group-lg > textarea.form-control, .footer-left .wpcf7-form .input-group-lg > textarea.home-contact-name, .footer-left .wpcf7-form .input-group-lg > textarea.home-contact-email, .footer-left .wpcf7-form .input-group-lg > textarea.home-contact-message,
 .input-group-lg > textarea.input-group-addon,
 .input-group-lg > .input-group-btn > textarea.btn,
+.footer-left .wpcf7-form .input-group-lg > .input-group-btn > textarea.home-contact-submit,
 select[multiple].input-lg,
 .form-horizontal .form-group-lg select[multiple].form-control,
+.form-horizontal .form-group-lg .footer-left .wpcf7-form select[multiple].home-contact-name,
+.footer-left .wpcf7-form .form-horizontal .form-group-lg select[multiple].home-contact-name,
+.form-horizontal .form-group-lg .footer-left .wpcf7-form select[multiple].home-contact-email,
+.footer-left .wpcf7-form .form-horizontal .form-group-lg select[multiple].home-contact-email,
+.form-horizontal .form-group-lg .footer-left .wpcf7-form select[multiple].home-contact-message,
+.footer-left .wpcf7-form .form-horizontal .form-group-lg select[multiple].home-contact-message,
 .input-group-lg > select[multiple].form-control,
+.footer-left .wpcf7-form .input-group-lg > select[multiple].home-contact-name,
+.footer-left .wpcf7-form .input-group-lg > select[multiple].home-contact-email,
+.footer-left .wpcf7-form .input-group-lg > select[multiple].home-contact-message,
 .input-group-lg > select[multiple].input-group-addon,
-.input-group-lg > .input-group-btn > select[multiple].btn {
+.input-group-lg > .input-group-btn > select[multiple].btn,
+.footer-left .wpcf7-form .input-group-lg > .input-group-btn > select[multiple].home-contact-submit {
   height: auto;
 }
 
@@ -3770,7 +3861,7 @@ select[multiple].input-lg,
   position: relative;
 }
 /* line 325, sass/bootstrap/_forms.scss */
-.has-feedback .form-control {
+.has-feedback .form-control, .has-feedback .footer-left .wpcf7-form .home-contact-name, .footer-left .wpcf7-form .has-feedback .home-contact-name, .has-feedback .footer-left .wpcf7-form .home-contact-email, .footer-left .wpcf7-form .has-feedback .home-contact-email, .has-feedback .footer-left .wpcf7-form .home-contact-message, .footer-left .wpcf7-form .has-feedback .home-contact-message {
   padding-right: 42.5px;
 }
 
@@ -3788,18 +3879,20 @@ select[multiple].input-lg,
 }
 
 /* line 341, sass/bootstrap/_forms.scss */
-.input-lg + .form-control-feedback, .form-horizontal .form-group-lg .form-control + .form-control-feedback, .input-group-lg > .form-control + .form-control-feedback,
+.input-lg + .form-control-feedback, .form-horizontal .form-group-lg .form-control + .form-control-feedback, .form-horizontal .form-group-lg .footer-left .wpcf7-form .home-contact-name + .form-control-feedback, .footer-left .wpcf7-form .form-horizontal .form-group-lg .home-contact-name + .form-control-feedback, .form-horizontal .form-group-lg .footer-left .wpcf7-form .home-contact-email + .form-control-feedback, .footer-left .wpcf7-form .form-horizontal .form-group-lg .home-contact-email + .form-control-feedback, .form-horizontal .form-group-lg .footer-left .wpcf7-form .home-contact-message + .form-control-feedback, .footer-left .wpcf7-form .form-horizontal .form-group-lg .home-contact-message + .form-control-feedback, .input-group-lg > .form-control + .form-control-feedback, .footer-left .wpcf7-form .input-group-lg > .home-contact-name + .form-control-feedback, .footer-left .wpcf7-form .input-group-lg > .home-contact-email + .form-control-feedback, .footer-left .wpcf7-form .input-group-lg > .home-contact-message + .form-control-feedback,
 .input-group-lg > .input-group-addon + .form-control-feedback,
-.input-group-lg > .input-group-btn > .btn + .form-control-feedback {
+.input-group-lg > .input-group-btn > .btn + .form-control-feedback,
+.footer-left .wpcf7-form .input-group-lg > .input-group-btn > .home-contact-submit + .form-control-feedback {
   width: 46px;
   height: 46px;
   line-height: 46px;
 }
 
 /* line 346, sass/bootstrap/_forms.scss */
-.input-sm + .form-control-feedback, .form-horizontal .form-group-sm .form-control + .form-control-feedback, .input-group-sm > .form-control + .form-control-feedback,
+.input-sm + .form-control-feedback, .form-horizontal .form-group-sm .form-control + .form-control-feedback, .form-horizontal .form-group-sm .footer-left .wpcf7-form .home-contact-name + .form-control-feedback, .footer-left .wpcf7-form .form-horizontal .form-group-sm .home-contact-name + .form-control-feedback, .form-horizontal .form-group-sm .footer-left .wpcf7-form .home-contact-email + .form-control-feedback, .footer-left .wpcf7-form .form-horizontal .form-group-sm .home-contact-email + .form-control-feedback, .form-horizontal .form-group-sm .footer-left .wpcf7-form .home-contact-message + .form-control-feedback, .footer-left .wpcf7-form .form-horizontal .form-group-sm .home-contact-message + .form-control-feedback, .input-group-sm > .form-control + .form-control-feedback, .footer-left .wpcf7-form .input-group-sm > .home-contact-name + .form-control-feedback, .footer-left .wpcf7-form .input-group-sm > .home-contact-email + .form-control-feedback, .footer-left .wpcf7-form .input-group-sm > .home-contact-message + .form-control-feedback,
 .input-group-sm > .input-group-addon + .form-control-feedback,
-.input-group-sm > .input-group-btn > .btn + .form-control-feedback {
+.input-group-sm > .input-group-btn > .btn + .form-control-feedback,
+.footer-left .wpcf7-form .input-group-sm > .input-group-btn > .home-contact-submit + .form-control-feedback {
   width: 30px;
   height: 30px;
   line-height: 30px;
@@ -3815,13 +3908,13 @@ select[multiple].input-lg,
   color: #3c763d;
 }
 /* line 17, sass/bootstrap/mixins/_forms.scss */
-.has-success .form-control {
+.has-success .form-control, .has-success .footer-left .wpcf7-form .home-contact-name, .footer-left .wpcf7-form .has-success .home-contact-name, .has-success .footer-left .wpcf7-form .home-contact-email, .footer-left .wpcf7-form .has-success .home-contact-email, .has-success .footer-left .wpcf7-form .home-contact-message, .footer-left .wpcf7-form .has-success .home-contact-message {
   border-color: #3c763d;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 /* line 20, sass/bootstrap/mixins/_forms.scss */
-.has-success .form-control:focus {
+.has-success .form-control:focus, .has-success .footer-left .wpcf7-form .home-contact-name:focus, .footer-left .wpcf7-form .has-success .home-contact-name:focus, .has-success .footer-left .wpcf7-form .home-contact-email:focus, .footer-left .wpcf7-form .has-success .home-contact-email:focus, .has-success .footer-left .wpcf7-form .home-contact-message:focus, .footer-left .wpcf7-form .has-success .home-contact-message:focus {
   border-color: #2b542c;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
@@ -3847,13 +3940,13 @@ select[multiple].input-lg,
   color: #8a6d3b;
 }
 /* line 17, sass/bootstrap/mixins/_forms.scss */
-.has-warning .form-control {
+.has-warning .form-control, .has-warning .footer-left .wpcf7-form .home-contact-name, .footer-left .wpcf7-form .has-warning .home-contact-name, .has-warning .footer-left .wpcf7-form .home-contact-email, .footer-left .wpcf7-form .has-warning .home-contact-email, .has-warning .footer-left .wpcf7-form .home-contact-message, .footer-left .wpcf7-form .has-warning .home-contact-message {
   border-color: #8a6d3b;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 /* line 20, sass/bootstrap/mixins/_forms.scss */
-.has-warning .form-control:focus {
+.has-warning .form-control:focus, .has-warning .footer-left .wpcf7-form .home-contact-name:focus, .footer-left .wpcf7-form .has-warning .home-contact-name:focus, .has-warning .footer-left .wpcf7-form .home-contact-email:focus, .footer-left .wpcf7-form .has-warning .home-contact-email:focus, .has-warning .footer-left .wpcf7-form .home-contact-message:focus, .footer-left .wpcf7-form .has-warning .home-contact-message:focus {
   border-color: #66512c;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
@@ -3879,13 +3972,13 @@ select[multiple].input-lg,
   color: #a94442;
 }
 /* line 17, sass/bootstrap/mixins/_forms.scss */
-.has-error .form-control {
+.has-error .form-control, .has-error .footer-left .wpcf7-form .home-contact-name, .footer-left .wpcf7-form .has-error .home-contact-name, .has-error .footer-left .wpcf7-form .home-contact-email, .footer-left .wpcf7-form .has-error .home-contact-email, .has-error .footer-left .wpcf7-form .home-contact-message, .footer-left .wpcf7-form .has-error .home-contact-message {
   border-color: #a94442;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 /* line 20, sass/bootstrap/mixins/_forms.scss */
-.has-error .form-control:focus {
+.has-error .form-control:focus, .has-error .footer-left .wpcf7-form .home-contact-name:focus, .footer-left .wpcf7-form .has-error .home-contact-name:focus, .has-error .footer-left .wpcf7-form .home-contact-email:focus, .footer-left .wpcf7-form .has-error .home-contact-email:focus, .has-error .footer-left .wpcf7-form .home-contact-message:focus, .footer-left .wpcf7-form .has-error .home-contact-message:focus {
   border-color: #843534;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
@@ -3922,7 +4015,7 @@ select[multiple].input-lg,
     vertical-align: middle;
   }
   /* line 407, sass/bootstrap/_forms.scss */
-  .form-inline .form-control, .navbar-form .form-control {
+  .form-inline .form-control, .navbar-form .form-control, .form-inline .footer-left .wpcf7-form .home-contact-name, .footer-left .wpcf7-form .form-inline .home-contact-name, .navbar-form .footer-left .wpcf7-form .home-contact-name, .footer-left .wpcf7-form .navbar-form .home-contact-name, .form-inline .footer-left .wpcf7-form .home-contact-email, .footer-left .wpcf7-form .form-inline .home-contact-email, .navbar-form .footer-left .wpcf7-form .home-contact-email, .footer-left .wpcf7-form .navbar-form .home-contact-email, .form-inline .footer-left .wpcf7-form .home-contact-message, .footer-left .wpcf7-form .form-inline .home-contact-message, .navbar-form .footer-left .wpcf7-form .home-contact-message, .footer-left .wpcf7-form .navbar-form .home-contact-message {
     display: inline-block;
     width: auto;
     vertical-align: middle;
@@ -3937,11 +4030,23 @@ select[multiple].input-lg,
   .form-inline .input-group .input-group-btn,
   .navbar-form .input-group .input-group-btn,
   .form-inline .input-group .form-control,
-  .navbar-form .input-group .form-control {
+  .navbar-form .input-group .form-control,
+  .form-inline .input-group .footer-left .wpcf7-form .home-contact-name,
+  .footer-left .wpcf7-form .form-inline .input-group .home-contact-name,
+  .navbar-form .input-group .footer-left .wpcf7-form .home-contact-name,
+  .footer-left .wpcf7-form .navbar-form .input-group .home-contact-name,
+  .form-inline .input-group .footer-left .wpcf7-form .home-contact-email,
+  .footer-left .wpcf7-form .form-inline .input-group .home-contact-email,
+  .navbar-form .input-group .footer-left .wpcf7-form .home-contact-email,
+  .footer-left .wpcf7-form .navbar-form .input-group .home-contact-email,
+  .form-inline .input-group .footer-left .wpcf7-form .home-contact-message,
+  .footer-left .wpcf7-form .form-inline .input-group .home-contact-message,
+  .navbar-form .input-group .footer-left .wpcf7-form .home-contact-message,
+  .footer-left .wpcf7-form .navbar-form .input-group .home-contact-message {
     width: auto;
   }
   /* line 425, sass/bootstrap/_forms.scss */
-  .form-inline .input-group > .form-control, .navbar-form .input-group > .form-control {
+  .form-inline .input-group > .form-control, .navbar-form .input-group > .form-control, .form-inline .footer-left .wpcf7-form .input-group > .home-contact-name, .footer-left .wpcf7-form .form-inline .input-group > .home-contact-name, .navbar-form .footer-left .wpcf7-form .input-group > .home-contact-name, .footer-left .wpcf7-form .navbar-form .input-group > .home-contact-name, .form-inline .footer-left .wpcf7-form .input-group > .home-contact-email, .footer-left .wpcf7-form .form-inline .input-group > .home-contact-email, .navbar-form .footer-left .wpcf7-form .input-group > .home-contact-email, .footer-left .wpcf7-form .navbar-form .input-group > .home-contact-email, .form-inline .footer-left .wpcf7-form .input-group > .home-contact-message, .footer-left .wpcf7-form .form-inline .input-group > .home-contact-message, .navbar-form .footer-left .wpcf7-form .input-group > .home-contact-message, .footer-left .wpcf7-form .navbar-form .input-group > .home-contact-message {
     width: 100%;
   }
   /* line 429, sass/bootstrap/_forms.scss */
@@ -4032,7 +4137,7 @@ select[multiple].input-lg,
 }
 
 /* line 9, sass/bootstrap/_buttons.scss */
-.btn {
+.btn, .footer-left .wpcf7-form .home-contact-submit {
   display: inline-block;
   margin-bottom: 0;
   font-weight: normal;
@@ -4052,25 +4157,25 @@ select[multiple].input-lg,
   user-select: none;
 }
 /* line 25, sass/bootstrap/_buttons.scss */
-.btn:focus, .btn:active:focus, .btn.active:focus {
+.btn:focus, .footer-left .wpcf7-form .home-contact-submit:focus, .btn:active:focus, .footer-left .wpcf7-form .home-contact-submit:active:focus, .btn.active:focus, .footer-left .wpcf7-form .active.home-contact-submit:focus {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
 /* line 31, sass/bootstrap/_buttons.scss */
-.btn:hover, .btn:focus {
+.btn:hover, .footer-left .wpcf7-form .home-contact-submit:hover, .btn:focus, .footer-left .wpcf7-form .home-contact-submit:focus {
   color: #333333;
   text-decoration: none;
 }
 /* line 37, sass/bootstrap/_buttons.scss */
-.btn:active, .btn.active {
+.btn:active, .footer-left .wpcf7-form .home-contact-submit:active, .btn.active, .footer-left .wpcf7-form .active.home-contact-submit {
   outline: 0;
   background-image: none;
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 /* line 45, sass/bootstrap/_buttons.scss */
-.btn.disabled, .btn[disabled], fieldset[disabled] .btn {
+.btn.disabled, .footer-left .wpcf7-form .disabled.home-contact-submit, .btn[disabled], .footer-left .wpcf7-form [disabled].home-contact-submit, fieldset[disabled] .btn, fieldset[disabled] .footer-left .wpcf7-form .home-contact-submit, .footer-left .wpcf7-form fieldset[disabled] .home-contact-submit {
   cursor: not-allowed;
   pointer-events: none;
   opacity: 0.65;
@@ -4080,28 +4185,28 @@ select[multiple].input-lg,
 }
 
 /* line 57, sass/bootstrap/_buttons.scss */
-.btn-default {
+.btn-default, .footer-left .wpcf7-form .home-contact-submit {
   color: #333333;
   background-color: white;
   border-color: #cccccc;
 }
 /* line 15, sass/bootstrap/mixins/_buttons.scss */
-.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle {
+.btn-default:hover, .footer-left .wpcf7-form .home-contact-submit:hover, .btn-default:focus, .footer-left .wpcf7-form .home-contact-submit:focus, .btn-default:active, .footer-left .wpcf7-form .home-contact-submit:active, .btn-default.active, .footer-left .wpcf7-form .active.home-contact-submit, .open > .btn-default.dropdown-toggle, .footer-left .wpcf7-form .open > .dropdown-toggle.home-contact-submit {
   color: #333333;
   background-color: #e6e6e6;
   border-color: #adadad;
 }
 /* line 22, sass/bootstrap/mixins/_buttons.scss */
-.btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle {
+.btn-default:active, .footer-left .wpcf7-form .home-contact-submit:active, .btn-default.active, .footer-left .wpcf7-form .active.home-contact-submit, .open > .btn-default.dropdown-toggle, .footer-left .wpcf7-form .open > .dropdown-toggle.home-contact-submit {
   background-image: none;
 }
 /* line 32, sass/bootstrap/mixins/_buttons.scss */
-.btn-default.disabled, .btn-default.disabled:hover, .btn-default.disabled:focus, .btn-default.disabled:active, .btn-default.disabled.active, .btn-default[disabled], .btn-default[disabled]:hover, .btn-default[disabled]:focus, .btn-default[disabled]:active, .btn-default[disabled].active, fieldset[disabled] .btn-default, fieldset[disabled] .btn-default:hover, fieldset[disabled] .btn-default:focus, fieldset[disabled] .btn-default:active, fieldset[disabled] .btn-default.active {
+.btn-default.disabled, .footer-left .wpcf7-form .disabled.home-contact-submit, .btn-default.disabled:hover, .footer-left .wpcf7-form .disabled.home-contact-submit:hover, .btn-default.disabled:focus, .footer-left .wpcf7-form .disabled.home-contact-submit:focus, .btn-default.disabled:active, .footer-left .wpcf7-form .disabled.home-contact-submit:active, .btn-default.disabled.active, .footer-left .wpcf7-form .disabled.active.home-contact-submit, .btn-default[disabled], .footer-left .wpcf7-form [disabled].home-contact-submit, .btn-default[disabled]:hover, .footer-left .wpcf7-form [disabled].home-contact-submit:hover, .btn-default[disabled]:focus, .footer-left .wpcf7-form [disabled].home-contact-submit:focus, .btn-default[disabled]:active, .footer-left .wpcf7-form [disabled].home-contact-submit:active, .btn-default[disabled].active, .footer-left .wpcf7-form [disabled].active.home-contact-submit, fieldset[disabled] .btn-default, fieldset[disabled] .footer-left .wpcf7-form .home-contact-submit, .footer-left .wpcf7-form fieldset[disabled] .home-contact-submit, fieldset[disabled] .btn-default:hover, fieldset[disabled] .footer-left .wpcf7-form .home-contact-submit:hover, .footer-left .wpcf7-form fieldset[disabled] .home-contact-submit:hover, fieldset[disabled] .btn-default:focus, fieldset[disabled] .footer-left .wpcf7-form .home-contact-submit:focus, .footer-left .wpcf7-form fieldset[disabled] .home-contact-submit:focus, fieldset[disabled] .btn-default:active, fieldset[disabled] .footer-left .wpcf7-form .home-contact-submit:active, .footer-left .wpcf7-form fieldset[disabled] .home-contact-submit:active, fieldset[disabled] .btn-default.active, fieldset[disabled] .footer-left .wpcf7-form .active.home-contact-submit, .footer-left .wpcf7-form fieldset[disabled] .active.home-contact-submit {
   background-color: white;
   border-color: #cccccc;
 }
 /* line 38, sass/bootstrap/mixins/_buttons.scss */
-.btn-default .badge {
+.btn-default .badge, .footer-left .wpcf7-form .home-contact-submit .badge {
   color: white;
   background-color: #333333;
 }
@@ -4271,7 +4376,7 @@ select[multiple].input-lg,
 }
 
 /* line 124, sass/bootstrap/_buttons.scss */
-.btn-lg, .btn-group-lg > .btn {
+.btn-lg, .btn-group-lg > .btn, .footer-left .wpcf7-form .btn-group-lg > .home-contact-submit {
   padding: 10px 16px;
   font-size: 18px;
   line-height: 1.33;
@@ -4279,7 +4384,7 @@ select[multiple].input-lg,
 }
 
 /* line 128, sass/bootstrap/_buttons.scss */
-.btn-sm, .btn-group-sm > .btn {
+.btn-sm, .btn-group-sm > .btn, .footer-left .wpcf7-form .btn-group-sm > .home-contact-submit {
   padding: 5px 10px;
   font-size: 12px;
   line-height: 1.5;
@@ -4287,7 +4392,7 @@ select[multiple].input-lg,
 }
 
 /* line 132, sass/bootstrap/_buttons.scss */
-.btn-xs, .btn-group-xs > .btn {
+.btn-xs, .btn-group-xs > .btn, .footer-left .wpcf7-form .btn-group-xs > .home-contact-submit {
   padding: 1px 5px;
   font-size: 12px;
   line-height: 1.5;
@@ -4531,29 +4636,39 @@ tbody.collapse.in {
   vertical-align: middle;
 }
 /* line 11, sass/bootstrap/_button-groups.scss */
-.btn-group > .btn,
-.btn-group-vertical > .btn {
+.btn-group > .btn, .footer-left .wpcf7-form .btn-group > .home-contact-submit,
+.btn-group-vertical > .btn,
+.footer-left .wpcf7-form .btn-group-vertical > .home-contact-submit {
   position: relative;
   float: left;
 }
 /* line 18, sass/bootstrap/_button-groups.scss */
-.btn-group > .btn:hover, .btn-group > .btn:focus, .btn-group > .btn:active, .btn-group > .btn.active,
+.btn-group > .btn:hover, .footer-left .wpcf7-form .btn-group > .home-contact-submit:hover, .btn-group > .btn:focus, .footer-left .wpcf7-form .btn-group > .home-contact-submit:focus, .btn-group > .btn:active, .footer-left .wpcf7-form .btn-group > .home-contact-submit:active, .btn-group > .btn.active, .footer-left .wpcf7-form .btn-group > .active.home-contact-submit,
 .btn-group-vertical > .btn:hover,
+.footer-left .wpcf7-form .btn-group-vertical > .home-contact-submit:hover,
 .btn-group-vertical > .btn:focus,
+.footer-left .wpcf7-form .btn-group-vertical > .home-contact-submit:focus,
 .btn-group-vertical > .btn:active,
-.btn-group-vertical > .btn.active {
+.footer-left .wpcf7-form .btn-group-vertical > .home-contact-submit:active,
+.btn-group-vertical > .btn.active,
+.footer-left .wpcf7-form .btn-group-vertical > .active.home-contact-submit {
   z-index: 2;
 }
 /* line 21, sass/bootstrap/_button-groups.scss */
-.btn-group > .btn:focus,
-.btn-group-vertical > .btn:focus {
+.btn-group > .btn:focus, .footer-left .wpcf7-form .btn-group > .home-contact-submit:focus,
+.btn-group-vertical > .btn:focus,
+.footer-left .wpcf7-form .btn-group-vertical > .home-contact-submit:focus {
   outline: 0;
 }
 
 /* line 33, sass/bootstrap/_button-groups.scss */
-.btn-group .btn + .btn,
+.btn-group .btn + .btn, .btn-group .footer-left .wpcf7-form .home-contact-submit + .btn, .footer-left .wpcf7-form .btn-group .home-contact-submit + .btn, .btn-group .footer-left .wpcf7-form .btn + .home-contact-submit, .footer-left .wpcf7-form .btn-group .btn + .home-contact-submit, .btn-group .footer-left .wpcf7-form .home-contact-submit + .home-contact-submit, .footer-left .wpcf7-form .btn-group .home-contact-submit + .home-contact-submit,
 .btn-group .btn + .btn-group,
+.btn-group .footer-left .wpcf7-form .home-contact-submit + .btn-group,
+.footer-left .wpcf7-form .btn-group .home-contact-submit + .btn-group,
 .btn-group .btn-group + .btn,
+.btn-group .footer-left .wpcf7-form .btn-group + .home-contact-submit,
+.footer-left .wpcf7-form .btn-group .btn-group + .home-contact-submit,
 .btn-group .btn-group + .btn-group {
   margin-left: -1px;
 }
@@ -4577,29 +4692,29 @@ tbody.collapse.in {
   float: left;
 }
 /* line 49, sass/bootstrap/_button-groups.scss */
-.btn-toolbar > .btn,
+.btn-toolbar > .btn, .footer-left .wpcf7-form .btn-toolbar > .home-contact-submit,
 .btn-toolbar > .btn-group,
 .btn-toolbar > .input-group {
   margin-left: 5px;
 }
 
 /* line 54, sass/bootstrap/_button-groups.scss */
-.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle), .footer-left .wpcf7-form .btn-group > .home-contact-submit:not(:first-child):not(:last-child):not(.dropdown-toggle) {
   border-radius: 0;
 }
 
 /* line 59, sass/bootstrap/_button-groups.scss */
-.btn-group > .btn:first-child {
+.btn-group > .btn:first-child, .footer-left .wpcf7-form .btn-group > .home-contact-submit:first-child {
   margin-left: 0;
 }
 /* line 61, sass/bootstrap/_button-groups.scss */
-.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
+.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle), .footer-left .wpcf7-form .btn-group > .home-contact-submit:first-child:not(:last-child):not(.dropdown-toggle) {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
 
 /* line 67, sass/bootstrap/_button-groups.scss */
-.btn-group > .btn:last-child:not(:first-child),
+.btn-group > .btn:last-child:not(:first-child), .footer-left .wpcf7-form .btn-group > .home-contact-submit:last-child:not(:first-child),
 .btn-group > .dropdown-toggle:not(:first-child) {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
@@ -4611,19 +4726,19 @@ tbody.collapse.in {
 }
 
 /* line 75, sass/bootstrap/_button-groups.scss */
-.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn {
+.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn, .footer-left .wpcf7-form .btn-group > .btn-group:not(:first-child):not(:last-child) > .home-contact-submit {
   border-radius: 0;
 }
 
 /* line 80, sass/bootstrap/_button-groups.scss */
-.btn-group > .btn-group:first-child > .btn:last-child,
+.btn-group > .btn-group:first-child > .btn:last-child, .footer-left .wpcf7-form .btn-group > .btn-group:first-child > .home-contact-submit:last-child,
 .btn-group > .btn-group:first-child > .dropdown-toggle {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
 
 /* line 84, sass/bootstrap/_button-groups.scss */
-.btn-group > .btn-group:last-child > .btn:first-child {
+.btn-group > .btn-group:last-child > .btn:first-child, .footer-left .wpcf7-form .btn-group > .btn-group:last-child > .home-contact-submit:first-child {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
@@ -4635,13 +4750,13 @@ tbody.collapse.in {
 }
 
 /* line 108, sass/bootstrap/_button-groups.scss */
-.btn-group > .btn + .dropdown-toggle {
+.btn-group > .btn + .dropdown-toggle, .footer-left .wpcf7-form .btn-group > .home-contact-submit + .dropdown-toggle {
   padding-left: 8px;
   padding-right: 8px;
 }
 
 /* line 112, sass/bootstrap/_button-groups.scss */
-.btn-group > .btn-lg + .dropdown-toggle, .btn-group-lg.btn-group > .btn + .dropdown-toggle {
+.btn-group > .btn-lg + .dropdown-toggle, .btn-group-lg.btn-group > .btn + .dropdown-toggle, .footer-left .wpcf7-form .btn-group-lg.btn-group > .home-contact-submit + .dropdown-toggle {
   padding-left: 12px;
   padding-right: 12px;
 }
@@ -4658,25 +4773,26 @@ tbody.collapse.in {
 }
 
 /* line 130, sass/bootstrap/_button-groups.scss */
-.btn .caret {
+.btn .caret, .footer-left .wpcf7-form .home-contact-submit .caret {
   margin-left: 0;
 }
 
 /* line 134, sass/bootstrap/_button-groups.scss */
-.btn-lg .caret, .btn-group-lg > .btn .caret {
+.btn-lg .caret, .btn-group-lg > .btn .caret, .footer-left .wpcf7-form .btn-group-lg > .home-contact-submit .caret {
   border-width: 5px 5px 0;
   border-bottom-width: 0;
 }
 
 /* line 139, sass/bootstrap/_button-groups.scss */
-.dropup .btn-lg .caret, .dropup .btn-group-lg > .btn .caret {
+.dropup .btn-lg .caret, .dropup .btn-group-lg > .btn .caret, .dropup .footer-left .wpcf7-form .btn-group-lg > .home-contact-submit .caret, .footer-left .wpcf7-form .dropup .btn-group-lg > .home-contact-submit .caret {
   border-width: 0 5px 5px;
 }
 
 /* line 150, sass/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn,
+.btn-group-vertical > .btn, .footer-left .wpcf7-form .btn-group-vertical > .home-contact-submit,
 .btn-group-vertical > .btn-group,
-.btn-group-vertical > .btn-group > .btn {
+.btn-group-vertical > .btn-group > .btn,
+.footer-left .wpcf7-form .btn-group-vertical > .btn-group > .home-contact-submit {
   display: block;
   float: none;
   width: 100%;
@@ -4692,49 +4808,51 @@ tbody.collapse.in {
   clear: both;
 }
 /* line 160, sass/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn-group > .btn {
+.btn-group-vertical > .btn-group > .btn, .footer-left .wpcf7-form .btn-group-vertical > .btn-group > .home-contact-submit {
   float: none;
 }
 /* line 168, sass/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn + .btn,
+.btn-group-vertical > .btn + .btn, .footer-left .wpcf7-form .btn-group-vertical > .home-contact-submit + .btn, .footer-left .wpcf7-form .btn-group-vertical > .btn + .home-contact-submit, .footer-left .wpcf7-form .btn-group-vertical > .home-contact-submit + .home-contact-submit,
 .btn-group-vertical > .btn + .btn-group,
+.footer-left .wpcf7-form .btn-group-vertical > .home-contact-submit + .btn-group,
 .btn-group-vertical > .btn-group + .btn,
+.footer-left .wpcf7-form .btn-group-vertical > .btn-group + .home-contact-submit,
 .btn-group-vertical > .btn-group + .btn-group {
   margin-top: -1px;
   margin-left: 0;
 }
 
 /* line 175, sass/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn:not(:first-child):not(:last-child) {
+.btn-group-vertical > .btn:not(:first-child):not(:last-child), .footer-left .wpcf7-form .btn-group-vertical > .home-contact-submit:not(:first-child):not(:last-child) {
   border-radius: 0;
 }
 /* line 178, sass/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn:first-child:not(:last-child) {
+.btn-group-vertical > .btn:first-child:not(:last-child), .footer-left .wpcf7-form .btn-group-vertical > .home-contact-submit:first-child:not(:last-child) {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
 /* line 182, sass/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn:last-child:not(:first-child) {
+.btn-group-vertical > .btn:last-child:not(:first-child), .footer-left .wpcf7-form .btn-group-vertical > .home-contact-submit:last-child:not(:first-child) {
   border-bottom-left-radius: 4px;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
 
 /* line 187, sass/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn {
+.btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn, .footer-left .wpcf7-form .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .home-contact-submit {
   border-radius: 0;
 }
 
 /* line 192, sass/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn-group:first-child:not(:last-child) > .btn:last-child,
+.btn-group-vertical > .btn-group:first-child:not(:last-child) > .btn:last-child, .footer-left .wpcf7-form .btn-group-vertical > .btn-group:first-child:not(:last-child) > .home-contact-submit:last-child,
 .btn-group-vertical > .btn-group:first-child:not(:last-child) > .dropdown-toggle {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
 
 /* line 196, sass/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child {
+.btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child, .footer-left .wpcf7-form .btn-group-vertical > .btn-group:last-child:not(:first-child) > .home-contact-submit:first-child {
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
@@ -4747,14 +4865,14 @@ tbody.collapse.in {
   border-collapse: separate;
 }
 /* line 211, sass/bootstrap/_button-groups.scss */
-.btn-group-justified > .btn,
+.btn-group-justified > .btn, .footer-left .wpcf7-form .btn-group-justified > .home-contact-submit,
 .btn-group-justified > .btn-group {
   float: none;
   display: table-cell;
   width: 1%;
 }
 /* line 216, sass/bootstrap/_button-groups.scss */
-.btn-group-justified > .btn-group .btn {
+.btn-group-justified > .btn-group .btn, .btn-group-justified > .btn-group .footer-left .wpcf7-form .home-contact-submit, .footer-left .wpcf7-form .btn-group-justified > .btn-group .home-contact-submit {
   width: 100%;
 }
 /* line 220, sass/bootstrap/_button-groups.scss */
@@ -4763,8 +4881,9 @@ tbody.collapse.in {
 }
 
 /* line 236, sass/bootstrap/_button-groups.scss */
-[data-toggle="buttons"] > .btn > input[type="radio"],
-[data-toggle="buttons"] > .btn > input[type="checkbox"] {
+[data-toggle="buttons"] > .btn > input[type="radio"], .footer-left .wpcf7-form [data-toggle="buttons"] > .home-contact-submit > input[type="radio"],
+[data-toggle="buttons"] > .btn > input[type="checkbox"],
+.footer-left .wpcf7-form [data-toggle="buttons"] > .home-contact-submit > input[type="checkbox"] {
   position: absolute;
   z-index: -1;
   opacity: 0;
@@ -4784,7 +4903,7 @@ tbody.collapse.in {
   padding-right: 0;
 }
 /* line 19, sass/bootstrap/_input-groups.scss */
-.input-group .form-control {
+.input-group .form-control, .input-group .footer-left .wpcf7-form .home-contact-name, .footer-left .wpcf7-form .input-group .home-contact-name, .input-group .footer-left .wpcf7-form .home-contact-email, .footer-left .wpcf7-form .input-group .home-contact-email, .input-group .footer-left .wpcf7-form .home-contact-message, .footer-left .wpcf7-form .input-group .home-contact-message {
   position: relative;
   z-index: 2;
   float: left;
@@ -4795,13 +4914,25 @@ tbody.collapse.in {
 /* line 56, sass/bootstrap/_input-groups.scss */
 .input-group-addon,
 .input-group-btn,
-.input-group .form-control {
+.input-group .form-control,
+.input-group .footer-left .wpcf7-form .home-contact-name,
+.footer-left .wpcf7-form .input-group .home-contact-name,
+.input-group .footer-left .wpcf7-form .home-contact-email,
+.footer-left .wpcf7-form .input-group .home-contact-email,
+.input-group .footer-left .wpcf7-form .home-contact-message,
+.footer-left .wpcf7-form .input-group .home-contact-message {
   display: table-cell;
 }
 /* line 59, sass/bootstrap/_input-groups.scss */
 .input-group-addon:not(:first-child):not(:last-child),
 .input-group-btn:not(:first-child):not(:last-child),
-.input-group .form-control:not(:first-child):not(:last-child) {
+.input-group .form-control:not(:first-child):not(:last-child),
+.input-group .footer-left .wpcf7-form .home-contact-name:not(:first-child):not(:last-child),
+.footer-left .wpcf7-form .input-group .home-contact-name:not(:first-child):not(:last-child),
+.input-group .footer-left .wpcf7-form .home-contact-email:not(:first-child):not(:last-child),
+.footer-left .wpcf7-form .input-group .home-contact-email:not(:first-child):not(:last-child),
+.input-group .footer-left .wpcf7-form .home-contact-message:not(:first-child):not(:last-child),
+.footer-left .wpcf7-form .input-group .home-contact-message:not(:first-child):not(:last-child) {
   border-radius: 0;
 }
 
@@ -4826,17 +4957,19 @@ tbody.collapse.in {
   border-radius: 4px;
 }
 /* line 85, sass/bootstrap/_input-groups.scss */
-.input-group-addon.input-sm, .form-horizontal .form-group-sm .input-group-addon.form-control,
+.input-group-addon.input-sm, .form-horizontal .form-group-sm .input-group-addon.form-control, .form-horizontal .form-group-sm .footer-left .wpcf7-form .input-group-addon.home-contact-name, .footer-left .wpcf7-form .form-horizontal .form-group-sm .input-group-addon.home-contact-name, .form-horizontal .form-group-sm .footer-left .wpcf7-form .input-group-addon.home-contact-email, .footer-left .wpcf7-form .form-horizontal .form-group-sm .input-group-addon.home-contact-email, .form-horizontal .form-group-sm .footer-left .wpcf7-form .input-group-addon.home-contact-message, .footer-left .wpcf7-form .form-horizontal .form-group-sm .input-group-addon.home-contact-message, .footer-left .wpcf7-form .input-group-sm > .input-group-addon.home-contact-name, .footer-left .wpcf7-form .input-group-sm > .input-group-addon.home-contact-email, .footer-left .wpcf7-form .input-group-sm > .input-group-addon.home-contact-message,
 .input-group-sm > .input-group-addon,
-.input-group-sm > .input-group-btn > .input-group-addon.btn {
+.input-group-sm > .input-group-btn > .input-group-addon.btn,
+.footer-left .wpcf7-form .input-group-sm > .input-group-btn > .input-group-addon.home-contact-submit {
   padding: 5px 10px;
   font-size: 12px;
   border-radius: 3px;
 }
 /* line 90, sass/bootstrap/_input-groups.scss */
-.input-group-addon.input-lg, .form-horizontal .form-group-lg .input-group-addon.form-control,
+.input-group-addon.input-lg, .form-horizontal .form-group-lg .input-group-addon.form-control, .form-horizontal .form-group-lg .footer-left .wpcf7-form .input-group-addon.home-contact-name, .footer-left .wpcf7-form .form-horizontal .form-group-lg .input-group-addon.home-contact-name, .form-horizontal .form-group-lg .footer-left .wpcf7-form .input-group-addon.home-contact-email, .footer-left .wpcf7-form .form-horizontal .form-group-lg .input-group-addon.home-contact-email, .form-horizontal .form-group-lg .footer-left .wpcf7-form .input-group-addon.home-contact-message, .footer-left .wpcf7-form .form-horizontal .form-group-lg .input-group-addon.home-contact-message, .footer-left .wpcf7-form .input-group-lg > .input-group-addon.home-contact-name, .footer-left .wpcf7-form .input-group-lg > .input-group-addon.home-contact-email, .footer-left .wpcf7-form .input-group-lg > .input-group-addon.home-contact-message,
 .input-group-lg > .input-group-addon,
-.input-group-lg > .input-group-btn > .input-group-addon.btn {
+.input-group-lg > .input-group-btn > .input-group-addon.btn,
+.footer-left .wpcf7-form .input-group-lg > .input-group-btn > .input-group-addon.home-contact-submit {
   padding: 10px 16px;
   font-size: 18px;
   border-radius: 6px;
@@ -4848,13 +4981,17 @@ tbody.collapse.in {
 }
 
 /* line 110, sass/bootstrap/_input-groups.scss */
-.input-group .form-control:first-child,
+.input-group .form-control:first-child, .input-group .footer-left .wpcf7-form .home-contact-name:first-child, .footer-left .wpcf7-form .input-group .home-contact-name:first-child, .input-group .footer-left .wpcf7-form .home-contact-email:first-child, .footer-left .wpcf7-form .input-group .home-contact-email:first-child, .input-group .footer-left .wpcf7-form .home-contact-message:first-child, .footer-left .wpcf7-form .input-group .home-contact-message:first-child,
 .input-group-addon:first-child,
 .input-group-btn:first-child > .btn,
+.footer-left .wpcf7-form .input-group-btn:first-child > .home-contact-submit,
 .input-group-btn:first-child > .btn-group > .btn,
+.footer-left .wpcf7-form .input-group-btn:first-child > .btn-group > .home-contact-submit,
 .input-group-btn:first-child > .dropdown-toggle,
 .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle),
-.input-group-btn:last-child > .btn-group:not(:last-child) > .btn {
+.footer-left .wpcf7-form .input-group-btn:last-child > .home-contact-submit:not(:last-child):not(.dropdown-toggle),
+.input-group-btn:last-child > .btn-group:not(:last-child) > .btn,
+.footer-left .wpcf7-form .input-group-btn:last-child > .btn-group:not(:last-child) > .home-contact-submit {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
@@ -4865,13 +5002,17 @@ tbody.collapse.in {
 }
 
 /* line 122, sass/bootstrap/_input-groups.scss */
-.input-group .form-control:last-child,
+.input-group .form-control:last-child, .input-group .footer-left .wpcf7-form .home-contact-name:last-child, .footer-left .wpcf7-form .input-group .home-contact-name:last-child, .input-group .footer-left .wpcf7-form .home-contact-email:last-child, .footer-left .wpcf7-form .input-group .home-contact-email:last-child, .input-group .footer-left .wpcf7-form .home-contact-message:last-child, .footer-left .wpcf7-form .input-group .home-contact-message:last-child,
 .input-group-addon:last-child,
 .input-group-btn:last-child > .btn,
+.footer-left .wpcf7-form .input-group-btn:last-child > .home-contact-submit,
 .input-group-btn:last-child > .btn-group > .btn,
+.footer-left .wpcf7-form .input-group-btn:last-child > .btn-group > .home-contact-submit,
 .input-group-btn:last-child > .dropdown-toggle,
 .input-group-btn:first-child > .btn:not(:first-child),
-.input-group-btn:first-child > .btn-group:not(:first-child) > .btn {
+.footer-left .wpcf7-form .input-group-btn:first-child > .home-contact-submit:not(:first-child),
+.input-group-btn:first-child > .btn-group:not(:first-child) > .btn,
+.footer-left .wpcf7-form .input-group-btn:first-child > .btn-group:not(:first-child) > .home-contact-submit {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
@@ -4888,24 +5029,24 @@ tbody.collapse.in {
   white-space: nowrap;
 }
 /* line 140, sass/bootstrap/_input-groups.scss */
-.input-group-btn > .btn {
+.input-group-btn > .btn, .footer-left .wpcf7-form .input-group-btn > .home-contact-submit {
   position: relative;
 }
 /* line 142, sass/bootstrap/_input-groups.scss */
-.input-group-btn > .btn + .btn {
+.input-group-btn > .btn + .btn, .footer-left .wpcf7-form .input-group-btn > .home-contact-submit + .btn, .footer-left .wpcf7-form .input-group-btn > .btn + .home-contact-submit, .footer-left .wpcf7-form .input-group-btn > .home-contact-submit + .home-contact-submit {
   margin-left: -1px;
 }
 /* line 148, sass/bootstrap/_input-groups.scss */
-.input-group-btn > .btn:hover, .input-group-btn > .btn:focus, .input-group-btn > .btn:active {
+.input-group-btn > .btn:hover, .footer-left .wpcf7-form .input-group-btn > .home-contact-submit:hover, .input-group-btn > .btn:focus, .footer-left .wpcf7-form .input-group-btn > .home-contact-submit:focus, .input-group-btn > .btn:active, .footer-left .wpcf7-form .input-group-btn > .home-contact-submit:active {
   z-index: 2;
 }
 /* line 156, sass/bootstrap/_input-groups.scss */
-.input-group-btn:first-child > .btn,
+.input-group-btn:first-child > .btn, .footer-left .wpcf7-form .input-group-btn:first-child > .home-contact-submit,
 .input-group-btn:first-child > .btn-group {
   margin-right: -1px;
 }
 /* line 162, sass/bootstrap/_input-groups.scss */
-.input-group-btn:last-child > .btn,
+.input-group-btn:last-child > .btn, .footer-left .wpcf7-form .input-group-btn:last-child > .home-contact-submit,
 .input-group-btn:last-child > .btn-group {
   margin-left: -1px;
 }
@@ -5442,12 +5583,12 @@ tbody.collapse.in {
   margin-bottom: 8px;
 }
 /* line 362, sass/bootstrap/_navbar.scss */
-.navbar-btn.btn-sm, .btn-group-sm > .navbar-btn.btn {
+.navbar-btn.btn-sm, .btn-group-sm > .navbar-btn.btn, .footer-left .wpcf7-form .btn-group-sm > .navbar-btn.home-contact-submit {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 /* line 365, sass/bootstrap/_navbar.scss */
-.navbar-btn.btn-xs, .btn-group-xs > .navbar-btn.btn {
+.navbar-btn.btn-xs, .btn-group-xs > .navbar-btn.btn, .footer-left .wpcf7-form .btn-group-xs > .navbar-btn.home-contact-submit {
   margin-top: 14px;
   margin-bottom: 14px;
 }
@@ -5884,7 +6025,7 @@ tbody.collapse.in {
   display: none;
 }
 /* line 25, sass/bootstrap/_labels.scss */
-.btn .label {
+.btn .label, .footer-left .wpcf7-form .home-contact-submit .label {
   position: relative;
   top: -1px;
 }
@@ -5970,12 +6111,12 @@ a.label:hover, a.label:focus {
   display: none;
 }
 /* line 27, sass/bootstrap/_badges.scss */
-.btn .badge {
+.btn .badge, .footer-left .wpcf7-form .home-contact-submit .badge {
   position: relative;
   top: -1px;
 }
 /* line 31, sass/bootstrap/_badges.scss */
-.btn-xs .badge, .btn-group-xs > .btn .badge {
+.btn-xs .badge, .btn-group-xs > .btn .badge, .footer-left .wpcf7-form .btn-group-xs > .home-contact-submit .badge {
   top: 0;
   padding: 1px 5px;
 }
@@ -7157,12 +7298,12 @@ button.close {
   clear: both;
 }
 /* line 110, sass/bootstrap/_modals.scss */
-.modal-footer .btn + .btn {
+.modal-footer .btn + .btn, .modal-footer .footer-left .wpcf7-form .home-contact-submit + .btn, .footer-left .wpcf7-form .modal-footer .home-contact-submit + .btn, .modal-footer .footer-left .wpcf7-form .btn + .home-contact-submit, .footer-left .wpcf7-form .modal-footer .btn + .home-contact-submit, .modal-footer .footer-left .wpcf7-form .home-contact-submit + .home-contact-submit, .footer-left .wpcf7-form .modal-footer .home-contact-submit + .home-contact-submit {
   margin-left: 5px;
   margin-bottom: 0;
 }
 /* line 115, sass/bootstrap/_modals.scss */
-.modal-footer .btn-group .btn + .btn {
+.modal-footer .btn-group .btn + .btn, .modal-footer .btn-group .footer-left .wpcf7-form .home-contact-submit + .btn, .footer-left .wpcf7-form .modal-footer .btn-group .home-contact-submit + .btn, .modal-footer .btn-group .footer-left .wpcf7-form .btn + .home-contact-submit, .footer-left .wpcf7-form .modal-footer .btn-group .btn + .home-contact-submit, .modal-footer .btn-group .footer-left .wpcf7-form .home-contact-submit + .home-contact-submit, .footer-left .wpcf7-form .modal-footer .btn-group .home-contact-submit + .home-contact-submit {
   margin-left: -1px;
 }
 /* line 119, sass/bootstrap/_modals.scss */
@@ -7657,7 +7798,7 @@ button.close {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
 /* line 202, sass/bootstrap/_carousel.scss */
-.carousel-caption .btn {
+.carousel-caption .btn, .carousel-caption .footer-left .wpcf7-form .home-contact-submit, .footer-left .wpcf7-form .carousel-caption .home-contact-submit {
   text-shadow: none;
 }
 
@@ -8087,7 +8228,7 @@ button.close {
 }
 
 /* line 7, sass/partials/_color_classes.scss */
-.grey-background, .home-page .testimonials-row {
+.grey-background, .home-page .testimonials-row, .home-page .tweetchat-section {
   -webkit-box-shadow: #cfcfcf 0px -80px 200px 1px inset;
   background-color: whitesmoke;
   box-shadow: #cfcfcf 0px -80px 200px 1px inset;
@@ -8881,6 +9022,20 @@ li.menu-item .active > a:focus {
   background-color: #e84d0e;
   border-color: #e84d0e;
 }
+/* line 380, sass/pages/_home.scss */
+.home-page .tweetchat-section {
+  min-height: 20em;
+}
+/* line 383, sass/pages/_home.scss */
+.home-page .tweetchat-section .tweetchat-logo, .home-page .tweetchat-section .tweetchat_text {
+  padding: 1em;
+}
+/* line 386, sass/pages/_home.scss */
+.home-page .tweetchat-section .tweetchat-button {
+  color: white;
+  background-color: #e84d0e;
+  border-color: #e84d0e;
+}
 
 /**widgets scss*/
 /* line 3, sass/partials/_widgets.scss */
@@ -8921,35 +9076,43 @@ li.menu-item .active > a:focus {
   padding-top: 2em;
 }
 
-/* line 35, sass/partials/_widgets.scss */
-.cscfBlock {
-  margin: 1em;
-}
-/* line 37, sass/partials/_widgets.scss */
-.cscfBlock .cscfForm {
-  font-size: .8em;
-}
-/* line 39, sass/partials/_widgets.scss */
-.cscfBlock .cscfForm input[type="submit"] {
+/* line 44, sass/partials/_widgets.scss */
+.footer-left .wpcf7-form .home-contact-submit {
   color: white;
   background-color: #e84d0e;
+  margin-bottom: 1em;
+  margin-top: .4em;
 }
-/* line 43, sass/partials/_widgets.scss */
-.cscfBlock .cscfForm label {
-  display: none;
+/* line 52, sass/partials/_widgets.scss */
+.footer-left .wpcf7-form .home-contact-submit:hover {
+  color: white;
+  background-color: #e84d0e;
+  margin-bottom: 1em;
 }
 
 /* line 1, sass/partials/_footer.scss */
-.footer {
-  border-top: inset thin #e7e7e7;
+footer {
+  background-color: #e84d0e;
+  padding-top: 2%;
 }
 
-/* line 4, sass/partials/_footer.scss */
+/* line 5, sass/partials/_footer.scss */
 .copyright-notices-bar {
-  font-size: 1em;
-  background-color: #000000;
+  background-color: inherit;
+  font-size: .8em;
   color: white;
   min-height: 2.5em;
+}
+
+/* line 11, sass/partials/_footer.scss */
+.social-icon {
+  font-size: 1.4em;
+  color: #e84d0e;
+  background-color: white;
+  border-radius: 50%;
+  width: 1.6em;
+  height: 1.6em;
+  padding-top: 1%;
 }
 
 /* line 27, sass/style.scss */

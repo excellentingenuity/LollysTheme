@@ -106,14 +106,6 @@ function register_widgets() {
 		'after_widget' => '</div>',
 		'before_title' => '<h3 class="footer-left-title">',
 		'after_title' => '</h3>',
-	) );
-	register_sidebar( array(
-		'name' => 'Footer Center',
-		'id' => 'footer_center_1',
-		'before_widget' => '<div class="footer-center">',
-		'after_widget' => '</div>',
-		'before_title' => '<h3 class="footer-center-title">',
-		'after_title' => '</h3>',
 	) );	
 	register_sidebar( array(
 		'name' => 'Footer Right',
@@ -123,7 +115,14 @@ function register_widgets() {
 		'before_title' => '<h3 class="footer-right-title">',
 		'after_title' => '</h3>',
 	) );
-	
+	register_sidebar( array(
+		'name' => 'Social Icons',
+		'id' => 'footer_bar_social_icons',
+		'before_widget' => '<div class="social-icons">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="social-icons-header hidden">',
+		'after_title' => '</h3>',
+	) );
 }
 add_action( 'widgets_init', 'register_widgets' );
 

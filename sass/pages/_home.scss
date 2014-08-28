@@ -376,4 +376,17 @@
 			border-color: $highlight-color;
 		}
 	}
+
+	.tweetchat-section {
+		min-height: 20em;
+		@extend .grey-background;
+		.tweetchat-logo, .tweetchat_text{
+			padding:1em;
+		}
+		.tweetchat-button {
+			color: $primary-color;
+			background-color: $highlight-color;
+			border-color: $highlight-color;
+		}
+	}
 }

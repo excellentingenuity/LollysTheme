@@ -32,16 +32,27 @@
 			padding-top: 2em;
 	}
 }
-.cscfBlock {
-	margin:1em;
-	.cscfForm {
-		font-size: .8em;
-		input[type="submit"] {
+.footer-left {
+	.wpcf7-form {
+		.home-contact-name, .home-contact-email {
+			@extend .form-control;
+		}
+		.home-contact-message {
+			@extend .form-control;
+		}
+
+		.home-contact-submit {
+			@extend .btn;
+			@extend .btn-default;
 			color: $primary-color;
 			background-color: $highlight-color;
+			margin-bottom: 1em;
+			margin-top: .4em;
 		}
-		label {
-			display: none;
+		.home-contact-submit:hover {
+			color: $primary-color;
+			background-color: $highlight-color;
+			margin-bottom: 1em;
 		}
-	}
+	}	
 }

@@ -180,4 +180,24 @@
 
 	$tab_3->createOption(array('type' => 'save'));
 
+	$tab_4 = $homepanel->createTab(array('name' => 'Tweet Chat Section'));
+
+	$tab_4->createOption( array(
+		'name' => 'Tweet Chat Page Link',
+		'id' => 'teweetchat_link',
+		'type' => 'select-pages',
+		'default' => '',
+		'desc' => 'Enter the page for the Tweetchat link'
+	));
+
+	$tab_4->createOption( array('name' => 'Tweetchat Logo', 'id' => 'tweetchat_logo', 'type' => 'upload', 'desc' => 'Upload your image') );
+
+	$tab_4->createOption(array(
+			'name' => 'Tweetchat Paragraph',
+			'id'   => 'tweetchat_text',
+			'type' => 'textarea',
+			'desc' => 'Tweetchat Paragraph Text'
+		));
+
+	$tab_4->createOption(array('type' => 'save'));
 ?>

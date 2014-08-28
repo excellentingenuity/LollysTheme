@@ -1,9 +1,19 @@
-.footer {
-	border-top: inset thin #e7e7e7;
+footer {
+	background-color: $highlight-color;
+	padding-top: 2%;
 }
 .copyright-notices-bar {
-	font-size: 1em;
-	background-color: #000000;
+	background-color: inherit;
+	font-size: .8em;
 	color: $primary-color;
 	min-height: 2.5em;
+}
+.social-icon {
+	font-size: 1.4em;
+	color: #e84d0e;
+	background-color: white;
+	border-radius: 50%;
+	width: 1.6em;
+	height: 1.6em;
+	padding-top: 1%;
 }

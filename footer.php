@@ -4,31 +4,15 @@
 	<div class="container-fluid">
 		<div class="row">
 			<footer>
-				<div class="footer">
-					<div class="col-sm-3">
-						<div class="footer-socialmedia">
-							
-						</div>
+				<div class="copyright-notices-bar">
+					<div class="col-sm-6 copyright">
+						&copy; Copyright <?php echo date("Y") ?> LollyDaskal.com
 					</div>
-					<div class="col-sm-3">
-						<div class="footer-contactlolly">
-							
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="footer-worldmap">
-							
-						</div>
+					<div class="col-sm-6 social icons">
+					<?php dynamic_sidebar( 'footer_bar_social_icons' ); ?>
 					</div>
 				</div>
 			</footer>
-		</div>
-		<div class="row">
-			<div class="copyright-notices-bar">
-				<div class="col-sm-12 copyright">
-					&copy; Copyright <?php echo date("Y") ?>
-				</div>
-			</div>
 		</div>
 	</div>
 

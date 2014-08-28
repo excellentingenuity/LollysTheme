@@ -198,6 +198,18 @@ include("header.php");
 		</div>
 	</div>
 	<div class="row">
+		<div class="tweetchat-section">
+			<img class="col-md-6 col-sm-6 img-responsive tweetchat-logo" src="<?php echo get_image_source_from_titan_option($titan, 'tweetchat_logo');?>"/>
+			<div class="col-md-6 col-sm-6 tweetchat-content">
+				<div class="tweetchat_text">
+					<?php echo $titan->getOption('tweetchat_text');?>
+				</div>
+				<button class="btn btn-default tweetchat-button" href="<?php echo get_site_url() . '/' . $titan->getOption('tweetchat_link');?>">View Schedule</button>
+			</div>
+			
+		</div>
+	</div>
+	<div class="row">
 		<div class="awards-and-mentions">
 			<div class="col-md-6 col-sm-6 awards-and-mentions-content">
 				<div class="awards-and-mentions-text">
@@ -210,13 +222,10 @@ include("header.php");
 	</div>
 	<div class="row">
 		<div class="home-footer">
-			<div class="col-sm-4 contact-us">
+			<div class="col-sm-5 col-sm-offset-1 contact-us">
 				<?php dynamic_sidebar( 'footer_left_1' ); ?>
 			</div>
-			<div class="col-sm-4 social icons">
-				<?php dynamic_sidebar( 'footer_center_1' ); ?>
-			</div>
-			<div class="col-sm-4 static-map">
+			<div class="col-sm-5 col-sm-offset-1static-map">
 				<?php dynamic_sidebar( 'footer_right_1' ); ?>
 			</div>
 		</div>
