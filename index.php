@@ -199,7 +199,10 @@ include("header.php");
 	<div class="row">
 		<div class="awards-and-mentions">
 			<div class="col-md-6 col-sm-6 awards-and-mentions-content">
-				<?php echo $titan->getOption('awards_text');?>
+				<div class="awards-and-mentions-text">
+					<?php echo $titan->getOption('awards_text');?>
+				</div>
+				<button class="btn btn-default awards-button" href="<?php echo get_site_url() . '/' . $titan->getOption('awards_link');?>">Read more</button>
 			</div>
 			<img class="col-md-6 col-sm-6 img-responsive awards-and-mentions-logos" src="<?php echo get_image_source_from_titan_option($titan, 'awards_logos_image');?>"/>
 		</div>

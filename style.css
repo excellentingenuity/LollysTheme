@@ -8863,6 +8863,21 @@ li.menu-item .active > a:focus {
 /* line 362, sass/pages/_home.scss */
 .home-page .awards-and-mentions {
   min-height: 25em;
+  color: white;
+}
+/* line 365, sass/pages/_home.scss */
+.home-page .awards-and-mentions .awards-and-mentions-content {
+  padding: 1em;
+}
+/* line 368, sass/pages/_home.scss */
+.home-page .awards-and-mentions .awards-and-mentions-logos {
+  padding: 1em;
+}
+/* line 371, sass/pages/_home.scss */
+.home-page .awards-and-mentions .awards-button {
+  color: white;
+  background-color: #e84d0e;
+  border-color: #e84d0e;
 }
 
 /**widgets scss*/

@@ -361,5 +361,17 @@
 	}
 	.awards-and-mentions {
 		min-height: 25em;
+		color: $primary-color;
+		.awards-and-mentions-content {
+			padding: 1em;
+		}
+		.awards-and-mentions-logos {
+			padding: 1em;
+		}
+		.awards-button {
+			color: $primary-color;
+			background-color: $highlight-color;
+			border-color: $highlight-color;
+		}
 	}
 }

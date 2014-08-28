@@ -170,6 +170,14 @@
 	$tab_3->createOption( array('name' => 'Awards and Mentions Backround Image', 'id' => 'awards_background_image', 'type' => 'upload', 'desc' => 'Upload your image') );
 	$tab_3->createOption( array('name' => 'Awards and Mentions Logos Image', 'id' => 'awards_logos_image', 'type' => 'upload', 'desc' => 'Upload your image') );
 
+	$tab_3->createOption( array(
+		'name' => 'Awards and Mentions Read More Link',
+		'id' => 'awards_link',
+		'type' => 'select-pages',
+		'default' => '',
+		'desc' => 'Enter the page for the Awards and Mentions button to link to'
+	));
+
 	$tab_3->createOption(array('type' => 'save'));
 
 ?>
