@@ -189,11 +189,12 @@ include("header.php");
 	</div>
 	<div class="row">
 		<div class="lower-navigation icon-navigation">
-			<div class="col-md-2 col-sm-2 col-md-offset-1 col-sm-offset-1 lower-nav-item outer-nav-item-left"></div>
+			<div class="col-md-2 col-sm-2 lower-nav-item lower-outer-nav-item-left"></div>
 			<div class="col-md-2 col-sm-2 lower-nav-item"></div>
 			<div class="col-md-2 col-sm-2 lower-nav-item"></div>
 			<div class="col-md-2 col-sm-2 lower-nav-item"></div>
-			<div class="col-md-2 col-sm-2 lower-nav-item outer-nav-item-right"></div>
+			<div class="col-md-2 col-sm-2 lower-nav-item"></div>
+			<div class="col-md-2 col-sm-2 lower-nav-item lower-outer-nav-item-right"></div>
 		</div>
 	</div>
 	<div class="row">

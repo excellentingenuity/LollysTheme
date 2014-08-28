@@ -8848,32 +8848,34 @@ li.menu-item .active > a:focus {
 /* line 348, sass/pages/_home.scss */
 .home-page .lower-navigation .lower-nav-item {
   border: thin solid #ebebeb;
+  border-top: none;
+  border-bottom: none;
   padding: 1em;
   color: #e84d0e;
   background-color: white;
 }
-/* line 354, sass/pages/_home.scss */
+/* line 356, sass/pages/_home.scss */
 .home-page .lower-navigation .lower-nav-item .lower-outer-nav-item-left {
   border-left: none;
 }
-/* line 357, sass/pages/_home.scss */
+/* line 359, sass/pages/_home.scss */
 .home-page .lower-navigation .lower-nav-item .lower-outer-nav-item-right {
   border-right: none;
 }
-/* line 362, sass/pages/_home.scss */
+/* line 364, sass/pages/_home.scss */
 .home-page .awards-and-mentions {
   min-height: 25em;
   color: white;
 }
-/* line 365, sass/pages/_home.scss */
+/* line 367, sass/pages/_home.scss */
 .home-page .awards-and-mentions .awards-and-mentions-content {
   padding: 1em;
 }
-/* line 368, sass/pages/_home.scss */
+/* line 370, sass/pages/_home.scss */
 .home-page .awards-and-mentions .awards-and-mentions-logos {
   padding: 1em;
 }
-/* line 371, sass/pages/_home.scss */
+/* line 373, sass/pages/_home.scss */
 .home-page .awards-and-mentions .awards-button {
   color: white;
   background-color: #e84d0e;

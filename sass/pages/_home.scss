@@ -347,6 +347,8 @@
 		min-height: 15em;
 		.lower-nav-item {
 			border: thin solid $grey-accent;
+			border-top: none;
+			border-bottom: none;
 			padding: 1em;
 			color: $highlight-color;
 			background-color: $primary-color;
