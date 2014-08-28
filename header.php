@@ -12,7 +12,7 @@
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 		<!-- Bootstrap -->
-	    <link href="<?php echo get_template_directory_uri(); ?>/style.css" rel="stylesheet">
+	    <link href="<?php echo bloginfo('template_directory');; ?>/style.css" rel="stylesheet">
 		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.2/flexslider-min.css" type="text/css">
 		

@@ -8933,7 +8933,6 @@ li.menu-item .active > a:focus {
   background-color: #000000;
   color: white;
   min-height: 2.5em;
-  vertical-align: middle;
 }
 
 /* line 27, sass/style.scss */

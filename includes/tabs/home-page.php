@@ -138,6 +138,38 @@
 			'type' => 'textarea',
 			'desc' => 'Value in Bottom Right Hover Text'
 		));
+	$tab_2->createOption( array(
+		'name' => 'About Me Link',
+		'id' => 'about_me_link',
+		'type' => 'select-pages',
+		'default' => '',
+		'desc' => 'Enter the page for the About me link'
+	));
+
 	$tab_2->createOption(array('type' => 'save'));
+
+	$tab_3 = $homepanel->createTab(array('name' => 'Awards and Mentions Section'));
+
+	$tab_3->createOption( array(
+		'name' => 'Testimonials Link',
+		'id' => 'testimonials_link',
+		'type' => 'select-pages',
+		'default' => '',
+		'desc' => 'Enter the page for the Testimonials button to link to'
+	));
+
+	$tab_3->createOption(array(
+			'name' => 'Awards Paragraph',
+			'id'   => 'awards_text',
+			'type' => 'textarea',
+			'desc' => 'Awards Paragraph Text'
+		));
+	$tab_3->createOption( array('name' => 'Awards Background', 'id' => 'awards-background', 'type' => 'select',
+							'desc' => 'Choose the type of background for this section',
+							'options' => array('white' => 'White', 'image' => 'Fullscreen image'), 'default' => 'white') );
+	$tab_3->createOption( array('name' => 'Awards and Mentions Backround Image', 'id' => 'awards_background_image', 'type' => 'upload', 'desc' => 'Upload your image') );
+	$tab_3->createOption( array('name' => 'Awards and Mentions Logos Image', 'id' => 'awards_logos_image', 'type' => 'upload', 'desc' => 'Upload your image') );
+
+	$tab_3->createOption(array('type' => 'save'));
 
 ?>

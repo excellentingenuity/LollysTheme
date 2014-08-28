@@ -12,6 +12,9 @@ jQuery(document).ready(function( $ ) {
 	if(lolly_scripts_js_vars.speaker_with_heart_bg.bg_type == 'image' && lolly_scripts_js_vars.speaker_with_heart_bg.image_src !== '') {
 		jQuery('.speaker-with-heart').backstretch(lolly_scripts_js_vars.speaker_with_heart_bg.image_src);
 	}
+	if(lolly_scripts_js_vars.awards_background_bg.bg_type == 'image' && lolly_scripts_js_vars.awards_background_bg.image_src !== '') {
+		jQuery('.awards-and-mentions').backstretch(lolly_scripts_js_vars.awards_background_bg.image_src);
+	}
 
 
 	//values boxes
