@@ -180,9 +180,104 @@
 
 	$tab_3->createOption(array('type' => 'save'));
 
-	$tab_4 = $homepanel->createTab(array('name' => 'Tweet Chat Section'));
+	$tab_4 = $homepanel->createTab(array('name' => 'Icon Navigation Section'));
 
 	$tab_4->createOption( array(
+		'name' => 'Icon Navigation Link 1',
+		'id' => 'icon_nav_link_1',
+		'type' => 'select-pages',
+		'default' => '',
+		'desc' => 'Enter the page for the 1st Icon navigation link'
+	));
+
+	$tab_4->createOption(array(
+			'name' => 'Icon Navigation Link 1',
+			'id'   => 'icon_nav_text_1',
+			'type' => 'text',
+			'desc' => 'Icon Navigation Link 1st text '
+		));
+
+	$tab_4->createOption( array(
+		'name' => 'Icon Navigation Link 2',
+		'id' => 'icon_nav_link_2',
+		'type' => 'select-pages',
+		'default' => '',
+		'desc' => 'Enter the page for the 2nd Icon navigation link'
+	));
+
+	$tab_4->createOption(array(
+			'name' => 'Icon Navigation Link 2',
+			'id'   => 'icon_nav_text_2',
+			'type' => 'text',
+			'desc' => 'Icon Navigation Link 2nd text'
+		));
+
+	$tab_4->createOption( array(
+		'name' => 'Icon Navigation Link text 3',
+		'id' => 'icon_nav_link_3',
+		'type' => 'select-pages',
+		'default' => '',
+		'desc' => 'Enter the page for the 3rd Icon navigation link'
+	));
+
+	$tab_4->createOption(array(
+			'name' => 'Icon Navigation Link 3',
+			'id'   => 'icon_nav_text_3',
+			'type' => 'text',
+			'desc' => 'Icon Navigation Link 3rd text '
+		));
+
+	$tab_4->createOption( array(
+		'name' => 'Icon Navigation Link 4',
+		'id' => 'icon_nav_link_4',
+		'type' => 'select-pages',
+		'default' => '',
+		'desc' => 'Enter the page for the 4th Icon navigation link'
+	));
+
+	$tab_4->createOption(array(
+			'name' => 'Icon Navigation Link 4',
+			'id'   => 'icon_nav_text_4',
+			'type' => 'text',
+			'desc' => 'Icon Navigation Link 4th text '
+		));
+
+	$tab_4->createOption( array(
+		'name' => 'Icon Navigation Link 5',
+		'id' => 'icon_nav_link_5',
+		'type' => 'select-pages',
+		'default' => '',
+		'desc' => 'Enter the page for the 5th Icon navigation link'
+	));
+
+	$tab_4->createOption(array(
+			'name' => 'Icon Navigation Link 5',
+			'id'   => 'icon_nav_text_5',
+			'type' => 'text',
+			'desc' => 'Icon Navigation Link 5th text '
+		));
+
+	$tab_4->createOption( array(
+		'name' => 'Icon Navigation Link 6',
+		'id' => 'icon_nav_link_6',
+		'type' => 'select-pages',
+		'default' => '',
+		'desc' => 'Enter the page for the 6th Icon navigation link'
+	));
+
+	$tab_4->createOption(array(
+			'name' => 'Icon Navigation Link 6',
+			'id'   => 'icon_nav_text_6',
+			'type' => 'text',
+			'desc' => 'Icon Navigation Link 6th text '
+		));
+	
+
+	$tab_4->createOption(array('type' => 'save'));
+
+	$tab_5 = $homepanel->createTab(array('name' => 'Tweet Chat Section'));
+
+	$tab_5->createOption( array(
 		'name' => 'Tweet Chat Page Link',
 		'id' => 'teweetchat_link',
 		'type' => 'select-pages',
@@ -190,14 +285,14 @@
 		'desc' => 'Enter the page for the Tweetchat link'
 	));
 
-	$tab_4->createOption( array('name' => 'Tweetchat Logo', 'id' => 'tweetchat_logo', 'type' => 'upload', 'desc' => 'Upload your image') );
+	$tab_5->createOption( array('name' => 'Tweetchat Logo', 'id' => 'tweetchat_logo', 'type' => 'upload', 'desc' => 'Upload your image') );
 
-	$tab_4->createOption(array(
+	$tab_5->createOption(array(
 			'name' => 'Tweetchat Paragraph',
 			'id'   => 'tweetchat_text',
 			'type' => 'textarea',
 			'desc' => 'Tweetchat Paragraph Text'
 		));
 
-	$tab_4->createOption(array('type' => 'save'));
+	$tab_5->createOption(array('type' => 'save'));
 ?>

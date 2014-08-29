@@ -1,6 +1,21 @@
 <?php 
 require_once('wp_bootstrap_navwalker.php');
 require_once('top_menu_walker.php');
+
+function catch_that_image() {
+  global $post, $posts;
+  $first_img = '';
+  ob_start();
+  ob_end_clean();
+  $output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
+  $first_img = $matches[1][0];
+
+  if(empty($first_img)) {
+    $first_img = "/path/to/default.png";
+  }
+  return $first_img;
+}
+
 /**
  * Get source of image uploaded to titan option
  */
@@ -128,7 +143,7 @@ add_action( 'widgets_init', 'register_widgets' );
 
 function lolly_load_scripts() {
 	$titan = TitanFramework::getInstance('lolly');
-	wp_enqueue_script('lolly-backstretch-js', get_template_directory_uri() . '/js/jquery.backstretch.min.js', array('jquery'), '2.0.4', true);
+	wp_enqueue_script('lolly-backstretch-js', get_template_directory_uri() . '/js/jquery.backstretch.js', array('jquery'), '2.0.4', true);
 	wp_enqueue_script('lolly-wow-js', get_template_directory_uri() . '/js/wow.min.js', array('jquery'), '0.1.9', true);
 	wp_enqueue_script('lolly-maps-api-js', '//maps.google.com/maps/api/js?sensor=true', array('jquery'), null, true);
 	wp_enqueue_script('lolly-ui-maps-js', get_template_directory_uri() . '/js/jquery.ui.map.min.js', array('jquery'), null, true);

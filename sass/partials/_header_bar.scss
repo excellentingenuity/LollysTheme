@@ -31,3 +31,11 @@
 	position: relative;
 	z-index: 2
 }
+.header-search-submit, .header-search-submit:visited {
+	color:$highlight-color;
+}
+.header-search-submit:hover {
+	color:$primary-color;
+	background-color: $highlight-color;
+	border:2px solid $primary-color;
+}

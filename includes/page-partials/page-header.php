@@ -5,9 +5,10 @@
 	<div class="header-bar">
 		<div class="col-sm-12">
 			<div class="header-bar-content">
-				<a class="header-bar-link" href="<?php echo $titan->getOption('header_text_link');?>"><?php echo $titan->getOption('header_text');?></a>
+				<a class="text-right header-bar-link" href="<?php echo $titan->getOption('header_text_link');?>"><?php echo $titan->getOption('header_text');?></a>
 			</div>	
 		</div>
+		
 	</div>
 </div>
 <div class="row">
