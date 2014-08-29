@@ -1,26 +1,26 @@
 jQuery(document).ready(function( $ ) {
 
-	jQuery.backstretch("resize");
+	
 
 	/*
 		Background slideshow (coming soon section)
 	*/
 	if(lolly_scripts_js_vars.coming_soon_bg.images_number == 1) {
 		jQuery('.featured-fade-slideshow').backstretch(lolly_scripts_js_vars.coming_soon_bg.images_src);
+		jQuery('.featured-fade-slideshow').backstretch("resize");
 	}
 	else if(lolly_scripts_js_vars.coming_soon_bg.images_number > 1) {
 		jQuery('.featured-fade-slideshow').backstretch(lolly_scripts_js_vars.coming_soon_bg.images_src, { duration: 3000, fade: 750});
+		jQuery('.featured-fade-slideshow').backstretch("resize");
 	}
 	if(lolly_scripts_js_vars.speaker_with_heart_bg.bg_type == 'image' && lolly_scripts_js_vars.speaker_with_heart_bg.image_src !== '') {
 		jQuery('.speaker-with-heart').backstretch(lolly_scripts_js_vars.speaker_with_heart_bg.image_src);
+		jQuery('.speaker-with-heart').backstretch("resize");
 	}
 	if(lolly_scripts_js_vars.awards_background_bg.bg_type == 'image' && lolly_scripts_js_vars.awards_background_bg.image_src !== '') {
 		jQuery('.awards-and-mentions').backstretch(lolly_scripts_js_vars.awards_background_bg.image_src);
+		jQuery('.awards-and-mentions').backstretch("resize");
 	}
-
-	$(window).resize(function(){
-		$.backstretch("resize");
-	});
 
 
 	//values boxes

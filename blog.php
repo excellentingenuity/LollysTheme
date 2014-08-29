@@ -3,7 +3,7 @@
 Template Name: Blog Gallery
 */
 $paged = get_query_var('paged') ? get_query_var('paged') : 1;
-$posts_per_page = 33;
+$posts_per_page = 30;
 $date = false;
 $enable_hover_description = true;
 $titan = TitanFramework::getInstance( 'lolly' );
@@ -19,7 +19,7 @@ include("header.php");
 				?>
 				<!-- Sing Post Starts -->
 					
-					<div id="gridContainer">
+					
 						<?php
 							$i = 0;
 							$j = 0;
@@ -35,7 +35,7 @@ include("header.php");
 									//if($img == "/path/to/default.png"){
 									//	$img = 'http://www.lollydaskal.com/wp-content/uploads/2013/03/Screen-shot-2013-03-22-at-10.37.42-PM-e1364007776356.png';
 									//}
-									echo '<div class="grid-div">';
+									echo '<div class="col-sm-6 grid-div">';
 									echo '<div class="grid-img-text-blocks-wrapper">';
 									echo '<a class="grid-post-link" href="';
 									echo the_permalink();
@@ -97,7 +97,7 @@ include("header.php");
 					 				if(($j > $num_posts) || ($j >= $posts_per_page)){
 					 					echo '</div>';	
 					 				} else {
-					 					if($i == 2) {
+					 					if($i == 1) {
 											echo '</div><div class="row">';
 											$i = 0;
 											$j++;
@@ -134,7 +134,7 @@ include("header.php");
 					
 						
 
-					</div>
+					
 	
 </div> <!-- closing container-fluid div -->
 <!-- body tag closed in footer -->

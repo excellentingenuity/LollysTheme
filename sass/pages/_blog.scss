@@ -1,1 +1,31 @@
 /** _blog.scss */
+.blog-page {
+	.blog-grid-row {
+		margin-bottom: 3em;
+	}
+	.grid-div {
+		@extend .grey-background;
+		height: 14em;
+		padding:3em;
+		display: inline-block;
+		display: inline-flex;
+		margin: 0px;
+		text-align: center;
+	}
+	.grid-img-text-blocks-wrapper {
+		height: 10em;
+		width:28em;
+		display: block;
+		position: absolute;
+	}
+	.grid-div:hover .grid-hover-text{
+	visibility: visible;
+	display: inline;
+	z-index: 2;
+	}
+	.grid-post-img {
+		height:10em;
+		width:28em;
+
+	}
+}

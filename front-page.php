@@ -6,7 +6,7 @@ $titan = TitanFramework::getInstance( 'lolly' );
 include("header.php");
 ?>
 <!-- body tag opened at the end of header -->
-<div class="container home-page">
+<div class="container-fluid home-page">
 	<?php include('includes/page-partials/page-header.php'); ?>
 	<div class="row">
 		<div class="col-sm-12">
