@@ -428,4 +428,12 @@
 			border-color: $highlight-color;
 		}
 	}
+	@media (max-width:320px){
+		
+		img {
+			max-width: auto;
+			max-height: 480px;
+		}
+		
+	}
 }

@@ -1,12 +1,22 @@
 /** _blog.scss */
 .blog-page {
+	margin-left:3em;
+	margin-right: 3em;
+	@media(max-width: 320px){
+		margin-left: .5em;
+		margin-right: .5em;
+
+		img {
+			max-width: 288px;
+		}
+	}
 	.blog-grid-row {
 		margin-bottom: 3em;
 	}
 	.grid-div {
-		@extend .grey-background;
+		
 		height: 14em;
-		padding:3em;
+		//padding:3em;
 		display: inline-block;
 		display: inline-flex;
 		margin: 0px;
@@ -14,18 +24,47 @@
 	}
 	.grid-img-text-blocks-wrapper {
 		height: 10em;
-		width:28em;
+		//width:28em;
 		display: block;
 		position: absolute;
 	}
+	.grid-img-block {
+		display: inline-block;
+		display: inline-flex;
+		margin: 0px;
+		margin-bottom: 3px;
+		padding: 0px;
+	}
 	.grid-div:hover .grid-hover-text{
-	visibility: visible;
-	display: inline;
-	z-index: 2;
+		visibility: visible;
+		display: inline;
+		z-index: 2;
+	}
+	.grid-hover-text {
+		display: none;
+		visibility: hidden;
+		position: absolute;
+		//width: 28em;
+		height: 10em;
+		padding: 1em;
+		font-weight: bold;
+		font-size: 18px;
+		color: #ffffff;
+		background-color: rgba(0, 0, 0, 0.5);
 	}
 	.grid-post-img {
 		height:10em;
-		width:28em;
+		//width:28em;
 
 	}
+	.grid-text-social-icons {
+		//width: 28em !important;
+		height: 5em !important;
+		position: relative;
+		text-align: left;
+		margin: 0px;
+		padding:0px;
+		top: 10em;
+}
+
 }

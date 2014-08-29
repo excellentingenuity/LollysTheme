@@ -10,8 +10,11 @@ $titan = TitanFramework::getInstance( 'lolly' );
 include("header.php");
 ?>
 <!-- body tag opened at the end of header -->
-<div class="container-fluid blog-page">
+<div class="container-fluid">
 	<?php include('includes/page-partials/page-header.php'); ?>
+</div>
+<div class="container-fluid blog-page">
+	
 	<?php
 					query_posts(
     					array('post_type' => 'post', 'posts_per_page' => $posts_per_page, 'paged' => $paged)
@@ -26,7 +29,7 @@ include("header.php");
 							
 							$count_posts = $wp_query->post_count;
 							$num_posts = $count_posts - 2;
-							echo '<div class="row">';
+							echo '<div class="row blog-grid-row">';
 							if(have_posts()) :
 								while(have_posts()) :
 									the_post();
@@ -35,7 +38,7 @@ include("header.php");
 									//if($img == "/path/to/default.png"){
 									//	$img = 'http://www.lollydaskal.com/wp-content/uploads/2013/03/Screen-shot-2013-03-22-at-10.37.42-PM-e1364007776356.png';
 									//}
-									echo '<div class="col-sm-6 grid-div">';
+									echo '<div class="col-sm-6 col-xs-12 grid-div">';
 									echo '<div class="grid-img-text-blocks-wrapper">';
 									echo '<a class="grid-post-link" href="';
 									echo the_permalink();
@@ -63,7 +66,7 @@ include("header.php");
 					 				echo '</a>';
 					 				echo '</div>';
 					 				
-					 				echo '<div class="grid-text-social-icons">';
+					 				/*echo '<div class="grid-text-social-icons">';
 					 				echo '<div class="sharedaddy sd-sharing-enabled custom-grid-sd">';
 									echo '<div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing custom-grid-sd-block">';
 									echo '<div class="sd-content custom-grid-sd-content">';
@@ -91,7 +94,7 @@ include("header.php");
 									echo '<a rel="nofollow" target="_blank" class="share-pinterest sd-button share-icon no-text" href="';
 									echo the_permalink();
 									echo '?share=pinterest&amp;nb=1" title="Click to share on Pinterest">';
-									echo '</a></li><li class="share-end"></li></ul></div></div></div>';
+									echo '</a></li><li class="share-end"></li></ul></div></div></div>';*/
 					 				echo '</div>';
 					 				echo '</div>';
 					 				if(($j > $num_posts) || ($j >= $posts_per_page)){

@@ -8228,7 +8228,7 @@ button.close {
 }
 
 /* line 7, sass/partials/_color_classes.scss */
-.grey-background, .home-page .testimonials-row, .home-page .tweetchat-section, .blog-page .grid-div {
+.grey-background, .home-page .testimonials-row, .home-page .tweetchat-section {
   -webkit-box-shadow: #cfcfcf 0px -80px 200px 1px inset;
   background-color: whitesmoke;
   box-shadow: #cfcfcf 0px -80px 200px 1px inset;
@@ -9096,38 +9096,87 @@ li.menu-item .active > a:focus {
   background-color: #e84d0e;
   border-color: #e84d0e;
 }
+@media (max-width: 320px) {
+  /* line 433, sass/pages/_home.scss */
+  .home-page img {
+    max-width: auto;
+    max-height: 480px;
+  }
+}
 
 /** _blog.scss */
-/* line 3, sass/pages/_blog.scss */
+/* line 2, sass/pages/_blog.scss */
+.blog-page {
+  margin-left: 3em;
+  margin-right: 3em;
+}
+@media (max-width: 320px) {
+  /* line 2, sass/pages/_blog.scss */
+  .blog-page {
+    margin-left: .5em;
+    margin-right: .5em;
+  }
+  /* line 9, sass/pages/_blog.scss */
+  .blog-page img {
+    max-width: 288px;
+  }
+}
+/* line 13, sass/pages/_blog.scss */
 .blog-page .blog-grid-row {
   margin-bottom: 3em;
 }
-/* line 6, sass/pages/_blog.scss */
+/* line 16, sass/pages/_blog.scss */
 .blog-page .grid-div {
   height: 14em;
-  padding: 3em;
   display: inline-block;
   display: inline-flex;
   margin: 0px;
   text-align: center;
 }
-/* line 15, sass/pages/_blog.scss */
+/* line 25, sass/pages/_blog.scss */
 .blog-page .grid-img-text-blocks-wrapper {
   height: 10em;
-  width: 28em;
   display: block;
   position: absolute;
 }
-/* line 21, sass/pages/_blog.scss */
+/* line 31, sass/pages/_blog.scss */
+.blog-page .grid-img-block {
+  display: inline-block;
+  display: inline-flex;
+  margin: 0px;
+  margin-bottom: 3px;
+  padding: 0px;
+}
+/* line 38, sass/pages/_blog.scss */
 .blog-page .grid-div:hover .grid-hover-text {
   visibility: visible;
   display: inline;
   z-index: 2;
 }
-/* line 26, sass/pages/_blog.scss */
+/* line 43, sass/pages/_blog.scss */
+.blog-page .grid-hover-text {
+  display: none;
+  visibility: hidden;
+  position: absolute;
+  height: 10em;
+  padding: 1em;
+  font-weight: bold;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* line 55, sass/pages/_blog.scss */
 .blog-page .grid-post-img {
   height: 10em;
-  width: 28em;
+}
+/* line 60, sass/pages/_blog.scss */
+.blog-page .grid-text-social-icons {
+  height: 5em !important;
+  position: relative;
+  text-align: left;
+  margin: 0px;
+  padding: 0px;
+  top: 10em;
 }
 
 /**widgets scss*/
