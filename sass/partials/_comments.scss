@@ -1,0 +1,110 @@
+.comments-container {
+	@extend .grey-background;
+	padding-bottom: 3em;
+	@media(max-width: $screen-md-max){
+		padding-left:2em;
+		padding-right: 2em;
+
+		li.comment {
+			@extend .clear;
+		}
+	}
+	
+	.comments-row {
+		text-align: left;
+	}	
+	a:hover {
+		text-decoration: none;
+	}
+	.comment-list {
+		margin-bottom: 2em;
+	}
+	.comments-title {
+		text-transform: none;
+	}
+	li.comment, li.pingback {
+		@extend .col-md-8;
+		@extend .col-md-offset-2;
+		@extend .col-sm-12;
+		font-size: 1.1em;
+		list-style-type: none;
+
+		.comment-body {
+			@extend blockquote;
+			.comment-author, .comment-meta {
+				background-color: transparent;
+			}
+			background-color: $primary-color;
+				
+		
+		}
+
+		ol.children {
+			padding-left:0px;
+			li {
+				margin-left: 0px;
+				padding-left:0px;
+				width: 102%;
+				@media (max-width:$screen-sm-min){
+					width:100%;
+					padding-right:0px;
+				}
+			}
+		}
+
+		
+	}
+	.avatar {
+		
+		@extend .img-circle;
+		height: 2em;
+		width: 2em;
+	}
+	.avatar:hover {
+		@extend .img-circle;
+	}
+
+	.form-allowed-tags {
+		code {
+			color: #000000;
+			background-color: inherit;
+		}
+	}
+	
+	.comment-respond {
+		@extend .pull-left;
+		text-align: left;
+		padding:2em;
+		@media (max-width:$screen-sm-min){
+			width:90%
+		}
+	}
+	.form-submit > input#submit {
+		display: none !important;
+	}
+	.form-allowed-tags {
+		text-align: left;
+	}	
+	
+	#subscribe-label,
+	#subscribe-blog-label {
+		font-weight: 400;
+	}
+
+	.comment-form-author,
+	.comment-form-email,
+	.comment-form-url,
+	#comment {
+    	width: 50%;
+    	@media (max-width:$screen-sm-min){
+			width:90%
+		}
+	}
+	.comment-submit-btn {
+		color: $primary-color;
+		background-color: $highlight-color;
+		font-size: 1.1em;
+	}		
+	
+	
+}

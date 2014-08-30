@@ -1,0 +1,20 @@
+/**single_post.scss*/
+.post-container {
+	padding-top: 3em;
+	@media(max-width: 320px){
+		margin-left: 2.5%;
+		margin-right: 2.5%;
+		width:95%;
+	}
+	@media(max-width: $screen-md-max){
+		padding-left:2em;
+		padding-right: 2em;
+	}
+	img {
+		width: 100%;
+	}
+	.post-content {
+		text-align: left;
+	}
+
+}

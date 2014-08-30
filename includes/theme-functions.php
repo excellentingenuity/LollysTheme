@@ -94,6 +94,85 @@ function get_top_menu($menu_name)
 	return get_menu($args);
 }
 
+add_filter( 'comment_form_default_fields', 'bootstrap3_comment_form_fields' );
+function bootstrap3_comment_form_fields( $fields ) {
+    $commenter = wp_get_current_commenter();
+    
+    $req      = get_option( 'require_name_email' );
+    $aria_req = ( $req ? " aria-required='true'" : '' );
+    $html5    = current_theme_supports( 'html5', 'comment-form' ) ? 1 : 0;
+    
+    $fields   =  array(
+        'author' => '<div class="form-group comment-form-author">' . '<label for="author">' . __( 'Name' ) . ( $req ? ' <span class="required">*</span>' : '' ) . '</label> ' .
+                    '<input class="form-control" id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' /></div>',
+        'email'  => '<div class="form-group comment-form-email"><label for="email">' . __( 'Email' ) . ( $req ? ' <span class="required">*</span>' : '' ) . '</label> ' .
+                    '<input class="form-control" id="email" name="email" ' . ( $html5 ? 'type="email"' : 'type="text"' ) . ' value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . ' /></div>',
+        'url'    => '<div class="form-group comment-form-url"><label for="url">' . __( 'Website' ) . '</label> ' .
+                    '<input class="form-control" id="url" name="url" ' . ( $html5 ? 'type="url"' : 'type="text"' ) . ' value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" /></div>',
+    );
+    
+    return $fields;
+}
+add_filter( 'comment_form_defaults', 'bootstrap3_comment_form' );
+function bootstrap3_comment_form( $args ) {
+    $args['comment_field'] = '<div class="form-group comment-form-comment">
+            <label for="comment">' . _x( 'Comment', 'noun' ) . '</label> 
+            <textarea class="form-control" id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea>
+        </div>';
+    return $args;
+}
+add_action('comment_form', 'bootstrap3_comment_button' );
+function bootstrap3_comment_button() {
+    echo '<button class="btn btn-default comment-submit-btn" type="submit">' . __( 'Submit' ) . '</button>';
+}
+/*-----------------------------------------------------------------------------------*/
+/* 1. Lollys Shortcodes  */
+/*-----------------------------------------------------------------------------------*/
+
+// Enable shortcodes in widget areas
+//add_filter( 'widget_text', 'do_shortcode' );
+
+
+// Replace WP autop formatting
+if ( ! function_exists( 'lolly_remove_wpautop' ) ) {
+	function lolly_remove_wpautop( $content ) {
+		$content = do_shortcode( shortcode_unautop( $content ) );
+		$content = preg_replace( '#^<\/p>|^<br \/>|<p>$#', '', $content );
+		return $content;
+	} // End lolly_remove_wpautop()
+}
+/*-----------------------------------------------------------------------------------*/
+/* 11. Quote - quote
+/*-----------------------------------------------------------------------------------*/
+/*
+
+Optional arguments:
+ - style: boxed
+ - float: left, right
+
+*/
+function lolly_shortcode_quote($atts, $content = null) {
+   	extract(shortcode_atts(array(	'style' => '',
+   									'float' => ''), $atts));
+   $class = '';
+   if ( $style )
+   		$class .= ' '.$style;
+   if ( $float )
+   		$class .= ' '.$float;
+		
+	$twitContent = lolly_remove_wpautop($content);
+	$twitContent = strip_tags($twitContent);
+
+      return '<div class="lolly-sc-quote' . $class . '"><blockquote>' . lolly_remove_wpautop($content) . 
+      '&nbsp;<a class="quote-share-a" target="_blank" class="popup" href="https://twitter.com/intent/tweet?source=tweetbutton&text=' . $twitContent .
+       '&via=lollydaskal"><i class="fa fa-twitter social-icon"></i></a>
+		<a class="quote-share-a" target="_blank" class="popup" href="https://www.facebook.com/sharer/sharer.php?u='. get_permalink().'&t=' . lolly_remove_wpautop( $content ) . '"
+		onclick="javascript:window.open(this.href, "", "menubar=no,toolbar=no,resizeable=yes,scrollbars=yes,height=300,width=600");return false;"
+   		title="Share on Facebook">
+   		<i class="fa fa-facebook social-icon"></i></a></blockqoute></div>';
+}
+add_shortcode( 'quote', 'lolly_shortcode_quote' );
+
 /** Register Menu Support in the theme */
 function register_my_menus() {
   register_nav_menus(

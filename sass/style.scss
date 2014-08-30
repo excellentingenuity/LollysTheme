@@ -18,9 +18,13 @@
 @import "partials/header_bar.scss";
 @import "partials/primary_menu.scss";
 @import "partials/custom_icons.scss";
+@import "partials/comments.scss";
+@import "mixins/_mixins.scss";
+@import "partials/incontent.scss";
 
 @import "pages/home.scss";
 @import "pages/blog.scss";
+@import "pages/single_post.scss";
 @import "partials/widgets.scss";
 
 @import "partials/footer.scss";
@@ -38,6 +42,15 @@ body {
 	font-size: $font-size;
 	text-align: center;
 	color: $primary-font-color;
+}
+a {
+	color: $highlight-color;
+}
+a:hover {
+	color: $highlight-color;
+}
+a:visited {
+	color: $highlight-color;
 }
 
 

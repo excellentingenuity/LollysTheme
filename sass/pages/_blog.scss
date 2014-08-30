@@ -1,6 +1,9 @@
 /** _blog.scss */
 .blog-page {
 	padding-top: 3em;
+	margin-left: 1em;
+	margin-right: 1em;
+	width:auto;
 	@media(max-width: 320px){
 		margin-left: 2.5%;
 		margin-right: 2.5%;
@@ -11,20 +14,33 @@
 		}
 		
 	}
+	@media(max-width: $screen-sm-min){
+		.grid-div {
+			margin: auto;
+			margin-bottom: 2em;
+			width:60%;
+		}
+	}
+	.col-sm-4,
+	.col-md-4 {
+		padding-left:.5%;
+		padding-right:.5%;
+	}
 	.blog-grid-row {
-		margin-bottom: 3em;
+		margin-bottom: 1%;
 	}
 		
 	.gird-div {
-		
 		overflow: hidden;
-		height:18em;
+		height:17em;
 		text-align: center;
 		display: inline-block;
 		display: inline-flex;
+		
+
 	}
 	.grid-div-background {
-		@extend .grey-background;
+		background-color: rgb(244, 244, 244);
 		width: 100%;
 		height: 100%;
 	}
@@ -33,72 +49,55 @@
 		
 		width:100%;
 		display: block;
-		//position: absolute;
-		
+		overflow: hidden;
 	}
 
 	.grid-post-link {
 		width: 100%;
-	}
-	.grid-div:hover .grid-hover-text{
-		visibility: visible;
-		display: inline;
-		z-index: 2;
 	}	
 	.grid-div:hover .grid-post-link {
 		text-decoration: none;
 	}
-	.grid-hover-text {
-		width: 94%;
-		height: 10em;
-		visibility: hidden;
-		display: none;
-		padding: 1em;
-		position: absolute;
-		font-weight: 400;
-		font-size: 1.4em;
-		color: #ffffff;
-		background-color: rgba(0, 0, 0, 0.5);
-
-	}
 	.grid-img-block {
 		width: 100%;
-		height:14em;
+		height:10em;
 		display: inline-block;
 		display: inline-flex;
 
 		.grid-post-img {
 			width: 100%;
-			height: 14em;
+			height: 10em;
 		}
 	}
 	.grid-text-block {
 		width:100%;
-		height:4em;
+		height:5em;
 		
 		.grid-text {
 			width: 100%;
 			height: 4em;
 			color: #000000;
-			font-size: 1.4em;
+			font-size: 1.2em;
 			font-weight: 800;
+			padding-left: .5em;
+			padding-right: .5em;
+			text-align: left;
 		}
 	}
 	.grid-text-social-icons {
 		padding-left: 1em;
 		padding-bottom: 1em;
 		text-align: left;
-		font-size: .9em;
+		font-size: .7em;
 		.social-icon {
 			text-align: center;
 			color:$primary-color;
-			background-color: $highlight-color;
-			width: 1.3em;
-			height: 1.3em;
-			padding-top: 1%;
+			background-color:rgba(194, 194, 194, 0.73);
+			width: 1.1em;
+			height: 1.1em;
 		}
 		.social-icon:hover {
-			color:$highlight-color;
+			color:rgba(194, 194, 194, 0.73);
 			background-color: $primary-color;
 		}
 	}
@@ -109,7 +108,7 @@
 		color: #000000;
 		display: inline-block;
 		padding: 5px;
-		font-size: 1.2em;
+		font-size: 1em;
 		font-weight: bold;
 	}
 	.grid-blog-pagination-left > a {
