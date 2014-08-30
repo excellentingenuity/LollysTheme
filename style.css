@@ -8228,7 +8228,7 @@ button.close {
 }
 
 /* line 7, sass/partials/_color_classes.scss */
-.grey-background, .home-page .testimonials-row, .home-page .tweetchat-section {
+.grey-background, .home-page .testimonials-row, .home-page .tweetchat-section, .blog-page .grid-div-background {
   -webkit-box-shadow: #cfcfcf 0px -80px 200px 1px inset;
   background-color: whitesmoke;
   box-shadow: #cfcfcf 0px -80px 200px 1px inset;
@@ -8629,11 +8629,17 @@ li.menu-item .active > a:focus {
   content: "\e616";
 }
 
-/* line 3, sass/pages/_home.scss */
+@media (max-width: 320px) {
+  /* line 1, sass/pages/_home.scss */
+  .home-page {
+    overflow: hidden;
+  }
+}
+/* line 7, sass/pages/_home.scss */
 .home-page .featured-fade-slideshow {
   min-height: 29em;
 }
-/* line 6, sass/pages/_home.scss */
+/* line 10, sass/pages/_home.scss */
 .home-page .header_slideshow_text, .home-page .speaker-with-heart .speaker_with_heart_text {
   .position: relative;
   margin-top: 0px;
@@ -8643,13 +8649,13 @@ li.menu-item .active > a:focus {
   font-size: 2.6em;
 }
 @media (max-width: 768px) {
-  /* line 6, sass/pages/_home.scss */
+  /* line 10, sass/pages/_home.scss */
   .home-page .header_slideshow_text, .home-page .speaker-with-heart .speaker_with_heart_text {
     text-align: center;
     padding-right: 0px;
   }
 }
-/* line 20, sass/pages/_home.scss */
+/* line 24, sass/pages/_home.scss */
 .home-page .header_slideshow_text2, .home-page .speaker-with-heart .speaker_with_heart_text2 {
   .position: relative;
   margin-top: 0px;
@@ -8658,86 +8664,86 @@ li.menu-item .active > a:focus {
   font-size: 2.6em;
 }
 @media (max-width: 768px) {
-  /* line 20, sass/pages/_home.scss */
+  /* line 24, sass/pages/_home.scss */
   .home-page .header_slideshow_text2, .home-page .speaker-with-heart .speaker_with_heart_text2 {
     text-align: center;
     padding-right: 0px;
   }
 }
-/* line 33, sass/pages/_home.scss */
+/* line 37, sass/pages/_home.scss */
 .home-page .header_slideshow_link, .home-page .speaker-with-heart .speaker_with_heart_link {
   text-decoration: none;
 }
-/* line 37, sass/pages/_home.scss */
+/* line 41, sass/pages/_home.scss */
 .home-page .header_slideshow_link :hover, .home-page .speaker-with-heart .speaker_with_heart_link :hover {
   text-decoration: none;
 }
-/* line 42, sass/pages/_home.scss */
+/* line 46, sass/pages/_home.scss */
 .home-page .header_slideshow_link :visited, .home-page .speaker-with-heart .speaker_with_heart_link :visited {
   text-decoration: none;
 }
-/* line 47, sass/pages/_home.scss */
+/* line 51, sass/pages/_home.scss */
 .home-page .commitment {
   padding-top: 2.5em;
   padding-bottom: 2.5em;
   min-height: 28em;
 }
-/* line 53, sass/pages/_home.scss */
+/* line 57, sass/pages/_home.scss */
 .home-page .commitment .commitment-text-header {
   font-size: 1.1em;
   font-weight: 400;
   margin-bottom: 2em;
   text-transform: none;
 }
-/* line 60, sass/pages/_home.scss */
+/* line 64, sass/pages/_home.scss */
 .home-page .commitment .coach-block {
   right: -2.8em;
   font-size: 1.1em;
   line-height: 1.6em;
 }
 @media (min-width: 1200px) {
-  /* line 60, sass/pages/_home.scss */
+  /* line 64, sass/pages/_home.scss */
   .home-page .commitment .coach-block {
     right: -5%;
   }
 }
 @media (max-width: 768px) {
-  /* line 60, sass/pages/_home.scss */
+  /* line 64, sass/pages/_home.scss */
   .home-page .commitment .coach-block {
     text-align: center;
     right: 0em;
   }
 }
-/* line 76, sass/pages/_home.scss */
+/* line 80, sass/pages/_home.scss */
 .home-page .commitment .consultant-block {
   font-size: 1.1em;
   line-height: 1.6em;
   left: -2.8em;
 }
 @media (min-width: 1200px) {
-  /* line 76, sass/pages/_home.scss */
+  /* line 80, sass/pages/_home.scss */
   .home-page .commitment .consultant-block {
     left: -5%;
   }
 }
 @media (max-width: 768px) {
-  /* line 76, sass/pages/_home.scss */
+  /* line 80, sass/pages/_home.scss */
   .home-page .commitment .consultant-block {
     text-align: center;
     left: 0em;
   }
 }
-/* line 89, sass/pages/_home.scss */
+/* line 93, sass/pages/_home.scss */
 .home-page .commitment .commitment-amperstand {
   top: .8em;
 }
 @media (max-width: 768px) {
-  /* line 89, sass/pages/_home.scss */
+  /* line 93, sass/pages/_home.scss */
   .home-page .commitment .commitment-amperstand {
     top: 0px;
   }
 }
-/* line 96, sass/pages/_home.scss */
+/* line 100, sass/pages/_home.scss */
 .home-page .commitment .commitment-amperstand-p {
   width: 1.7em;
   font-size: 2.4em;
@@ -8747,17 +8753,17 @@ li.menu-item .active > a:focus {
   margin: auto;
   font-weight: 800;
 }
-/* line 107, sass/pages/_home.scss */
+/* line 111, sass/pages/_home.scss */
 .home-page .commitment .coach-header, .home-page .commitment .consultant-header {
   font-size: 2.2em;
   margin-bottom: .9em;
   font-weight: 900;
 }
-/* line 113, sass/pages/_home.scss */
+/* line 117, sass/pages/_home.scss */
 .home-page .speaker-with-heart {
   min-height: 25em;
 }
-/* line 124, sass/pages/_home.scss */
+/* line 128, sass/pages/_home.scss */
 .home-page .speaker-with-heart .all-services-link-div {
   border: .5em solid #E84D0E;
   font-size: 1em;
@@ -8773,52 +8779,52 @@ li.menu-item .active > a:focus {
   width: 7em;
   padding-top: 1.4em;
 }
-/* line 141, sass/pages/_home.scss */
+/* line 145, sass/pages/_home.scss */
 .home-page .speaker-with-heart .all-services-link-div .all-services-link {
   color: white;
 }
-/* line 144, sass/pages/_home.scss */
+/* line 148, sass/pages/_home.scss */
 .home-page .speaker-with-heart .all-services-link-div .all-services-link:hover {
   color: white;
   text-decoration: none;
 }
-/* line 149, sass/pages/_home.scss */
+/* line 153, sass/pages/_home.scss */
 .home-page .speaker-with-heart .all-services-link-div .all-services-link:visited {
   color: white;
   text-decoration: none;
 }
-/* line 154, sass/pages/_home.scss */
+/* line 158, sass/pages/_home.scss */
 .home-page .speaker-with-heart .all-services-link-div .all-services-link-greater-than {
   font-size: 1em;
 }
-/* line 158, sass/pages/_home.scss */
+/* line 162, sass/pages/_home.scss */
 .home-page .speaker-with-heart .all-services-link-div:hover {
   border-color: #ff7536;
 }
 @media (max-width: 768px) {
-  /* line 164, sass/pages/_home.scss */
+  /* line 168, sass/pages/_home.scss */
   .home-page .about-lolly {
     padding-bottom: 5em;
   }
 }
-/* line 168, sass/pages/_home.scss */
+/* line 172, sass/pages/_home.scss */
 .home-page .about-lolly .about-lolly-header {
   padding-bottom: 3em;
   padding-top: 4em;
 }
-/* line 173, sass/pages/_home.scss */
+/* line 177, sass/pages/_home.scss */
 .home-page .about-lolly .about-lolly-h3 {
   text-align: center;
   text-transform: none;
   max-width: 90%;
   margin: auto;
 }
-/* line 180, sass/pages/_home.scss */
+/* line 184, sass/pages/_home.scss */
 .home-page .about-lolly .values-subrow {
   padding-top: 3em;
   padding-bottom: 3em;
 }
-/* line 184, sass/pages/_home.scss */
+/* line 188, sass/pages/_home.scss */
 .home-page .about-lolly .values-inner-header {
   font-family: "proxima-nova-n9","proxima-nova",sans-serif;
   font-style: normal;
@@ -8828,25 +8834,25 @@ li.menu-item .active > a:focus {
   padding-bottom: .3em;
   top: 0;
 }
-/* line 193, sass/pages/_home.scss */
+/* line 197, sass/pages/_home.scss */
 .home-page .about-lolly .values-block {
   min-height: 12em;
   padding-bottom: 4em;
 }
-/* line 196, sass/pages/_home.scss */
+/* line 200, sass/pages/_home.scss */
 .home-page .about-lolly .values-block .values-inner {
   background-color: #e84d0e;
   color: white;
   min-height: 14em;
   width: 24em;
 }
-/* line 201, sass/pages/_home.scss */
+/* line 205, sass/pages/_home.scss */
 .home-page .about-lolly .values-block .values-inner .values-elipses {
   padding-top: 1.4em;
   color: #000000;
   font-weight: 200;
 }
-/* line 206, sass/pages/_home.scss */
+/* line 210, sass/pages/_home.scss */
 .home-page .about-lolly .values-block .values-inner i {
   color: #e84d0e;
   font-size: 2.8em;
@@ -8857,7 +8863,7 @@ li.menu-item .active > a:focus {
   padding-bottom: .2em;
   width: 1.4em;
 }
-/* line 216, sass/pages/_home.scss */
+/* line 220, sass/pages/_home.scss */
 .home-page .about-lolly .values-block .values-inner i.fa-angle-down {
   color: #000000;
   font-size: 1em;
@@ -8865,20 +8871,20 @@ li.menu-item .active > a:focus {
   border: none;
   padding: 0px;
 }
-/* line 223, sass/pages/_home.scss */
+/* line 227, sass/pages/_home.scss */
 .home-page .about-lolly .values-block .values-inner i.icon-shield, .home-page .about-lolly .values-block .values-inner i.icon-keyhole {
   width: 1.8em;
   padding-left: .3em;
   padding-right: .3em;
 }
-/* line 228, sass/pages/_home.scss */
+/* line 232, sass/pages/_home.scss */
 .home-page .about-lolly .values-block .values-inner .values-content-wrapper {
   height: 5em;
   position: absolute;
   overflow: hidden;
   bottom: 4em;
 }
-/* line 234, sass/pages/_home.scss */
+/* line 238, sass/pages/_home.scss */
 .home-page .about-lolly .values-block .values-inner .values-content {
   padding: .6em;
   background-color: #EBEBEB;
@@ -8891,27 +8897,27 @@ li.menu-item .active > a:focus {
   text-align: left;
 }
 @media (max-width: 768px) {
-  /* line 193, sass/pages/_home.scss */
+  /* line 197, sass/pages/_home.scss */
   .home-page .about-lolly .values-block {
     width: 100%;
     padding: 1em;
   }
-  /* line 249, sass/pages/_home.scss */
+  /* line 253, sass/pages/_home.scss */
   .home-page .about-lolly .values-block .values-inner {
     float: none !important;
     margin-left: auto;
     margin-right: auto;
   }
 }
-/* line 257, sass/pages/_home.scss */
+/* line 261, sass/pages/_home.scss */
 .home-page .about-lolly .about-link-subrow {
   height: 1px;
 }
-/* line 260, sass/pages/_home.scss */
+/* line 264, sass/pages/_home.scss */
 .home-page .about-lolly .about-link-container-div {
   height: 5em;
 }
-/* line 263, sass/pages/_home.scss */
+/* line 267, sass/pages/_home.scss */
 .home-page .about-lolly .about-link-boundry {
   border: .5em solid #E84D0E;
   font-size: 1em;
@@ -8927,60 +8933,60 @@ li.menu-item .active > a:focus {
   width: 7em;
   padding-top: 1.1em;
 }
-/* line 280, sass/pages/_home.scss */
+/* line 284, sass/pages/_home.scss */
 .home-page .about-lolly .about-link-boundry .home-about-link {
   color: white;
   text-transform: none;
 }
-/* line 284, sass/pages/_home.scss */
+/* line 288, sass/pages/_home.scss */
 .home-page .about-lolly .about-link-boundry .home-about-link:hover {
   color: white;
   text-decoration: none;
 }
-/* line 289, sass/pages/_home.scss */
+/* line 293, sass/pages/_home.scss */
 .home-page .about-lolly .about-link-boundry .home-about-link:visited {
   color: white;
   text-decoration: none;
 }
-/* line 295, sass/pages/_home.scss */
+/* line 299, sass/pages/_home.scss */
 .home-page .about-lolly .about-link-boundry:hover {
   border-color: #ff7536;
 }
-/* line 300, sass/pages/_home.scss */
+/* line 304, sass/pages/_home.scss */
 .home-page .testimonials-row {
   min-height: 20em;
 }
-/* line 303, sass/pages/_home.scss */
+/* line 307, sass/pages/_home.scss */
 .home-page .testimonials-row .testimonials {
   padding-top: 7em;
   font-size: 1.1em;
 }
-/* line 306, sass/pages/_home.scss */
+/* line 310, sass/pages/_home.scss */
 .home-page .testimonials-row .testimonials .testimonial-text {
   text-align: center;
   padding-left: 5em;
   padding-right: 5em;
 }
-/* line 311, sass/pages/_home.scss */
+/* line 315, sass/pages/_home.scss */
 .home-page .testimonials-row .testimonials .testimonial-author {
   text-align: right;
   padding-left: 5em;
   padding-right: 5em;
 }
-/* line 316, sass/pages/_home.scss */
+/* line 320, sass/pages/_home.scss */
 .home-page .testimonials-row .testimonials .flex-control-nav {
   position: relative;
   bottom: -3em;
 }
-/* line 322, sass/pages/_home.scss */
+/* line 326, sass/pages/_home.scss */
 .home-page .testimonialst-link-subrow {
   height: 1px;
 }
-/* line 325, sass/pages/_home.scss */
+/* line 329, sass/pages/_home.scss */
 .home-page .all-testimonials-container {
   height: 5em;
 }
-/* line 328, sass/pages/_home.scss */
+/* line 332, sass/pages/_home.scss */
 .home-page .all-testimonials-link-div {
   border: .5em solid #E84D0E;
   font-size: 1em;
@@ -8996,29 +9002,29 @@ li.menu-item .active > a:focus {
   width: 7em;
   padding-top: 1.2em;
 }
-/* line 345, sass/pages/_home.scss */
+/* line 349, sass/pages/_home.scss */
 .home-page .all-testimonials-link-div .all-testimonials-link {
   color: white;
 }
-/* line 348, sass/pages/_home.scss */
+/* line 352, sass/pages/_home.scss */
 .home-page .all-testimonials-link-div .all-testimonials-link:hover {
   color: white;
   text-decoration: none;
 }
-/* line 353, sass/pages/_home.scss */
+/* line 357, sass/pages/_home.scss */
 .home-page .all-testimonials-link-div .all-testimonials-link:visited {
   color: white;
   text-decoration: none;
 }
-/* line 359, sass/pages/_home.scss */
+/* line 363, sass/pages/_home.scss */
 .home-page .all-testimonials-link-div:hover {
   border-color: #ff7536;
 }
-/* line 362, sass/pages/_home.scss */
+/* line 366, sass/pages/_home.scss */
 .home-page .lower-navigation {
   min-height: 15em;
 }
-/* line 364, sass/pages/_home.scss */
+/* line 368, sass/pages/_home.scss */
 .home-page .lower-navigation .lower-nav-item {
   border: thin solid #ebebeb;
   border-top: none;
@@ -9028,76 +9034,76 @@ li.menu-item .active > a:focus {
   padding-left: 0;
   padding-right: 0;
 }
-/* line 374, sass/pages/_home.scss */
+/* line 378, sass/pages/_home.scss */
 .home-page .lower-navigation .lower-nav-item .lower-outer-nav-item-left {
   border-left: none;
 }
-/* line 377, sass/pages/_home.scss */
+/* line 381, sass/pages/_home.scss */
 .home-page .lower-navigation .lower-nav-item .lower-outer-nav-item-right {
   border-right: none;
 }
-/* line 380, sass/pages/_home.scss */
+/* line 384, sass/pages/_home.scss */
 .home-page .lower-navigation .lower-nav-item .lower-nav-icon-link, .home-page .lower-navigation .lower-nav-item .lower-nav-icon-link:visited {
   color: #000000;
   display: inline-block;
   padding-top: 2em;
   padding-bottom: 2em;
 }
-/* line 386, sass/pages/_home.scss */
+/* line 390, sass/pages/_home.scss */
 .home-page .lower-navigation .lower-nav-item .lower-nav-icon-link .lower-nav-icon, .home-page .lower-navigation .lower-nav-item .lower-nav-icon-link:visited .lower-nav-icon {
   font-size: 7em;
 }
-/* line 390, sass/pages/_home.scss */
+/* line 394, sass/pages/_home.scss */
 .home-page .lower-navigation .lower-nav-item .lower-nav-icon-link:hover {
   color: #e84d0e;
   text-decoration: none;
 }
-/* line 394, sass/pages/_home.scss */
+/* line 398, sass/pages/_home.scss */
 .home-page .lower-navigation .lower-nav-item .lower-nav-text {
   padding-left: .4em;
   padding-right: .4em;
 }
-/* line 400, sass/pages/_home.scss */
+/* line 404, sass/pages/_home.scss */
 .home-page .awards-and-mentions {
   min-height: 28em;
   color: white;
 }
-/* line 403, sass/pages/_home.scss */
+/* line 407, sass/pages/_home.scss */
 .home-page .awards-and-mentions .awards-and-mentions-content {
   padding: 1em;
 }
-/* line 406, sass/pages/_home.scss */
+/* line 410, sass/pages/_home.scss */
 .home-page .awards-and-mentions .awards-and-mentions-logos {
   padding: 1em;
 }
 @media (max-width: 768px) {
-  /* line 406, sass/pages/_home.scss */
+  /* line 410, sass/pages/_home.scss */
   .home-page .awards-and-mentions .awards-and-mentions-logos {
     max-height: 20em;
   }
 }
-/* line 412, sass/pages/_home.scss */
+/* line 416, sass/pages/_home.scss */
 .home-page .awards-and-mentions .awards-button {
   color: white;
   background-color: #e84d0e;
   border-color: #e84d0e;
 }
-/* line 419, sass/pages/_home.scss */
+/* line 423, sass/pages/_home.scss */
 .home-page .tweetchat-section {
   min-height: 20em;
 }
-/* line 422, sass/pages/_home.scss */
+/* line 426, sass/pages/_home.scss */
 .home-page .tweetchat-section .tweetchat-logo, .home-page .tweetchat-section .tweetchat_text {
   padding: 1em;
 }
-/* line 425, sass/pages/_home.scss */
+/* line 429, sass/pages/_home.scss */
 .home-page .tweetchat-section .tweetchat-button {
   color: white;
   background-color: #e84d0e;
   border-color: #e84d0e;
 }
 @media (max-width: 320px) {
-  /* line 433, sass/pages/_home.scss */
+  /* line 437, sass/pages/_home.scss */
   .home-page img {
     max-width: auto;
     max-height: 480px;
@@ -9107,76 +9113,136 @@ li.menu-item .active > a:focus {
 /** _blog.scss */
 /* line 2, sass/pages/_blog.scss */
 .blog-page {
-  margin-left: 3em;
-  margin-right: 3em;
+  padding-top: 3em;
 }
 @media (max-width: 320px) {
   /* line 2, sass/pages/_blog.scss */
   .blog-page {
-    margin-left: .5em;
-    margin-right: .5em;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    width: 95%;
   }
   /* line 9, sass/pages/_blog.scss */
-  .blog-page img {
-    max-width: 288px;
+  .blog-page .grid-div {
+    margin-bottom: 2.5%;
   }
 }
-/* line 13, sass/pages/_blog.scss */
+/* line 14, sass/pages/_blog.scss */
 .blog-page .blog-grid-row {
   margin-bottom: 3em;
 }
-/* line 16, sass/pages/_blog.scss */
-.blog-page .grid-div {
-  height: 14em;
-  display: inline-block;
-  display: inline-flex;
-  margin: 0px;
+/* line 18, sass/pages/_blog.scss */
+.blog-page .gird-div {
+  overflow: hidden;
+  height: 18em;
   text-align: center;
-}
-/* line 25, sass/pages/_blog.scss */
-.blog-page .grid-img-text-blocks-wrapper {
-  height: 10em;
-  display: block;
-  position: absolute;
-}
-/* line 31, sass/pages/_blog.scss */
-.blog-page .grid-img-block {
   display: inline-block;
   display: inline-flex;
-  margin: 0px;
-  margin-bottom: 3px;
-  padding: 0px;
 }
-/* line 38, sass/pages/_blog.scss */
+/* line 26, sass/pages/_blog.scss */
+.blog-page .grid-div-background {
+  width: 100%;
+  height: 100%;
+}
+/* line 32, sass/pages/_blog.scss */
+.blog-page .grid-img-text-blocks-wrapper {
+  width: 100%;
+  display: block;
+}
+/* line 40, sass/pages/_blog.scss */
+.blog-page .grid-post-link {
+  width: 100%;
+}
+/* line 43, sass/pages/_blog.scss */
 .blog-page .grid-div:hover .grid-hover-text {
   visibility: visible;
   display: inline;
   z-index: 2;
 }
-/* line 43, sass/pages/_blog.scss */
+/* line 48, sass/pages/_blog.scss */
+.blog-page .grid-div:hover .grid-post-link {
+  text-decoration: none;
+}
+/* line 51, sass/pages/_blog.scss */
 .blog-page .grid-hover-text {
-  display: none;
-  visibility: hidden;
-  position: absolute;
+  width: 94%;
   height: 10em;
+  visibility: hidden;
+  display: none;
   padding: 1em;
-  font-weight: bold;
-  font-size: 18px;
+  position: absolute;
+  font-weight: 400;
+  font-size: 1.4em;
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.5);
 }
-/* line 55, sass/pages/_blog.scss */
-.blog-page .grid-post-img {
-  height: 10em;
+/* line 64, sass/pages/_blog.scss */
+.blog-page .grid-img-block {
+  width: 100%;
+  height: 14em;
+  display: inline-block;
+  display: inline-flex;
 }
-/* line 60, sass/pages/_blog.scss */
+/* line 70, sass/pages/_blog.scss */
+.blog-page .grid-img-block .grid-post-img {
+  width: 100%;
+  height: 14em;
+}
+/* line 75, sass/pages/_blog.scss */
+.blog-page .grid-text-block {
+  width: 100%;
+  height: 4em;
+}
+/* line 79, sass/pages/_blog.scss */
+.blog-page .grid-text-block .grid-text {
+  width: 100%;
+  height: 4em;
+  color: #000000;
+  font-size: 1.4em;
+  font-weight: 800;
+}
+/* line 87, sass/pages/_blog.scss */
 .blog-page .grid-text-social-icons {
-  height: 5em !important;
-  position: relative;
+  padding-left: 1em;
+  padding-bottom: 1em;
   text-align: left;
-  margin: 0px;
-  padding: 0px;
-  top: 10em;
+  font-size: .9em;
+}
+/* line 92, sass/pages/_blog.scss */
+.blog-page .grid-text-social-icons .social-icon {
+  text-align: center;
+  color: white;
+  background-color: #e84d0e;
+  width: 1.3em;
+  height: 1.3em;
+  padding-top: 1%;
+}
+/* line 100, sass/pages/_blog.scss */
+.blog-page .grid-text-social-icons .social-icon:hover {
+  color: #e84d0e;
+  background-color: white;
+}
+/* line 105, sass/pages/_blog.scss */
+.blog-page .grid-blog-pagination-block {
+  text-align: center;
+}
+/* line 108, sass/pages/_blog.scss */
+.blog-page .grid-blog-pagination {
+  color: #000000;
+  display: inline-block;
+  padding: 5px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+/* line 115, sass/pages/_blog.scss */
+.blog-page .grid-blog-pagination-left > a {
+  text-decoration: none;
+  color: #000000;
+}
+/* line 119, sass/pages/_blog.scss */
+.blog-page .grid-blog-pagination-right > a {
+  text-decoration: none;
+  color: #000000;
 }
 
 /**widgets scss*/
@@ -9258,19 +9324,18 @@ footer {
   padding-top: 1%;
 }
 
-/* line 28, sass/style.scss */
+/* line 27, sass/style.scss */
 html, body {
-  width: 100%;
-  height: 100%;
-  overflow-x: auto;
+  width: auto !important;
+  overflow-x: hidden !important;
 }
 
-/* line 35, sass/style.scss */
+/* line 31, sass/style.scss */
 #wpstats {
   display: none;
 }
 
-/* line 38, sass/style.scss */
+/* line 34, sass/style.scss */
 body {
   background: white;
   font-family: "Proxima-Nova", sans-serif;
@@ -9281,25 +9346,25 @@ body {
 }
 
 @media (max-width: 400px) {
-  /* line 49, sass/style.scss */
+  /* line 45, sass/style.scss */
   body {
     font-size: 10px;
   }
 }
 @media (max-width: 550px) {
-  /* line 55, sass/style.scss */
+  /* line 51, sass/style.scss */
   body {
     font-size: 12px;
   }
 }
 @media (max-width: 767px) {
-  /* line 60, sass/style.scss */
+  /* line 56, sass/style.scss */
   body {
     font-size: 14px;
   }
 }
 @media (min-width: 768px) {
-  /* line 65, sass/style.scss */
+  /* line 61, sass/style.scss */
   body {
     font-size: 18px;
   }

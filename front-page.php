@@ -6,8 +6,10 @@ $titan = TitanFramework::getInstance( 'lolly' );
 include("header.php");
 ?>
 <!-- body tag opened at the end of header -->
-<div class="container-fluid home-page">
+<div class="container-fluid">
 	<?php include('includes/page-partials/page-header.php'); ?>
+</div>
+<div class="container-fluid home-page">
 	<div class="row">
 		<div class="col-sm-12">
 			<div class="featured-fade-slideshow">

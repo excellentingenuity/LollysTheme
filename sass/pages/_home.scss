@@ -1,5 +1,9 @@
 .home-page {
 
+	@media(max-width:320px){
+		overflow: hidden;
+	}
+
 	.featured-fade-slideshow {
 		min-height: 29em;
 	}
