@@ -74,15 +74,7 @@ include("header.php");
  				echo '</div>';
 					 				
  				echo '<div class="grid-text-social-icons">';
- 				echo '<p style="text-align:left;">
-					<a href="';
-				echo the_permalink();
-				echo '?share=facebook&amp;nb=1" target="_blank"><i class="fa fa-facebook social-icon"></i></a>
-					<a href="https://twitter.com/LollyDaskal" target="_blank"><i class="fa fa-twitter social-icon"></i></a>
-					<a href="http://www.linkedin.com/in/lollydaskal" target="_blank"><i class="fa fa-linkedin social-icon"></i></a>
-					<a href="https://plus.google.com/104812637882394423546" target="_blank"><i class="fa fa-google-plus social-icon"></i></a>
-					<a href="http://www.pinterest.com/lollydaskal" target="_blank"><i class="fa fa-pinterest social-icon"></i></a>
-					</p>';
+ 				include("includes/page-partials/social-share.php");
  				echo '</div>'; //end of social icons
 
  				echo '</div></div>';//gird-div and grid-div-background

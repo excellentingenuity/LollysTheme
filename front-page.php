@@ -149,7 +149,7 @@ include("header.php");
     					<?php
 							//this is normally where the WP Loop would be. Instead we add a loop to get pods stuff 
 		 					 $params = array(     
-							    'limit' => 3 
+							    'limit' => 10 
 							    ); 
 		 					 $mypod = pods('testimonial');
 		 					 $mypod->find($params);      
