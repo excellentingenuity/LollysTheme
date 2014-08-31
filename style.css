@@ -8258,7 +8258,7 @@ button.close {
 }
 
 /* line 7, sass/partials/_color_classes.scss */
-.grey-background, .comments-container, .home-page .testimonials-row, .home-page .tweetchat-section {
+.grey-background, .comments-ober-container, .home-page .testimonials-row, .home-page .tweetchat-section {
   -webkit-box-shadow: #cfcfcf 0px -80px 200px 1px inset;
   background-color: whitesmoke;
   box-shadow: #cfcfcf 0px -80px 200px 1px inset;
@@ -8679,106 +8679,111 @@ li.menu-item .active > a:focus {
   content: "\e616";
 }
 
-/* line 1, sass/partials/_comments.scss */
+/* line 4, sass/partials/_comments.scss */
 .comments-container {
   padding-bottom: 3em;
 }
 @media (max-width: 1199px) {
-  /* line 1, sass/partials/_comments.scss */
+  /* line 4, sass/partials/_comments.scss */
   .comments-container {
     padding-left: 2em;
     padding-right: 2em;
   }
 }
-/* line 13, sass/partials/_comments.scss */
+/* line 16, sass/partials/_comments.scss */
 .comments-container .comments-row {
   text-align: left;
 }
-/* line 16, sass/partials/_comments.scss */
+/* line 19, sass/partials/_comments.scss */
 .comments-container a:hover {
   text-decoration: none;
 }
-/* line 19, sass/partials/_comments.scss */
+/* line 22, sass/partials/_comments.scss */
 .comments-container .comment-list {
   margin-bottom: 2em;
 }
-/* line 22, sass/partials/_comments.scss */
+/* line 25, sass/partials/_comments.scss */
 .comments-container .comments-title {
   text-transform: none;
 }
-/* line 25, sass/partials/_comments.scss */
+/* line 28, sass/partials/_comments.scss */
 .comments-container li.comment, .comments-container li.pingback {
   font-size: 1.1em;
   list-style-type: none;
 }
-/* line 32, sass/partials/_comments.scss */
+/* line 35, sass/partials/_comments.scss */
+.comments-container li.comment .commentmetadata, .comments-container li.pingback .commentmetadata {
+  display: none;
+}
+/* line 39, sass/partials/_comments.scss */
 .comments-container li.comment .comment-body, .comments-container li.pingback .comment-body {
   background-color: white;
 }
-/* line 34, sass/partials/_comments.scss */
+/* line 41, sass/partials/_comments.scss */
 .comments-container li.comment .comment-body .comment-author, .comments-container li.comment .comment-body .comment-meta, .comments-container li.pingback .comment-body .comment-author, .comments-container li.pingback .comment-body .comment-meta {
   background-color: transparent;
 }
-/* line 42, sass/partials/_comments.scss */
+/* line 49, sass/partials/_comments.scss */
 .comments-container li.comment ol.children, .comments-container li.pingback ol.children {
   padding-left: 0px;
 }
-/* line 44, sass/partials/_comments.scss */
+/* line 51, sass/partials/_comments.scss */
 .comments-container li.comment ol.children li, .comments-container li.pingback ol.children li {
   margin-left: 0px;
   padding-left: 0px;
   width: 102%;
 }
 @media (max-width: 768px) {
-  /* line 44, sass/partials/_comments.scss */
+  /* line 51, sass/partials/_comments.scss */
   .comments-container li.comment ol.children li, .comments-container li.pingback ol.children li {
     width: 100%;
     padding-right: 0px;
   }
 }
-/* line 57, sass/partials/_comments.scss */
+/* line 64, sass/partials/_comments.scss */
 .comments-container .avatar {
   height: 2em;
   width: 2em;
 }
-/* line 68, sass/partials/_comments.scss */
+/* line 75, sass/partials/_comments.scss */
 .comments-container .form-allowed-tags code {
   color: #000000;
   background-color: inherit;
 }
-/* line 74, sass/partials/_comments.scss */
+/* line 80, sass/partials/_comments.scss */
+.comments-container .comment-reply-title {
+  text-transform: none;
+}
+/* line 83, sass/partials/_comments.scss */
 .comments-container .comment-respond {
   text-align: left;
   padding: 2em;
 }
 @media (max-width: 768px) {
-  /* line 74, sass/partials/_comments.scss */
+  /* line 83, sass/partials/_comments.scss */
   .comments-container .comment-respond {
     width: 90%;
   }
 }
-/* line 82, sass/partials/_comments.scss */
+/* line 91, sass/partials/_comments.scss */
 .comments-container .form-submit > input#submit {
   display: none !important;
 }
-/* line 85, sass/partials/_comments.scss */
+/* line 94, sass/partials/_comments.scss */
 .comments-container .form-allowed-tags {
-  text-align: left;
+  display: none;
 }
-/* line 90, sass/partials/_comments.scss */
+/* line 99, sass/partials/_comments.scss */
 .comments-container #subscribe-label,
 .comments-container #subscribe-blog-label {
   font-weight: 400;
 }
-/* line 97, sass/partials/_comments.scss */
-.comments-container .comment-form-author,
-.comments-container .comment-form-email,
-.comments-container .comment-form-url,
-.comments-container #comment {
-  width: 50%;
+/* line 103, sass/partials/_comments.scss */
+.comments-container .comment-form-comment label {
+  display: none;
 }
 @media (max-width: 768px) {
-  /* line 97, sass/partials/_comments.scss */
+  /* line 110, sass/partials/_comments.scss */
   .comments-container .comment-form-author,
   .comments-container .comment-form-email,
   .comments-container .comment-form-url,
@@ -8786,7 +8791,7 @@ li.menu-item .active > a:focus {
     width: 90%;
   }
 }
-/* line 103, sass/partials/_comments.scss */
+/* line 116, sass/partials/_comments.scss */
 .comments-container .comment-submit-btn {
   color: white;
   background-color: #e84d0e;
@@ -9678,7 +9683,7 @@ a, a:hover,
 /* line 33, sass/pages/_blog.scss */
 .blog-page .gird-div {
   overflow: hidden;
-  height: 17em;
+  height: 28em;
   text-align: center;
   display: inline-block;
   display: inline-flex;
@@ -9706,24 +9711,24 @@ a, a:hover,
 /* line 61, sass/pages/_blog.scss */
 .blog-page .grid-img-block {
   width: 100%;
-  height: 10em;
+  height: 18em;
   display: inline-block;
   display: inline-flex;
 }
 /* line 67, sass/pages/_blog.scss */
 .blog-page .grid-img-block .grid-post-img {
   width: 100%;
-  height: 10em;
+  height: 18em;
 }
 /* line 72, sass/pages/_blog.scss */
 .blog-page .grid-text-block {
   width: 100%;
-  height: 5em;
+  height: 8em;
 }
 /* line 76, sass/pages/_blog.scss */
 .blog-page .grid-text-block .grid-text {
   width: 100%;
-  height: 4em;
+  height: 6em;
   color: #000000;
   font-size: 1.2em;
   font-weight: 800;
@@ -9743,8 +9748,8 @@ a, a:hover,
   text-align: center;
   color: white;
   background-color: rgba(194, 194, 194, 0.73);
-  width: 1.1em;
-  height: 1.1em;
+  width: 1.2em;
+  height: 1.2em;
 }
 /* line 99, sass/pages/_blog.scss */
 .blog-page .grid-text-social-icons .social-icon:hover {
@@ -9801,6 +9806,26 @@ a, a:hover,
 /* line 16, sass/pages/_single_post.scss */
 .post-container .post-content {
   text-align: left;
+}
+/* line 19, sass/pages/_single_post.scss */
+.post-container .social-icons {
+  display: inline-block;
+  height: 1.2em;
+  margin-bottom: 1em;
+}
+/* line 23, sass/pages/_single_post.scss */
+.post-container .social-icons .social-icon {
+  text-align: center;
+  color: white;
+  background-color: #e84d0e;
+  width: 1.3em;
+  height: 1.3em;
+  padding-top: 1%;
+}
+/* line 31, sass/pages/_single_post.scss */
+.post-container .social-icons .social-icon:hover {
+  color: #e84d0e;
+  background-color: white;
 }
 
 /**widgets scss*/

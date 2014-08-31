@@ -1,5 +1,8 @@
-.comments-container {
+.comments-ober-container {
 	@extend .grey-background;
+}
+.comments-container {
+	
 	padding-bottom: 3em;
 	@media(max-width: $screen-md-max){
 		padding-left:2em;
@@ -28,6 +31,10 @@
 		@extend .col-sm-12;
 		font-size: 1.1em;
 		list-style-type: none;
+		
+		.commentmetadata {
+			display:none;
+		}
 
 		.comment-body {
 			@extend blockquote;
@@ -70,7 +77,9 @@
 			background-color: inherit;
 		}
 	}
-	
+	.comment-reply-title {
+		text-transform: none;
+	}
 	.comment-respond {
 		@extend .pull-left;
 		text-align: left;
@@ -83,22 +92,26 @@
 		display: none !important;
 	}
 	.form-allowed-tags {
-		text-align: left;
+		display: none;
 	}	
 	
 	#subscribe-label,
 	#subscribe-blog-label {
 		font-weight: 400;
 	}
-
+	.comment-form-comment {
+		label {
+			display:none;
+		}
+	}
 	.comment-form-author,
 	.comment-form-email,
 	.comment-form-url,
 	#comment {
-    	width: 50%;
     	@media (max-width:$screen-sm-min){
 			width:90%
 		}
+
 	}
 	.comment-submit-btn {
 		color: $primary-color;

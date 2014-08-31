@@ -29,12 +29,6 @@ include("header.php");
 									<div class="post-content">
 										<?php the_content(); ?>
 									</div>
-									<div class="social-icons">
-			 						<?php include("includes/page-partials/social-share.php"); ?>
-			 						</div>
-									<div class="related-content-container">
-										<?php //echo do_shortcode( '[jetpack-related-posts]' ); ?>
-									</div>
 								</div>
 							</div>
 			</div>
@@ -42,12 +36,7 @@ include("header.php");
 	</div>
 </div>
 								
-	<?php
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) {
-				comments_template();
-			}
-	?>
+	
 
 		<?php endwhile; ?>
 	<?php endif; ?>

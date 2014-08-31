@@ -123,7 +123,7 @@ function bootstrap3_comment_form( $args ) {
 }
 add_action('comment_form', 'bootstrap3_comment_button' );
 function bootstrap3_comment_button() {
-    echo '<button class="btn btn-default comment-submit-btn" type="submit">' . __( 'Submit' ) . '</button>';
+    echo '<button class="btn btn-default comment-submit-btn" type="submit">' . __( 'Leave comment' ) . '</button>';
 }
 /*-----------------------------------------------------------------------------------*/
 /* 1. Lollys Shortcodes  */

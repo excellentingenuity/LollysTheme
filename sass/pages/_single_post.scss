@@ -16,5 +16,22 @@
 	.post-content {
 		text-align: left;
 	}
+	.social-icons {
+		display: inline-block;
+		height:1.2em;
+		margin-bottom: 1em;
+		.social-icon {
+			text-align: center;
+			color:$primary-color;
+			background-color: $highlight-color;
+			width: 1.3em;
+			height: 1.3em;
+			padding-top: 1%;
+		}
+		.social-icon:hover {
+			color:$highlight-color;
+			background-color: $primary-color;
+		}
+	}
 
 }
