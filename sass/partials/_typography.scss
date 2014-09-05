@@ -5,16 +5,19 @@
 	text-decoration: none;
 }
 h1 {
-	font-size: 1.8em;
+	font-size: 2.6em;
 	@extend .uppercase;
+	font-weight: 900;
 }
 h2 {
-	font-size: 1.6em;
+	font-size: 2em;
+	font-weight: 900;
 	@extend .uppercase;
 }
 h3 {
 	@extend .uppercase;
-	font-size: 1.4
+	font-size: 1.8;
+	font-weight: 900;
 }
 h4 {
 	@extend .uppercase;
@@ -35,6 +38,7 @@ h6 {
 		width: 1.3em;
 		height: 1.3em;
 		padding-top: 1%;
+		border-radius: 10%;
 	}
 	.social-icon:hover {
 		color:$highlight-color;

@@ -1,6 +1,7 @@
 /**single_post.scss*/
 .post-container {
 	padding-top: 3em;
+	padding-bottom: 3em;
 	@media(max-width: 320px){
 		margin-left: 2.5%;
 		margin-right: 2.5%;
@@ -13,25 +14,19 @@
 	img {
 		width: 100%;
 	}
+	.post-header {
+		text-transform: none;
+	}
 	.post-content {
 		text-align: left;
+
 	}
-	.social-icons {
-		display: inline-block;
-		height:1.2em;
-		margin-bottom: 1em;
-		.social-icon {
-			text-align: center;
-			color:$primary-color;
-			background-color: $highlight-color;
-			width: 1.3em;
-			height: 1.3em;
-			padding-top: 1%;
-		}
-		.social-icon:hover {
-			color:$highlight-color;
-			background-color: $primary-color;
-		}
+	.sharedaddy {
+		padding-top: 1em;
+	}
+	.post-tags {
+		text-align: left;
+		padding-bottom: 1em;
 	}
 
 }

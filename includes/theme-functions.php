@@ -125,53 +125,10 @@ add_action('comment_form', 'bootstrap3_comment_button' );
 function bootstrap3_comment_button() {
     echo '<button class="btn btn-default comment-submit-btn" type="submit">' . __( 'Leave comment' ) . '</button>';
 }
-/*-----------------------------------------------------------------------------------*/
-/* 1. Lollys Shortcodes  */
-/*-----------------------------------------------------------------------------------*/
 
-// Enable shortcodes in widget areas
-//add_filter( 'widget_text', 'do_shortcode' );
+/** add image support */
+add_theme_support( 'post-thumbnails' );
 
-
-// Replace WP autop formatting
-if ( ! function_exists( 'lolly_remove_wpautop' ) ) {
-	function lolly_remove_wpautop( $content ) {
-		$content = do_shortcode( shortcode_unautop( $content ) );
-		$content = preg_replace( '#^<\/p>|^<br \/>|<p>$#', '', $content );
-		return $content;
-	} // End lolly_remove_wpautop()
-}
-/*-----------------------------------------------------------------------------------*/
-/* 11. Quote - quote
-/*-----------------------------------------------------------------------------------*/
-/*
-
-Optional arguments:
- - style: boxed
- - float: left, right
-
-*/
-function lolly_shortcode_quote($atts, $content = null) {
-   	extract(shortcode_atts(array(	'style' => '',
-   									'float' => ''), $atts));
-   $class = '';
-   if ( $style )
-   		$class .= ' '.$style;
-   if ( $float )
-   		$class .= ' '.$float;
-		
-	$twitContent = lolly_remove_wpautop($content);
-	$twitContent = strip_tags($twitContent);
-
-      return '<div class="lolly-sc-quote' . $class . '"><blockquote>' . lolly_remove_wpautop($content) . 
-      '&nbsp;<a class="quote-share-a" target="_blank" class="popup" href="https://twitter.com/intent/tweet?source=tweetbutton&text=' . $twitContent .
-       '&via=lollydaskal"><i class="fa fa-twitter social-icon"></i></a>
-		<a class="quote-share-a" target="_blank" class="popup" href="https://www.facebook.com/sharer/sharer.php?u='. get_permalink().'&t=' . lolly_remove_wpautop( $content ) . '"
-		onclick="javascript:window.open(this.href, "", "menubar=no,toolbar=no,resizeable=yes,scrollbars=yes,height=300,width=600");return false;"
-   		title="Share on Facebook">
-   		<i class="fa fa-facebook social-icon"></i></a></blockqoute></div>';
-}
-add_shortcode( 'quote', 'lolly_shortcode_quote' );
 
 /** Register Menu Support in the theme */
 function register_my_menus() {
@@ -222,7 +179,7 @@ add_action( 'widgets_init', 'register_widgets' );
 
 function lolly_load_scripts() {
 	$titan = TitanFramework::getInstance('lolly');
-	wp_enqueue_script('lolly-backstretch-js', get_template_directory_uri() . '/js/jquery.backstretch.js', array('jquery'), '2.0.4', true);
+	wp_enqueue_script('lolly-backstretch-js', get_template_directory_uri() . '/js/jquery.backstretch.min.js', array('jquery'), '2.0.4', true);
 	wp_enqueue_script('lolly-wow-js', get_template_directory_uri() . '/js/wow.min.js', array('jquery'), '0.1.9', true);
 	wp_enqueue_script('lolly-maps-api-js', '//maps.google.com/maps/api/js?sensor=true', array('jquery'), null, true);
 	wp_enqueue_script('lolly-ui-maps-js', get_template_directory_uri() . '/js/jquery.ui.map.min.js', array('jquery'), null, true);

@@ -15,7 +15,7 @@ include("header.php");
 </div>
 <div class="blog-ober-container container-fluid">
 	<div class="blog-ober-row row">
-		<div class="blog-ober-content-section col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+		<div class="blog-ober-content-section col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
 			<div class="container-fluid blog-page">
 	
 				<?php

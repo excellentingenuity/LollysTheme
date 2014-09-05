@@ -5,7 +5,7 @@
 	echo '?share=facebook&amp;nb=1" target="_blank"><i class="fa fa-facebook social-icon"></i></a>
 	<a href="';
 	echo the_permalink();
-	echo '?share=twitter&amp;nb=1" target="_blank"><i class="fa fa-twitter social-icon"></i></a>
+	echo '?share=twitter&amp;nb=1" target="_blank"><i class="fa fa-tumblr social-icon"></i></a>
 	<a href="';
 	echo the_permalink();
 	echo '?share=linkedin&amp;nb=1" target="_blank"><i class="fa fa-linkedin social-icon"></i></a>

@@ -25,6 +25,8 @@
 @import "pages/home.scss";
 @import "pages/blog.scss";
 @import "pages/single_post.scss";
+@import "pages/generic_page.scss";
+@import "pages/section_landing.scss";
 @import "partials/widgets.scss";
 
 @import "partials/footer.scss";
@@ -56,18 +58,18 @@ a:visited {
 
 @media (max-width: 400px) {
 	body {
-		font-size: ($font-size - 8);
+		font-size: ($font-size);
 	}
 }
 
 @media (max-width: 550px) {
 	body {
-		font-size: ($font-size - 6);
+		font-size: ($font-size);
 	}
 }
 @media (max-width: 767px) {
 	body {
-		font-size: ($font-size - 4);
+		font-size: ($font-size);
 	}
 }
 @media (min-width: 768px){

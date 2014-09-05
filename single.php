@@ -29,9 +29,9 @@ include("header.php");
 									<div class="post-content">
 										<?php the_content(); ?>
 									</div>
-									<div class="social-icons">
-			 						<?php include("includes/page-partials/social-share.php"); ?>
-			 						</div>
+									<div class="post-tags">
+										<p><?php the_tags(); ?></p>
+									</div>
 									<div class="related-content-container">
 										<?php //echo do_shortcode( '[jetpack-related-posts]' ); ?>
 									</div>

@@ -9,15 +9,17 @@
 .top-navigation-menu {
 	text-align: center;
 	text-transform: uppercase;
+	//padding-top: 1.1em;
+	//padding-bottom: 1.1em;
 }
 .menu-item {
 	float: none;
 }
 li.menu-item > a {
-	font-size: 1.2em;
-	font-family: "proxima-nova-alt-n1","proxima-nova-alt",sans-serif;
+	font-size: 1.1em;
+	font-family: $font;
 	font-style: normal;
-	font-weight: 100;
+	font-weight: 400;
 	color: #000000;
 }
 li.menu-item > a:hover {
