@@ -167,6 +167,22 @@ function register_widgets() {
 		'after_title' => '</h3>',
 	) );
 	register_sidebar( array(
+		'name' => 'Footer Left 2nd Row',
+		'id' => 'footer_left_2',
+		'before_widget' => '<div class="footer-left">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="footer-left-title">',
+		'after_title' => '</h3>',
+	) );	
+	register_sidebar( array(
+		'name' => 'Footer Right 2nd Row',
+		'id' => 'footer_right_2',
+		'before_widget' => '<div class="footer-right">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="footer-right-title">',
+		'after_title' => '</h3>',
+	) );
+	register_sidebar( array(
 		'name' => 'Social Icons',
 		'id' => 'footer_bar_social_icons',
 		'before_widget' => '<div class="social-icons">',

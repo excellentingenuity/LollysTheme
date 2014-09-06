@@ -1,4 +1,27 @@
 .home-page {
+	h1 {
+		font-size: 2.6em;
+		@extend .uppercase;
+		font-weight: 900;
+	}
+	h2 {
+		font-size: 2em;
+		font-weight: 900;
+		@extend .uppercase;
+	}
+	h3 {
+		@extend .uppercase;
+		
+	}
+	h4 {
+		@extend .uppercase;
+	}
+	h5 {
+		@extend .uppercase;
+	}
+	h6 {
+		@extend .uppercase;
+	}
 
 	@media(max-width:320px){
 		overflow: hidden;
@@ -8,7 +31,7 @@
 		min-height: 28em;
 	}
 	.header_slideshow_text {
-		.position: relative;
+		position: relative;
 		margin-top: 0px;
 		padding-top:2.6em;
 		@extend .text-right;
@@ -22,17 +45,19 @@
 		}
 	}
 	.header_slideshow_text2 {
-		.position: relative;
-		margin-top: 0px;
+		position: relative;
+		top: -1.3em;
 		@extend .text-right;
+		h2 {
+			margin-bottom: 1.3em;
+		}
 		padding-right:22%;
-		font-weight: 900;
-		font-size: 2.6em;
 		@extend .black-text;
 		@media (max-width: $screen-sm-min){
 			text-align: center;
 			padding-right: 0px;
 		}
+
 	}
 	.header_slideshow_link {
 		@extend .black-text;
@@ -60,6 +85,7 @@
 			font-weight: 400;
 			margin-bottom:2em;
 			text-transform: none; 
+			margin-left: 2.8em;
 		}
 		.coach-block {
 			@extend .text-right;
@@ -125,7 +151,7 @@
 		.speaker_with_heart_text {
 			width: 100%;
 			padding-left: 2em;
-			padding-right: 2em;
+			padding-right: 22%;
 		}
 		
 		.all-services-link-div{
@@ -309,7 +335,7 @@
 		min-height: 27em;
 		.testimonials {
 			padding-top: 5.4em;
-			font-size: 1.1em;
+			font-size: 1em;
 			.testimonial-text {
 				text-align: left;
 				padding-left: 12em;
@@ -334,6 +360,16 @@
 				.testimonial-author {
 					padding-left: 19em;
 					padding-right: 19em;
+				}
+			}
+			@media (max-width: $screen-sm-min){
+				.testimonial-text {
+					padding-left: 1em;
+					padding-right: 1em;
+				}
+				.testimonial-author {
+					padding-left: 1em;
+					padding-right: 1em;
 				}
 			}
 		}
@@ -451,12 +487,12 @@
 		}
 	}
 	.awards-and-mentions { 
-		min-height: 29em;
+		height: 25em;
 		
 		margin-bottom: 4.5em;
 		.awards-and-mentions-content {
 			
-			max-height: 25em;
+			max-height: 20em;
 			color: #000000;
 			.awards-and-mentions-text {
 				padding:1.2em;
@@ -475,7 +511,7 @@
 			border-radius: 50%;
 			height: 7em;
 			width: 7em;
-			top:3.8em;
+			top:1.8em;
 			position: relative;
 		}
 		.awards-button:hover {
@@ -500,6 +536,10 @@
 			
 				padding-left: 19em;
 				padding-right: 19em;
+			}
+			@media (max-width: $screen-sm-min){
+				padding-left: 1em;
+				padding-right: 1em;
 			}
 				
 		}
@@ -544,5 +584,9 @@
 			max-height: 480px;
 		}
 		
+	}
+
+	.home-footer {
+		text-align: left;
 	}
 }

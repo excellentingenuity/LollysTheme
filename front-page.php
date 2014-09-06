@@ -15,7 +15,7 @@ include("header.php");
 			<div class="featured-fade-slideshow">
 				<a href="<?php echo get_site_url(); ?>" class="header_slideshow_link">
 					<h1 class="header_slideshow_text"><?php echo $titan->getOption('header_slider_text');?></h1>
-					<h1 class="header_slideshow_text2"><?php echo $titan->getOption('header_slider_text2');?></h1>
+					<div class="header_slideshow_text2"><?php echo $titan->getOption('header_slider_text2');?></div>
 				</a>
 			</div>
 		</div>
@@ -278,7 +278,7 @@ include("header.php");
 	</div>
 	<div class="row">
 		<div class="tweetchat-section">
-			<img class="col-md-6 col-sm-6 tweetchat-logo" src="<?php echo get_image_source_from_titan_option($titan, 'tweetchat_logo');?>"/>
+			<!--<img class="col-md-6 col-sm-6 tweetchat-logo" src="<?php echo get_image_source_from_titan_option($titan, 'tweetchat_logo');?>"/> -->
 			<div class="col-md-6 col-sm-6 tweetchat-content">
 				<div class="tweetchat_text">
 					<?php echo $titan->getOption('tweetchat_text');?>
@@ -290,11 +290,21 @@ include("header.php");
 	</div>
 	<div class="row">
 		<div class="home-footer">
-			<div class="col-sm-5 col-sm-offset-1 contact-us">
+			<div class="col-sm-5 col-sm-offset-1">
 				<?php dynamic_sidebar( 'footer_left_1' ); ?>
 			</div>
-			<div class="col-sm-5 col-sm-offset-1static-map">
+			<div class="col-sm-5 col-sm-offset-1">
 				<?php dynamic_sidebar( 'footer_right_1' ); ?>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="home-footer">
+			<div class="col-sm-5 col-sm-offset-1">
+				<?php dynamic_sidebar( 'footer_left_2' ); ?>
+			</div>
+			<div class="col-sm-5 col-sm-offset-1">
+				<?php dynamic_sidebar( 'footer_right_2' ); ?>
 			</div>
 		</div>
 	</div>

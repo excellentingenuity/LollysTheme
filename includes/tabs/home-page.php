@@ -15,6 +15,7 @@
 			'id'   => 'header_slider_text2',
 			'type' => 'editor',
 			'wpauto' => false,
+			'css' => 'body {background-color: #EBEBEB;}',
 			'desc' => 'Header Slideshow Message Text 2nd Line, any styling you apply here will ovveride the default sytles'
 		));
 

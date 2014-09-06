@@ -10,6 +10,9 @@
 
 -------------------------------------------------------------------------------------- */
 @import "bootstrap/variables.scss";
+
+$grid-float-breakpoint: 767px;
+
 @import "bootstrap.scss";
 @import "partials/lollysthemevariables.scss";
 @import "partials/page_structure.scss";
@@ -56,24 +59,9 @@ a:visited {
 }
 
 
-@media (max-width: 400px) {
-	body {
-		font-size: ($font-size);
-	}
+@media (max-width: $screen-sm-max){
+	font-size: $font-size - 4;
 }
-
-@media (max-width: 550px) {
-	body {
-		font-size: ($font-size);
-	}
-}
-@media (max-width: 767px) {
-	body {
-		font-size: ($font-size);
-	}
-}
-@media (min-width: 768px){
-	body {
-		font-size: $font-size;
-	}
+@media (max-width: $screen-sm-min){
+	font-size: $font-size - 8;
 }
