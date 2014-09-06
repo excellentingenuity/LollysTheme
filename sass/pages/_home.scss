@@ -39,10 +39,7 @@
 		font-weight: 900;
 		font-size: 2.6em;
 		@extend .black-text;
-		@media (max-width: $screen-sm-min){
-			text-align: center;
-			padding-right: 0px;
-		}
+		
 	}
 	.header_slideshow_text2 {
 		position: relative;
@@ -53,10 +50,7 @@
 		}
 		padding-right:22%;
 		@extend .black-text;
-		@media (max-width: $screen-sm-min){
-			text-align: center;
-			padding-right: 0px;
-		}
+		
 
 	}
 	.header_slideshow_link {
@@ -487,16 +481,14 @@
 		}
 	}
 	.awards-and-mentions { 
-		height: 25em;
+		min-height: 19em;
 		
 		margin-bottom: 4.5em;
 		.awards-and-mentions-content {
+			min-height: 19em;
 			
-			max-height: 20em;
 			color: #000000;
-			.awards-and-mentions-text {
-				padding:1.2em;
-			}
+			
 		}
 		
 		
@@ -511,7 +503,7 @@
 			border-radius: 50%;
 			height: 7em;
 			width: 7em;
-			top:1.8em;
+			bottom:-3.8em;
 			position: relative;
 		}
 		.awards-button:hover {
@@ -530,12 +522,20 @@
 			padding-left: 12em;
 			padding-right: 12em;
 			overflow: hidden;
-			height: 24.5em;
+			//min-height: 24.5em;
 
 			@media(min-width:$screen-lg-min){
 			
 				padding-left: 19em;
 				padding-right: 19em;
+			}
+			@media(max-width: $screen-md-max){
+				padding-left: 16em;
+				padding-right: 16em;
+			}
+			@media(max-width: $screen-md-min){
+				padding-left:8em;
+				padding-right: 8em;
 			}
 			@media (max-width: $screen-sm-min){
 				padding-left: 1em;

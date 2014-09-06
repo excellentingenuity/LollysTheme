@@ -40,7 +40,7 @@ include("header.php");
 							$img = catch_that_image();
 							
 
-							echo '<div class="col-md-4 col-sm-4 grid-div">';
+							echo '<div class="col-md-4 col-sm-4 col-lg-4 grid-div">';
 							echo '<div class="grid-div-background">';
 							//echo $spacer_class;					
 							echo '<div class="grid-img-text-blocks-wrapper">';
