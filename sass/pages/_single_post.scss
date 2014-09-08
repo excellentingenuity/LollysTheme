@@ -1,32 +1,40 @@
 /**single_post.scss*/
-.post-container {
-	padding-top: 3em;
-	padding-bottom: 3em;
-	@media(max-width: 320px){
-		margin-left: 2.5%;
-		margin-right: 2.5%;
-		width:95%;
-	}
-	@media(max-width: $screen-md-max){
-		padding-left:2em;
-		padding-right: 2em;
-	}
-	img {
-		width: 100%;
-	}
-	.post-header {
-		text-transform: none;
-	}
-	.post-content {
-		text-align: left;
+.post-page {
+	@extend .grey-background;
+
+	.post-container {
+		padding-top: 3em;
+		padding-bottom: 3em;
+
+		@media(max-width: 320px){
+			margin-left: 2.5%;
+			margin-right: 2.5%;
+			width:95%;
+		}
+		@media(max-width: $screen-md-max){
+			padding-left:2em;
+			padding-right: 2em;
+		}
+		.post-block, .post-tags-block, .related-content-container {
+			background-color: $primary-color;
+		}
+		img {
+			width: 100%;
+		}
+		.post-header {
+			text-transform: none;
+		}
+		.post-content {
+			text-align: left;
+
+		}
+		.sharedaddy {
+			padding-top: 1em;
+		}
+		.post-tags {
+			text-align: left;
+			padding-bottom: 1em;
+		}
 
 	}
-	.sharedaddy {
-		padding-top: 1em;
-	}
-	.post-tags {
-		text-align: left;
-		padding-bottom: 1em;
-	}
-
 }

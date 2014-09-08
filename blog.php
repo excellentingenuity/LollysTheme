@@ -33,6 +33,8 @@ include("header.php");
 					$count_posts = $wp_query->post_count;
 					$num_posts = $count_posts - 2;
 					echo '<div class="row blog-grid-row">';
+					echo '<div class="col-sm-10 col-sm-offset-1">';
+					echo '<div class="row">';
 					if(have_posts()) :
 						while(have_posts()) :
 							the_post();
@@ -40,7 +42,7 @@ include("header.php");
 							$img = catch_that_image();
 							
 
-							echo '<div class="col-md-4 col-sm-4 col-lg-4 grid-div">';
+							echo '<div class="col-sm-4 col-md-4 grid-div">';
 							echo '<div class="grid-div-background">';
 							//echo $spacer_class;					
 							echo '<div class="grid-img-text-blocks-wrapper">';
@@ -81,7 +83,9 @@ include("header.php");
 			 					echo '</div>';	
 			 				} else {
 			 					if($i == 2) {
-									echo '</div><div class="row blog-grid-row">';
+									echo '</div></div></div><div class="row blog-grid-row">';
+									echo '<div class="col-sm-10 col-sm-offset-1">';
+									echo '<div class="row">';
 									$i = 0;
 									$j++;
 			 					} else {

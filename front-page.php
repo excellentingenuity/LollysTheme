@@ -185,7 +185,7 @@ include("header.php");
 		</div>
 	</div>
 	<div class="blog-ober-row row">
-		<div class="lower-icon-nav-ober-section col-md-10 col-sm-10">
+		<div class="lower-icon-nav-ober-section col-md-10 col-sm-10 col-xs-12">
 			<div class="row">
 				<div class="col-sm-12">
 					<div class="lower-icon-nav-header">
@@ -196,7 +196,7 @@ include("header.php");
 			</div>
 			<div class="row">
 				<div class="lower-navigation icon-navigation">
-					<div class="col-md-2 col-sm-2 lower-nav-item lower-outer-nav-item-left">
+					<div class="col-md-2 col-sm-2 col-xs-6 lower-nav-item lower-outer-nav-item-left">
 						<a href="<?php echo get_site_url() . '/' . $titan->getOption('icon_nav_link_1');?>" class="lower-nav-icon-link">
 							<i class="icon-development lower-nav-icon"></i>
 							<div class="lower-nav-text-wrapper">
@@ -206,7 +206,7 @@ include("header.php");
 							</div>
 						</a>
 					</div>
-					<div class="col-md-2 col-sm-2 lower-nav-item">
+					<div class="col-md-2 col-sm-2 col-xs-6 lower-nav-item">
 						<a href="<?php echo get_site_url() . '/' . $titan->getOption('icon_nav_link_2');?>" class="lower-nav-icon-link">
 							<i class="icon-consulting lower-nav-icon"></i>
 							<div class="lower-nav-text-wrapper">
@@ -216,7 +216,7 @@ include("header.php");
 							</div>
 						</a>
 					</div>
-					<div class="col-md-2 col-sm-2 lower-nav-item">
+					<div class="col-md-2 col-sm-2 col-xs-6 lower-nav-item">
 						<a href="<?php echo get_site_url() . '/' . $titan->getOption('icon_nav_link_3');?>" class="lower-nav-icon-link">
 							<i class="icon-training lower-nav-icon"></i>
 							<div class="lower-nav-text-wrapper">
@@ -226,7 +226,7 @@ include("header.php");
 							</div>
 						</a>
 					</div>
-					<div class="col-md-2 col-sm-2 lower-nav-item">
+					<div class="col-md-2 col-sm-2 col-xs-6 lower-nav-item">
 						<a href="<?php echo get_site_url() . '/' . $titan->getOption('icon_nav_link_4');?>" class="lower-nav-icon-link">
 							<i class="icon-impact lower-nav-icon"></i>
 							<div class="lower-nav-text-wrapper">
@@ -236,7 +236,7 @@ include("header.php");
 							</div>
 						</a>
 					</div>
-					<div class="col-md-2 col-sm-2 lower-nav-item">
+					<div class="col-md-2 col-sm-2 col-xs-6 lower-nav-item">
 						<a href="<?php echo get_site_url() . '/' . $titan->getOption('icon_nav_link_5');?>" class="lower-nav-icon-link">
 							<i class="icon-culture lower-nav-icon"></i>
 							<div class="lower-nav-text-wrapper">
@@ -246,7 +246,7 @@ include("header.php");
 							</div>
 						</a>
 					</div>
-					<div class="col-md-2 col-sm-2 lower-nav-item lower-outer-nav-item-right">
+					<div class="col-md-2 col-sm-2 col-xs-6 lower-nav-item lower-outer-nav-item-right">
 						<a href="<?php echo get_site_url() . '/' . $titan->getOption('icon_nav_link_6');?>" class="lower-nav-icon-link">
 							<i class="icon-workshop lower-nav-icon"></i>
 							<div class="lower-nav-text-wrapper">
