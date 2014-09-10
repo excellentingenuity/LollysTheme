@@ -94,6 +94,55 @@ function get_top_menu($menu_name)
 	return get_menu($args);
 }
 
+function gravatar_shortcode_register( $atts ) {
+	extract( shortcode_atts( array(
+		'size' => '80',
+		'email' => '',
+		'rating' => 'X',
+		'default' => '',
+		'alt' => '',
+		'title' => '',
+		'align' => '', 
+		'style' => '', 
+		'class' => '', 
+		'id' => '', 
+		'border' => '', 
+		), $atts ) );
+	if ( !$email )
+		return '';
+	
+	// Supported Gravatar parameters
+	$rating  = $rating ? '&r=' . $rating : '';
+	$default = $default ? '&d=' . urlencode( $default ) : '';
+	
+	// Supported HTML attributes for the IMG tag
+	$alt    = $alt ?    ' alt="'    . esc_attr( $alt    ) . '"' : '';
+	$title  = $title ?  ' title="'  . esc_attr( $title  ) . '"' : '';
+	$align  = $align ?  ' align="'  . esc_attr( $align  ) . '"' : '';
+	$style  = $style ?  ' style="'  . esc_attr( $style  ) . '"' : '';
+	$class  = $class ?  ' class="'  . esc_attr( $class  ) . '"' : '';
+	$id     = $id ?     ' id="'     . esc_attr( $id     ) . '"' : '';
+	$border = $border ? ' border="' . esc_attr( $border ) . '"' : '';
+	
+	// Send back the completed tag
+	return '<img src="http://www.gravatar.com/avatar/' . md5( trim( strtolower( $email ) ) ) . '.jpg?s=' . $size . $rating . $default . '" width="' . $size . '" height="' . $size . '"' . $alt . $title . $align . $style . $class . $id . $border . ' />';
+}
+add_shortcode( 'gravatar', 'gravatar_shortcode_register' );
+
+function enable_more_buttons($buttons) {
+  $buttons[] = 'hr';
+  $buttons[] = 'sub';
+  $buttons[] = 'sup';
+  $buttons[] = 'fontselect';
+  $buttons[] = 'fontsizeselect';
+  $buttons[] = 'cleanup';
+  $buttons[] = 'styleselect';
+ 
+  return $buttons;
+}
+add_filter("mce_buttons_3", "enable_more_buttons");
+
+
 add_filter( 'comment_form_default_fields', 'bootstrap3_comment_form_fields' );
 function bootstrap3_comment_form_fields( $fields ) {
     $commenter = wp_get_current_commenter();
@@ -104,11 +153,11 @@ function bootstrap3_comment_form_fields( $fields ) {
     
     $fields   =  array(
         'author' => '<div class="form-group comment-form-author">' . '<label for="author">' . __( 'Name' ) . ( $req ? ' <span class="required">*</span>' : '' ) . '</label> ' .
-                    '<input class="form-control" id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' /></div>',
+                    '<input class="form-control" id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . $aria_req . ' /></div>',
         'email'  => '<div class="form-group comment-form-email"><label for="email">' . __( 'Email' ) . ( $req ? ' <span class="required">*</span>' : '' ) . '</label> ' .
-                    '<input class="form-control" id="email" name="email" ' . ( $html5 ? 'type="email"' : 'type="text"' ) . ' value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . ' /></div>',
+                    '<input class="form-control" id="email" name="email" ' . ( $html5 ? 'type="email"' : 'type="text"' ) . ' value="' . esc_attr(  $commenter['comment_author_email'] ) . $aria_req . ' /></div>',
         'url'    => '<div class="form-group comment-form-url"><label for="url">' . __( 'Website' ) . '</label> ' .
-                    '<input class="form-control" id="url" name="url" ' . ( $html5 ? 'type="url"' : 'type="text"' ) . ' value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" /></div>',
+                    '<input class="form-control" id="url" name="url" ' . ( $html5 ? 'type="url"' : 'type="text"' ) . ' value="' . esc_attr( $commenter['comment_author_url'] ) . ' /></div>',
     );
     
     return $fields;
@@ -117,7 +166,7 @@ add_filter( 'comment_form_defaults', 'bootstrap3_comment_form' );
 function bootstrap3_comment_form( $args ) {
     $args['comment_field'] = '<div class="form-group comment-form-comment">
             <label for="comment">' . _x( 'Comment', 'noun' ) . '</label> 
-            <textarea class="form-control" id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea>
+            <textarea class="form-control" id="comment" name="comment" aria-required="true"></textarea>
         </div>';
     return $args;
 }
@@ -199,6 +248,7 @@ function lolly_load_scripts() {
 	wp_enqueue_script('lolly-wow-js', get_template_directory_uri() . '/js/wow.min.js', array('jquery'), '0.1.9', true);
 	wp_enqueue_script('lolly-maps-api-js', '//maps.google.com/maps/api/js?sensor=true', array('jquery'), null, true);
 	wp_enqueue_script('lolly-ui-maps-js', get_template_directory_uri() . '/js/jquery.ui.map.min.js', array('jquery'), null, true);
+	wp_enqueue_script( 'comment-reply' );
 	wp_enqueue_script('lolly-scripts-js', get_template_directory_uri() . '/js/script.js', array(), null, true);
 	wp_localize_script('lolly-scripts-js', 'lolly_scripts_js_vars', array(
 			'coming_soon_bg'       => lolly_coming_soon_slideshow($titan, 'header_slider_image_'),

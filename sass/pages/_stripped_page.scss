@@ -1,0 +1,38 @@
+.stripped-page-container {
+	text-align: left;
+
+	h2 {
+		text-align: center;
+	}
+	.row-white {
+		background-color: $primary-color;
+		min-height: 15em;
+		padding: 2em;
+		margin-top:3em;
+	}
+	.row-grey {
+		@extend .grey-background;
+		min-height: 15em;
+		padding: 2em;
+		margin-top:3em;
+	}
+	.row-content {
+		@extend .col-md-10;
+		@extend .col-md-offset-1;
+		@extend .col-sm-10;
+		@extend .col-sm-offset-1
+	}
+	.text-right {
+		text-align: right;
+	}
+	.img-circle {
+		margin: 0 1em 1em 0;
+		width: 11.11em;
+	}
+	.img-left {
+		float: left;
+	}
+	.img-right {
+		float:right;
+	}
+}

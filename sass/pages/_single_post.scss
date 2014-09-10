@@ -3,8 +3,11 @@
 	@extend .grey-background;
 
 	.post-container {
-		padding-top: 3em;
-		padding-bottom: 3em;
+		margin-top:3em;
+		margin-bottom:3em;
+		padding-top: 1em;
+		padding-bottom: 1em;
+		background-color: $primary-color;
 
 		@media(max-width: 320px){
 			margin-left: 2.5%;
@@ -15,14 +18,18 @@
 			padding-left:2em;
 			padding-right: 2em;
 		}
-		.post-block, .post-tags-block, .related-content-container {
-			background-color: $primary-color;
-		}
+		
 		img {
-			width: 100%;
+			width: 80%;
+			margin-top:2em;
+			margin-bottom: 2em;
+			margin-left:10%;
 		}
 		.post-header {
 			text-transform: none;
+			margin-top:1em;
+			font-weight: 900;
+			text-shadow: none;
 		}
 		.post-content {
 			text-align: left;
@@ -36,5 +43,28 @@
 			padding-bottom: 1em;
 		}
 
+	}
+	.post-bio-white-container {
+		background-color: $primary-color;
+		margin-top:1em;
+		margin-bottom:1em;
+		padding-top:3em;
+		padding-bottom: 3em;
+		text-align: left;
+		@media(max-width: 320px){
+			margin-left: 2.5%;
+			margin-right: 2.5%;
+			width:95%;
+		}
+		@media(max-width: $screen-md-max){
+			padding-left:2em;
+			padding-right: 2em;
+		}
+
+		img {
+			@extend .img-circle;
+			float: left; 
+			margin: 0 1em 1em 0;
+		}
 	}
 }

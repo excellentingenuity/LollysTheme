@@ -23,7 +23,7 @@ include("header.php");
 								<?php while ( have_posts() ) : the_post(); ?>
 									
 								<div class="row">
-									<div class="content-container col-sm-12 col-md-8 col-md-offset-2">
+									<div class="content-container col-sm-12 col-md-10 col-md-offset-1">
 										<div class="post-block">
 											<h2 class="post-header">
 												<?php the_title(); ?>
@@ -31,11 +31,9 @@ include("header.php");
 											<div class="post-content">
 												<?php the_content(); ?>
 											</div>
-										</div>
-										<div class="post-tags-block">
-											<div class="post-tags">
-												<p><?php the_tags(); ?></p>
-											</div>
+											<!--<div class="post-tags">
+												<p><?php //the_tags(); ?></p>
+											</div>-->
 										</div>
 										<div class="related-content-container">
 											<?php echo do_shortcode( '[jetpack-related-posts]' ); ?>
@@ -43,7 +41,16 @@ include("header.php");
 									</div>
 								</div>
 				</div>
+				<div class="post-bio-white-container">
+					<div class="row post-bio-row">
+						<div class="col-sm-12 col-md-10 col-md-offset-1 comments-bio-container">
+							<?php echo do_shortcode('[gravatar email="lollydaskal@mac.com" size="74"]'); ?>
+							<?php echo $titan->getOption('blog_bio_text');?>
+						</div>
+					</div>
+				</div>
 			</div>
+			
 		</div>
 	</div>
 								
