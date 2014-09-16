@@ -1,0 +1,159 @@
+.single-post-dual-col-page-background-wrapper {
+	@extend .grey-background;
+}
+.single-post-dual-col {
+	.more-posts-mobile-button-wrapper {
+		float:right;
+		margin-right: 1em;
+		margin-top:.5em;
+
+		.more-posts-btn {
+			background-color: $highlight-color;
+			color: $primary-color;
+		}
+	}
+
+	.post-wrapper {
+		
+		margin-top:2em;
+		
+		
+		.post-container {
+			background-color: $primary-color;
+			padding: 1em;
+			padding-left: 3em;
+			padding-right: 3em;
+			.post-content {
+				text-align: left;
+				
+				
+				img {
+					text-align: center;
+					width: 100%;
+					margin-top: 2em;
+					margin-bottom: 2em;
+				}
+			}
+
+		
+			.post-header {
+				text-align: left;
+				font-weight: 700;
+			}
+		}
+	}
+
+	.post-bio-container {
+		background-color: $primary-color;
+		margin-top:2em;
+		
+		padding-top:3em;
+		padding-bottom: 3em;
+		padding-left: 3em;
+		padding-right: 3em;
+		text-align: left;
+		@media(max-width: 320px){
+			margin-left: 2.5%;
+			margin-right: 2.5%;
+			width:95%;
+		}
+		@media(max-width: $screen-md-max){
+			padding-left:2em;
+			padding-right: 2em;
+		}
+
+		img {
+			@extend .img-circle;
+			float: left; 
+			margin: 0 1em 1em 0;
+		}
+
+	}
+	
+	.post-reel-sidebar-container {
+		@media(max-width: $screen-xs-max){
+			position: absolute;
+			right:-400px;
+			top: 11em;
+			background-color: #EBEBEB;
+			width: 100%;
+			height:390%;
+
+			.post-reel-sidebar {
+				margin-top: 1em;
+				margin-bottom: 1em;
+			}
+
+		}
+		
+	}
+	.post-reel-sidebar {
+		max-width: inherit;
+		margin-left:1.5em;
+		margin-top: 2em;
+
+		ul.recent-posts-list {
+			padding-left: 0;
+			padding-top: 1em;
+			list-style-type: none;
+			background-color: $primary-color;
+			height: 100%;
+			overflow: auto;
+		}
+
+		h4.recent-post-list-header {
+			text-transform: none;
+			text-align: left;
+			font-size: 1em;
+			font-weight: 700;
+			margin-top: 0;
+			margin-left: .9em;
+		}
+
+		li.recent-post-list-item{
+			height:5em;
+			
+
+		}
+		.recent-post-block {
+			vertical-align: middle;
+		}
+		img.recent-post-image {
+			float:left;
+			max-width:27%;
+			height:3em;
+			margin-top: .5em;
+			margin-bottom: .5em;
+			margin-left:4%;
+		}
+		.recent-post-title {
+			float:right;
+			font-size: .9em;
+			font-weight: 500;
+			max-width: 69%;
+			text-align: left;
+			padding-left: 1em;
+			padding-right: 1em;
+			margin-top: .5em;
+			margin-bottom: .5em;
+		}
+		.recent-post-link {
+			color: #000000;
+		}
+		.recent-post-link :hover, .recent-post-link :focus {
+			
+			@extend .solid-grey-background;
+			
+		}
+		.recent-post-link :visited {
+			color: #000000;
+		}
+
+
+	}
+	.spacer-class {
+		display: block;
+		height: 100%;
+		@extend .clearfix;
+	}
+}

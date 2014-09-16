@@ -10,7 +10,6 @@ include("header.php");
 	<?php include('includes/page-partials/page-header.php'); ?>
 </div>
 <div class="container-fluid stripped-page-container">
-	
 	<?php if(have_posts()): ?>
 
 				
@@ -25,8 +24,6 @@ include("header.php");
 				
 		<?php endwhile; ?>
 	<?php endif; ?>
-		
-	
 </div> <!-- closing container-fluid div -->
 <!-- body tag closed in footer -->
 

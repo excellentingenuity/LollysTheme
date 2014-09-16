@@ -3,15 +3,7 @@
 }
 .comments-container {
 	padding-bottom: 3em;
-	@media(max-width: 320px){
-			margin-left: 2.5%;
-			margin-right: 2.5%;
-			width:95%;
-		}
-		@media(max-width: $screen-md-max){
-			padding-left:2em;
-			padding-right: 2em;
-		}
+	
 		margin-top:2em;
 
 	.comments-background-white-wrapper {
@@ -26,27 +18,25 @@
 		text-decoration: none;
 	}
 	.comment-list {
-		margin-bottom: 2em;
-		
-
+		padding-top: 1em;
+		padding-bottom: 2em;
+		padding-right: 2em;
+		padding-left: 2em;
+		background-color: $primary-color;
 	}
 	.comments-title {
 		text-transform: none;
-		padding-top:1em;
-		padding-bottom: 2em;
-		padding-right: 1em;
+		padding-bottom: .5em;
 		text-align: left;
 		font-weight: 800;
 
 	}
 
 	li.comment, li.pingback {
-		@extend .col-md-10;
-		@extend .col-md-offset-1;
+		@extend .col-md-12;
 		@extend .col-sm-12;
 		font-size: 1.1em;
 		list-style-type: none;
-		margin-left:6%;
 		@extend .grey-text-dark;
 		
 		
@@ -72,17 +62,11 @@
 
 		ol.children {
 			padding-left:0px;
-			width: 100%;
+			@extend .row;
 			li {
-				margin-left: 0px;
-				padding-left:0px;
-				width: 102.4%;
-				//margin-bottom:.5em;
-				//width: 102%;
-				@media (max-width:$screen-sm-min){
-					width:100%;
-					padding-right:0px;
-				}
+				@extend .col-md-12;
+				@extend .col-sm-12;
+				
 			}
 			ol.children :last-child {
 				margin-bottom:0;
@@ -90,17 +74,10 @@
 			}
 			ol.children {
 				padding-left:0px;
-				width: 100%;
+				@extend .row;
 				li {
-					margin-left: 0px;
-					padding-left:0px;
-					width: 102.4%;
-					//margin-bottom:.5em;
-					//width: 102%;
-					@media (max-width:$screen-sm-min){
-						width:100%;
-						padding-right:0px;
-					}
+					@extend .col-md-12;
+					@extend .col-sm-12;
 				}
 				ol.children :last-child {
 					margin-bottom:0;
@@ -108,17 +85,10 @@
 				}
 				ol.children {
 					padding-left:0px;
-					width:100%;
+					@extend .row;
 					li {
-						margin-left: 0px;
-						padding-left:0px;
-						width: 102.4%;
-						//margin-bottom:.5em;
-						//width: 102%;
-						@media (max-width:$screen-sm-min){
-							width:100%;
-							padding-right:0px;
-						}
+						@extend .col-md-12;
+						@extend .col-sm-12;
 					}
 					ol.children :last-child {
 						margin-bottom:0;
@@ -137,20 +107,29 @@
 	.avatar:hover {
 		@extend .img-circle;
 	}
+
+	.comment-form-wrapper {
+		margin-top: 2em;
+	}
 	
 	.comment-form-white-background {
-		background-color: $primary-color;
+		
 		margin-top: 3em;
 	}
 	.comment-form-container {
+		background-color: $primary-color;
+		padding-top: 1em;
+		padding-bottom: 1em;
+		padding-right: 3em;
+		padding-left: 3em;
 		@media(max-width: 320px){
 			margin-left: 2.5%;
 			margin-right: 2.5%;
 			width:95%;
 		}
 		@media(max-width: $screen-md-max){
-			padding-left:2em;
-			padding-right: 2em;
+			padding-left:1em;
+			padding-right: 1em;
 		}
 	}
 	.form-allowed-tags {
@@ -166,7 +145,7 @@
 		@extend .pull-left;
 		text-align: left;
 		padding:2em;
-		padding-left:4em;
+		padding-left:1em;
 		width:90%;
 		@media (max-width:$screen-sm-min){
 			width:90%
