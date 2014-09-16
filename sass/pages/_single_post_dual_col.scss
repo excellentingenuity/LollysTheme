@@ -25,6 +25,7 @@
 			padding-right: 3em;
 			.post-content {
 				text-align: left;
+				@extend .charcoal-grey;
 				
 				
 				img {
@@ -39,6 +40,7 @@
 			.post-header {
 				text-align: left;
 				font-weight: 700;
+				text-transform: none;
 			}
 		}
 	}
@@ -46,7 +48,7 @@
 	.post-bio-container {
 		background-color: $primary-color;
 		margin-top:2em;
-		
+		@extend .charcoal-grey;
 		padding-top:3em;
 		padding-bottom: 3em;
 		padding-left: 3em;
@@ -98,7 +100,8 @@
 			list-style-type: none;
 			background-color: $primary-color;
 			height: 100%;
-			overflow: auto;
+			overflow-y: auto;
+			overflow-x: hidden;
 		}
 
 		h4.recent-post-list-header {

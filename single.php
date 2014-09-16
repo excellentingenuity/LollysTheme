@@ -44,10 +44,10 @@ $cur_post = '';
 					</div>
 				</div>
 			</div>
-			<div class="col-md-3 col-sm-3 col-xs-3 post-reel-sidebar-container">
+			<div class="col-md-3_5 col-sm-3_5 col-xs-3_5 post-reel-sidebar-container">
 				<div class="post-reel-sidebar">
 					<ul class="recent-posts-list">
-						<h4 class="recent-post-list-header">You may also like</h4>
+						<h4 class="recent-post-list-header">You May Also Like</h4>
 						<?php
 							
 							$recent_post_args = array(
