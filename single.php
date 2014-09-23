@@ -20,7 +20,7 @@ $cur_post = '';
 			<div class="more-posts-mobile-button-wrapper visible-xs">
 				<a class="btn more-posts-btn" id="recent-post-button">Recent Posts</a>
 			</div>
-			<div class="col-md-6 col-md-offset-1_5 col-sm-6 col-sm-offset-1_5 post-wrapper">
+			<div class="col-md-7 col-md-offset-1 col-sm-7 col-sm-offset-1 post-wrapper">
 				<div class="row">
 					<div class="col-md-12 col-sm-12 post-container">
 						<?php if(have_posts()): ?>		
@@ -43,15 +43,29 @@ $cur_post = '';
 						<?php echo $titan->getOption('blog_bio_text');?>
 					</div>
 				</div>
+				<?php
+					// If comments are open or we have at least one comment, load up the comment template.
+					if ( comments_open() || get_comments_number() ) {
+						comments_template();
+					}
+				?>
 			</div>
 			<div class="col-md-3_5 col-sm-3_5 col-xs-3_5 post-reel-sidebar-container">
+				<div class="newsletter-signup-container">
+					<h4 class="subscribe-header">Stay connected with Lolly</h4>
+					<p class="subscribe-copy">Sign up for Lolly's exclusive newsletter!</p>
+					<form action="" role="form" class="newsletter-subscribe-form">
+						<input type="email" class="form-control subscribe-email" placeholder="Email">
+						<button type="submit" class="btn subscribe-submit">Subscribe</button>
+					</form>
+				</div>
 				<div class="post-reel-sidebar">
 					<ul class="recent-posts-list">
 						<h4 class="recent-post-list-header">You May Also Like</h4>
 						<?php
 							
 							$recent_post_args = array(
-								'numberposts' => '20',
+								'numberposts' => '15',
 								'post_status' => 'publish',
 								'exclude' => (string)$cur_post
 								);
@@ -64,9 +78,10 @@ $cur_post = '';
 								echo '<div class="col-sm-12 col-md-12 recent-post-block">';
 								$recent_img = catch_recent_post_image($recent);
 								echo '<div class="recent-post-title">';
+								echo '<img class="recent-post-image" src="'.$recent_img.'"/>';
 								echo $recent['post_title'];
 								echo '</div>';
-								echo '<img class="recent-post-image" src="'.$recent_img.'"/>';
+								
 								
 								
 
@@ -76,20 +91,23 @@ $cur_post = '';
 							}
 						?>
 					</ul>
+					<div class="more-recent-posts-button-container">
+						<button class="btn more-recent-posts-button">More Posts &darr;</button>
+					</div>
 				</div>
 			</div>
-			<div class="col-md-1 col-sm-1 spacer-class"></div>
+			
 		</div>
 		
 	</div>
 
-		<?php
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) {
-					comments_template();
-				}
-		?>
+		
 </div>
+<script>
+jQuery( document ).ready(function() {
+	jQuery('.recent-posts-list').css({'height': jQuery('.post-container').innerHeight() - 380});
+});
+</script>
 <script>
 
 jQuery('#recent-post-button').toggle( 

@@ -100,6 +100,29 @@
 	}
 	.grid-blog-pagination-block {
 		text-align: center;
+		margin-top: 1em;
+		margin-bottom: 1.5em;
+		font-size: 1em;
+		.wp-pagenavi {
+			@extend .solid-grey-background;
+			display: inline;
+			padding: .5em;
+			a, span {
+				color: #000000;
+				padding: .25em;
+				padding-left: .7em;
+				padding-right: .7em;
+			}
+			a:hover {
+				text-decoration: none;
+				color:$highlight-color;
+			}
+			span.current {
+				border: 2px solid $highlight-color;
+				border-radius: 50%;
+				color: $highlight-color;
+			}
+		}
 	}
 	.grid-blog-pagination {
 		color: #000000;

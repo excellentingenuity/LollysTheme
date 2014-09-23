@@ -2142,7 +2142,7 @@ pre code {
 }
 
 /* line 11, sass/bootstrap/mixins/_grid-framework.scss */
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-xs-3_5, .col-sm-3, .col-sm-3_5, .col-md-3, .col-md-3_5, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .stripped-page-container .row-content, .col-md-8, .stripped-page-container .row-content, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .comments-container li.comment, .comments-container li.pingback, .comments-container li.comment ol.children li, .comments-container li.pingback ol.children li, .comments-container li.comment ol.children ol.children li, .comments-container li.pingback ol.children ol.children li, .comments-container li.comment ol.children ol.children ol.children li, .comments-container li.pingback ol.children ol.children ol.children li, .col-md-12, .comments-container li.comment, .comments-container li.pingback, .comments-container li.comment ol.children li, .comments-container li.pingback ol.children li, .comments-container li.comment ol.children ol.children li, .comments-container li.pingback ol.children ol.children li, .comments-container li.comment ol.children ol.children ol.children li, .comments-container li.pingback ol.children ol.children ol.children li, .col-lg-12 {
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-xs-3_5, .col-sm-3, .col-sm-3_5, .col-md-3, .col-md-3_5, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-sm-6_5, .col-md-6, .col-md-6_5, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .stripped-page-container .row-content, .col-md-8, .stripped-page-container .row-content, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .comments-container li.comment, .comments-container li.pingback, .comments-container li.comment ol.children li, .comments-container li.pingback ol.children li, .comments-container li.comment ol.children ol.children li, .comments-container li.pingback ol.children ol.children li, .comments-container li.comment ol.children ol.children ol.children li, .comments-container li.pingback ol.children ol.children ol.children li, .col-md-12, .comments-container li.comment, .comments-container li.pingback, .comments-container li.comment ol.children li, .comments-container li.pingback ol.children li, .comments-container li.comment ol.children ol.children li, .comments-container li.pingback ol.children ol.children li, .comments-container li.comment ol.children ol.children ol.children li, .comments-container li.pingback ol.children ol.children ol.children li, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -2411,7 +2411,7 @@ pre code {
 
 @media (min-width: 768px) {
   /* line 27, sass/bootstrap/mixins/_grid-framework.scss */
-  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-3_5, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .stripped-page-container .row-content, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .comments-container li.comment, .comments-container li.pingback, .comments-container li.comment ol.children li, .comments-container li.pingback ol.children li, .comments-container li.comment ol.children ol.children li, .comments-container li.pingback ol.children ol.children li, .comments-container li.comment ol.children ol.children ol.children li, .comments-container li.pingback ol.children ol.children ol.children li {
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-3_5, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-6_5, .col-sm-7, .col-sm-8, .stripped-page-container .row-content, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .comments-container li.comment, .comments-container li.pingback, .comments-container li.comment ol.children li, .comments-container li.pingback ol.children li, .comments-container li.comment ol.children ol.children li, .comments-container li.pingback ol.children ol.children li, .comments-container li.comment ol.children ol.children ol.children li, .comments-container li.pingback ol.children ol.children ol.children li {
     float: left;
   }
 
@@ -2441,7 +2441,7 @@ pre code {
   }
 
   /* line 35, sass/bootstrap/mixins/_grid-framework.scss */
-  .col-sm-6 {
+  .col-sm-6, .col-sm-6_5 {
     width: 50%;
   }
 
@@ -2672,7 +2672,7 @@ pre code {
 }
 @media (min-width: 992px) {
   /* line 27, sass/bootstrap/mixins/_grid-framework.scss */
-  .col-md-1, .col-md-2, .col-md-3, .col-md-3_5, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .stripped-page-container .row-content, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .comments-container li.comment, .comments-container li.pingback, .comments-container li.comment ol.children li, .comments-container li.pingback ol.children li, .comments-container li.comment ol.children ol.children li, .comments-container li.pingback ol.children ol.children li, .comments-container li.comment ol.children ol.children ol.children li, .comments-container li.pingback ol.children ol.children ol.children li {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-3_5, .col-md-4, .col-md-5, .col-md-6, .col-md-6_5, .col-md-7, .col-md-8, .stripped-page-container .row-content, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .comments-container li.comment, .comments-container li.pingback, .comments-container li.comment ol.children li, .comments-container li.pingback ol.children li, .comments-container li.comment ol.children ol.children li, .comments-container li.pingback ol.children ol.children li, .comments-container li.comment ol.children ol.children ol.children li, .comments-container li.pingback ol.children ol.children ol.children li {
     float: left;
   }
 
@@ -2702,7 +2702,7 @@ pre code {
   }
 
   /* line 35, sass/bootstrap/mixins/_grid-framework.scss */
-  .col-md-6 {
+  .col-md-6, .col-md-6_5 {
     width: 50%;
   }
 
@@ -8273,6 +8273,16 @@ button.close {
   width: 29.1667%;
 }
 
+/* line 49, sass/partials/_page_structure.scss */
+.col-md-6_5 {
+  width: 58.332%;
+}
+
+/* line 53, sass/partials/_page_structure.scss */
+.col-sm-6_5 {
+  width: 58.332%;
+}
+
 /* line 1, sass/partials/_color_classes.scss */
 .orange-background, .header-bar {
   background-color: #e84d0e;
@@ -8311,33 +8321,38 @@ button.close {
 }
 
 /* line 24, sass/partials/_color_classes.scss */
-.solid-grey-background, .single-post-dual-col .post-reel-sidebar .recent-post-link :hover, .single-post-dual-col .post-reel-sidebar .recent-post-link :focus {
-  background-color: #EBEBEB;
+.dark-grey-background {
+  background-color: #666666;
 }
 
 /* line 27, sass/partials/_color_classes.scss */
-.light-grey-background, .comments-container li.comment .comment-body, .comments-container li.pingback .comment-body {
-  background-color: #f5f5f5;
+.solid-grey-background, .blog-page .grid-blog-pagination-block .wp-pagenavi, .single-post-dual-col .post-reel-sidebar .recent-post-link :hover, .single-post-dual-col .post-reel-sidebar .recent-post-link :focus {
+  background-color: #EBEBEB;
 }
 
 /* line 30, sass/partials/_color_classes.scss */
-.charcoal-grey, .comments-container li.comment, .comments-container li.pingback, .single-post-dual-col .post-wrapper .post-container .post-content, .single-post-dual-col .post-bio-container {
-  color: RGB(102, 102, 102);
+.light-grey-background, .comments-container li.comment .comment-body, .comments-container li.pingback .comment-body, .single-post-dual-col .newsletter-signup-container {
+  background-color: #f5f5f5;
 }
 
 /* line 33, sass/partials/_color_classes.scss */
+.charcoal-grey {
+  color: RGB(102, 102, 102);
+}
+
+/* line 36, sass/partials/_color_classes.scss */
 .text-black-shadow {
   color: white;
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 
-/* line 41, sass/partials/_color_classes.scss */
+/* line 44, sass/partials/_color_classes.scss */
 .text-black-shadow-bold {
   color: white;
   text-shadow: -3px -3px 0 black, 3px -3px 0 black, -3px 3px 0 black, 3px 3px 0 black;
 }
 
-/* line 49, sass/partials/_color_classes.scss */
+/* line 52, sass/partials/_color_classes.scss */
 .grey-box-shadow, .home-page .speaker-with-heart .all-services-link-div, .home-page .about-lolly .about-link-boundry, .home-page .all-testimonials-link-div, .home-page .awards-and-mentions .awards-button, .home-page .tweetchat-section .tweetchat-button {
   box-shadow: 2px 4px 0 2px rgba(0, 0, 0, 0.1);
 }
@@ -13635,8 +13650,34 @@ Copyright (c) 2014 Daniel Eden
 /* line 101, sass/pages/_blog.scss */
 .blog-page .grid-blog-pagination-block {
   text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+  font-size: 1em;
 }
-/* line 104, sass/pages/_blog.scss */
+/* line 106, sass/pages/_blog.scss */
+.blog-page .grid-blog-pagination-block .wp-pagenavi {
+  display: inline;
+  padding: .5em;
+}
+/* line 110, sass/pages/_blog.scss */
+.blog-page .grid-blog-pagination-block .wp-pagenavi a, .blog-page .grid-blog-pagination-block .wp-pagenavi span {
+  color: #000000;
+  padding: .25em;
+  padding-left: .7em;
+  padding-right: .7em;
+}
+/* line 116, sass/pages/_blog.scss */
+.blog-page .grid-blog-pagination-block .wp-pagenavi a:hover {
+  text-decoration: none;
+  color: #e84d0e;
+}
+/* line 120, sass/pages/_blog.scss */
+.blog-page .grid-blog-pagination-block .wp-pagenavi span.current {
+  border: 2px solid #e84d0e;
+  border-radius: 50%;
+  color: #e84d0e;
+}
+/* line 127, sass/pages/_blog.scss */
 .blog-page .grid-blog-pagination {
   color: #000000;
   display: inline-block;
@@ -13644,12 +13685,12 @@ Copyright (c) 2014 Daniel Eden
   font-size: 1em;
   font-weight: bold;
 }
-/* line 111, sass/pages/_blog.scss */
+/* line 134, sass/pages/_blog.scss */
 .blog-page .grid-blog-pagination-left > a {
   text-decoration: none;
   color: #000000;
 }
-/* line 115, sass/pages/_blog.scss */
+/* line 138, sass/pages/_blog.scss */
 .blog-page .grid-blog-pagination-right > a {
   text-decoration: none;
   color: #000000;
@@ -13736,46 +13777,51 @@ Copyright (c) 2014 Daniel Eden
   margin: 0 1em 1em 0;
 }
 
-/* line 5, sass/pages/_single_post_dual_col.scss */
+/* line 1, sass/pages/_single_post_dual_col.scss */
+.single-post-dual-col-page-background-wrapper {
+  height: 100%;
+}
+
+/* line 6, sass/pages/_single_post_dual_col.scss */
 .single-post-dual-col .more-posts-mobile-button-wrapper {
   float: right;
   margin-right: 1em;
   margin-top: .5em;
 }
-/* line 10, sass/pages/_single_post_dual_col.scss */
+/* line 11, sass/pages/_single_post_dual_col.scss */
 .single-post-dual-col .more-posts-mobile-button-wrapper .more-posts-btn {
   background-color: #e84d0e;
   color: white;
 }
-/* line 16, sass/pages/_single_post_dual_col.scss */
+/* line 17, sass/pages/_single_post_dual_col.scss */
 .single-post-dual-col .post-wrapper {
   margin-top: 2em;
 }
-/* line 21, sass/pages/_single_post_dual_col.scss */
+/* line 22, sass/pages/_single_post_dual_col.scss */
 .single-post-dual-col .post-wrapper .post-container {
   background-color: white;
   padding: 1em;
   padding-left: 3em;
   padding-right: 3em;
 }
-/* line 26, sass/pages/_single_post_dual_col.scss */
+/* line 27, sass/pages/_single_post_dual_col.scss */
 .single-post-dual-col .post-wrapper .post-container .post-content {
   text-align: left;
 }
-/* line 31, sass/pages/_single_post_dual_col.scss */
+/* line 32, sass/pages/_single_post_dual_col.scss */
 .single-post-dual-col .post-wrapper .post-container .post-content img {
   text-align: center;
   width: 100%;
   margin-top: 2em;
   margin-bottom: 2em;
 }
-/* line 40, sass/pages/_single_post_dual_col.scss */
+/* line 41, sass/pages/_single_post_dual_col.scss */
 .single-post-dual-col .post-wrapper .post-container .post-header {
   text-align: left;
   font-weight: 700;
   text-transform: none;
 }
-/* line 48, sass/pages/_single_post_dual_col.scss */
+/* line 49, sass/pages/_single_post_dual_col.scss */
 .single-post-dual-col .post-bio-container {
   background-color: white;
   margin-top: 2em;
@@ -13786,7 +13832,7 @@ Copyright (c) 2014 Daniel Eden
   text-align: left;
 }
 @media (max-width: 320px) {
-  /* line 48, sass/pages/_single_post_dual_col.scss */
+  /* line 49, sass/pages/_single_post_dual_col.scss */
   .single-post-dual-col .post-bio-container {
     margin-left: 2.5%;
     margin-right: 2.5%;
@@ -13794,50 +13840,89 @@ Copyright (c) 2014 Daniel Eden
   }
 }
 @media (max-width: 1199px) {
-  /* line 48, sass/pages/_single_post_dual_col.scss */
+  /* line 49, sass/pages/_single_post_dual_col.scss */
   .single-post-dual-col .post-bio-container {
     padding-left: 2em;
     padding-right: 2em;
   }
 }
-/* line 67, sass/pages/_single_post_dual_col.scss */
+/* line 68, sass/pages/_single_post_dual_col.scss */
 .single-post-dual-col .post-bio-container img {
   float: left;
   margin: 0 1em 1em 0;
 }
 @media (max-width: 767px) {
-  /* line 75, sass/pages/_single_post_dual_col.scss */
+  /* line 76, sass/pages/_single_post_dual_col.scss */
   .single-post-dual-col .post-reel-sidebar-container {
     position: absolute;
     right: -400px;
     top: 11em;
     background-color: #EBEBEB;
     width: 100%;
-    height: 390%;
   }
-  /* line 84, sass/pages/_single_post_dual_col.scss */
+  /* line 86, sass/pages/_single_post_dual_col.scss */
   .single-post-dual-col .post-reel-sidebar-container .post-reel-sidebar {
     margin-top: 1em;
     margin-bottom: 1em;
   }
+  /* line 91, sass/pages/_single_post_dual_col.scss */
+  .single-post-dual-col .post-reel-sidebar-container .newsletter-signup-container {
+    display: none;
+    visibility: hidden;
+  }
 }
-/* line 92, sass/pages/_single_post_dual_col.scss */
+/* line 99, sass/pages/_single_post_dual_col.scss */
+.single-post-dual-col .newsletter-signup-container {
+  border: 1em solid white;
+  height: 15em;
+  margin-top: 2em;
+  margin-left: 1.5em;
+}
+/* line 106, sass/pages/_single_post_dual_col.scss */
+.single-post-dual-col .newsletter-signup-container .subscribe-header {
+  margin-top: 1em;
+  padding-top: .5em;
+  text-align: left;
+  margin-left: 1em;
+}
+/* line 112, sass/pages/_single_post_dual_col.scss */
+.single-post-dual-col .newsletter-signup-container .subscribe-copy {
+  text-align: left;
+  margin-left: 1em;
+  padding-top: .5em;
+}
+/* line 117, sass/pages/_single_post_dual_col.scss */
+.single-post-dual-col .newsletter-signup-container .newsletter-subscribe-form {
+  padding: 1em;
+  padding-top: .5em;
+}
+/* line 121, sass/pages/_single_post_dual_col.scss */
+.single-post-dual-col .newsletter-signup-container .subscribe-email {
+  margin-bottom: 1em;
+}
+/* line 124, sass/pages/_single_post_dual_col.scss */
+.single-post-dual-col .newsletter-signup-container .subscribe-submit {
+  color: white;
+  background-color: #e84d0e;
+  padding: .5em;
+  font-size: 1em;
+}
+/* line 133, sass/pages/_single_post_dual_col.scss */
 .single-post-dual-col .post-reel-sidebar {
   max-width: inherit;
   margin-left: 1.5em;
   margin-top: 2em;
 }
-/* line 97, sass/pages/_single_post_dual_col.scss */
+/* line 139, sass/pages/_single_post_dual_col.scss */
 .single-post-dual-col .post-reel-sidebar ul.recent-posts-list {
   padding-left: 0;
   padding-top: 1em;
   list-style-type: none;
   background-color: white;
-  height: 100%;
-  overflow-y: auto;
   overflow-x: hidden;
+  overflow-y: scroll;
 }
-/* line 107, sass/pages/_single_post_dual_col.scss */
+/* line 149, sass/pages/_single_post_dual_col.scss */
 .single-post-dual-col .post-reel-sidebar h4.recent-post-list-header {
   text-transform: none;
   text-align: left;
@@ -13846,44 +13931,51 @@ Copyright (c) 2014 Daniel Eden
   margin-top: 0;
   margin-left: .9em;
 }
-/* line 116, sass/pages/_single_post_dual_col.scss */
+/* line 158, sass/pages/_single_post_dual_col.scss */
 .single-post-dual-col .post-reel-sidebar li.recent-post-list-item {
   height: 5em;
 }
-/* line 121, sass/pages/_single_post_dual_col.scss */
+/* line 163, sass/pages/_single_post_dual_col.scss */
 .single-post-dual-col .post-reel-sidebar .recent-post-block {
   vertical-align: middle;
 }
-/* line 124, sass/pages/_single_post_dual_col.scss */
+/* line 166, sass/pages/_single_post_dual_col.scss */
 .single-post-dual-col .post-reel-sidebar img.recent-post-image {
   float: left;
-  max-width: 27%;
+  width: 27%;
   height: 3em;
   margin-top: .5em;
   margin-bottom: .5em;
-  margin-left: 4%;
+  margin-right: 4%;
 }
-/* line 132, sass/pages/_single_post_dual_col.scss */
+/* line 174, sass/pages/_single_post_dual_col.scss */
 .single-post-dual-col .post-reel-sidebar .recent-post-title {
   float: right;
   font-size: .9em;
   font-weight: 500;
-  max-width: 69%;
   text-align: left;
   padding-left: 1em;
   padding-right: 1em;
   margin-top: .5em;
   margin-bottom: .5em;
 }
-/* line 143, sass/pages/_single_post_dual_col.scss */
+/* line 184, sass/pages/_single_post_dual_col.scss */
 .single-post-dual-col .post-reel-sidebar .recent-post-link {
   color: #000000;
 }
-/* line 151, sass/pages/_single_post_dual_col.scss */
+/* line 192, sass/pages/_single_post_dual_col.scss */
 .single-post-dual-col .post-reel-sidebar .recent-post-link :visited {
   color: #000000;
 }
-/* line 157, sass/pages/_single_post_dual_col.scss */
+/* line 195, sass/pages/_single_post_dual_col.scss */
+.single-post-dual-col .post-reel-sidebar .more-recent-posts-button {
+  color: white;
+  background-color: #e84d0e;
+  font-size: 1em;
+  padding: .5em;
+  margin-top: -0.5em;
+}
+/* line 204, sass/pages/_single_post_dual_col.scss */
 .single-post-dual-col .spacer-class {
   display: block;
   height: 100%;

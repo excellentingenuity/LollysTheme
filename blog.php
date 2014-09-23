@@ -100,27 +100,36 @@ include("header.php");
 								endwhile;
 							endif;
 						?>
-						<?php
-							if ( function_exists('wp_pagenavi') )
-						    {
-						      	wp_pagenavi();
-						   	}
-						    elseif ( get_next_posts_link() || get_previous_posts_link() )
-						    {
-						?>
+						</div>
+					</div>			
+									
+				
+					<div class="row">
+						<div class="col-md-10 col-md-offset-1">
+							<div class="clearfix grid-blog-pagination-block">
+								<?php
+									if ( function_exists('wp_pagenavi') )
+								    {
+								      	wp_pagenavi();
+								   	}
+								    elseif ( get_next_posts_link() || get_previous_posts_link() )
+								    {
+								?>
+							</div>
 						    <div class="wp-navigation clearfix grid-blog-pagination-block">
 						        <div class="aligncenter grid-blog-pagination grid-blog-pagination-right"><?php previous_posts_link('&laquo; Newer Entries'); ?></div>
 						        <?php if (($paged > 1) && ($paged != $wp_query->max_num_pages)){ ?>
 						        <div class="grid-blog-pagination grid-blog-page-pagination-seperator">||</div>
 						        <?php } ?>
 						        <div class="aligncenter grid-blog-pagination grid-blog-pagination-left"><?php next_posts_link('Older Entries  &raquo;');?></div>
-						        </div>
-						<?php } //if wp_pagenavi
-						?>
+						    </div>
+								<?php } //if wp_pagenavi
+								?>
 						</div>
-					</div>			
-									
+					</div>
 				</div>
+
+						
 								
 				
 			</div> <!-- closing container-fluid div -->

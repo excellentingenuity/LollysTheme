@@ -46,3 +46,11 @@ html {
 	@extend .col-xs-3;
 	width: 29.1667%;
 }
+.col-md-6_5 {
+	@extend .col-md-6;
+	width:58.332%;
+}
+.col-sm-6_5 {
+	@extend .col-sm-6;
+	width:58.332%;
+}
