@@ -63,36 +63,12 @@ $cur_post = '';
 					<ul class="recent-posts-list">
 						<h4 class="recent-post-list-header">You May Also Like</h4>
 						<?php
-							
-							$recent_post_args = array(
-								'numberposts' => '15',
-								'post_status' => 'publish',
-								'exclude' => (string)$cur_post
-								);
-							$recent_posts = wp_get_recent_posts($recent_post_args);
-							foreach( $recent_posts as $recent ){
-								echo '<li class="row recent-post-list-item">';
-								echo '<a class="recent-post-link" href="';
-								echo get_permalink($recent["ID"]);
-								echo '">';	
-								echo '<div class="col-sm-12 col-md-12 recent-post-block">';
-								$recent_img = catch_recent_post_image($recent);
-								echo '<div class="recent-post-title">';
-								echo '<img class="recent-post-image" src="'.$recent_img.'"/>';
-								echo $recent['post_title'];
-								echo '</div>';
-								
-								
-								
-
-								echo '</div>';
-								echo '</a>';
-								echo '</li>';
-							}
+							$result = abstractGetRecentPosts($cur_post);
+							echo $result['list'];
 						?>
 					</ul>
 					<div class="more-recent-posts-button-container">
-						<button class="btn more-recent-posts-button">More Posts &darr;</button>
+						<button class="btn more-recent-posts-button" id="more-recent-posts-button">More Posts &darr;</button>
 					</div>
 				</div>
 			</div>
@@ -122,6 +98,61 @@ jQuery('#recent-post-button').toggle(
         });
     }
 );
+</script>
+<script>
+	jQuery('#more-recent-posts-button').click(
+		function(){
+			var t_exclude = jQuery('#exclude').text();
+			var move_to_post = 0;
+			var t_offset = jQuery('#offset').text();
+			jQuery.ajax({
+				url: '/wp-admin/admin-ajax.php',
+				type: 'POST',
+				action: 'getMoreRecentPosts',
+				data: {
+					action: 'getMoreRecentPosts',
+					numberofposts: 15,
+					exclude: t_exclude,
+					offset:  t_offset
+				},
+				success: function(results){
+				console.log(results)
+				data = results.data;
+				jQuery('.recent-posts-list').append(data['list']);
+				jQuery('#offset').text(data['offset']);
+				jQuery('#counter').text(data['counter']);
+				move_to_post = data['first_post_in_list'];
+				scroll_to_post(move_to_post, data['counter']);
+			}
+			})
+			.done(function() {
+				console.log("success");
+			})
+			.fail(function() {
+				console.log("error");
+			})
+			.always(function() {
+				console.log("complete");
+			});
+			
+		});
+
+	function scroll_to_post(id, counter){
+		var height = jQuery('.recent-posts-list').height();
+		scrollToElement('#' + id, '.recent-posts-list', 1000, height * counter );
+
+	}
+	function scrollToElement(selector, parent, time, verticalOffset) {
+	    time = typeof(time) != 'undefined' ? time : 1000;
+	    verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
+	    element = $(selector);
+	    offset = element.offset();
+	    //offsetTop = offset.top + verticalOffset;
+	    jQuery('.recent-posts-list').scrollTop(verticalOffset);
+	    //jQuery(parent).animate({
+	     //   scrollTop: offsetTop
+	    //}, time);           
+	}
 </script>
 <?php
 include("footer.php");

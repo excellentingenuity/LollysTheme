@@ -13950,7 +13950,6 @@ Copyright (c) 2014 Daniel Eden
 }
 /* line 174, sass/pages/_single_post_dual_col.scss */
 .single-post-dual-col .post-reel-sidebar .recent-post-title {
-  float: right;
   font-size: .9em;
   font-weight: 500;
   text-align: left;

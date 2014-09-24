@@ -203,6 +203,68 @@ function register_my_menus() {
 }
 add_action( 'init', 'register_my_menus' );
 
+
+add_action( 'wp_ajax_getMoreRecentPosts', 'getMoreRecentPosts' );
+add_action( 'wp_ajax_nopriv_getMoreRecentPosts', 'getMoreRecentPosts');
+
+function getMoreRecentPosts(){
+	
+	$numberofposts = $_POST['numberofposts'];
+	$exclude = $_POST['exclude'];
+	$offset = $_POST['offset'] + 1;
+	$results = abstractGetRecentPosts($exclude, $offset);
+	$results['offset'] = $offset;
+	wp_send_json_success($results);
+	die();
+}
+
+function abstractGetRecentPosts($current_post, $offset=0){
+	$result = '';
+	$counter = 1;
+	$t_offset = $offset * 15;
+	$recent_post_args = array(
+	'numberposts' => '15',
+	'post_status' => 'publish',
+	'exclude' => (string)$current_post,
+	'offset' => $t_offset
+	);
+	$recent_posts = wp_get_recent_posts($recent_post_args);
+	foreach( $recent_posts as $recent ){
+		if ($counter == 1) {
+			$first_id = $recent['ID'];
+			$result .= '<span class="hidden" id="exclude">';
+			$result .= (string)$current_post;
+			$result .= '</span>';
+			$result .= '<span class="hidden" id="offset">';
+			$result .= $offset;
+			$result .= '</span>';
+			$result .= '<span class="hidden" id="counter">';
+			$result .= $offset;
+			$result .= '</span>';
+
+		}
+		$counter++;
+		$result .= '<li class="row recent-post-list-item" id="'. $recent["ID"]  .'">';
+		$result .= '<a class="recent-post-link" href="';
+		$result .= get_permalink($recent["ID"]);
+		$result .= '">';	
+		$result .= '<div class="col-sm-12 col-md-12 recent-post-block">';
+		$recent_img = catch_recent_post_image($recent);
+		$result .= '<div class="recent-post-title">';
+		$result .= '<img class="recent-post-image" src="'.$recent_img.'"/>';
+		$result .= $recent['post_title'];
+		$result .= '</div>';
+		
+		
+		
+
+		$result .= '</div>';
+		$result .= '</a>';
+		$result .= '</li>';
+	}
+	return array('list' => $result, 'first_post_in_list' => $first_id, 'counter' => $counter);
+}
+
 function register_widgets() {
 	register_sidebar( array(
 		'name' => 'Subscribe Area',
@@ -254,6 +316,8 @@ function register_widgets() {
 	) );
 }
 add_action( 'widgets_init', 'register_widgets' );
+
+
 
 function lolly_load_scripts() {
 	$titan = TitanFramework::getInstance('lolly');

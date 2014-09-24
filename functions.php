@@ -41,7 +41,6 @@ require_once('includes/tabs/general-options.php');
 require_once('includes/tabs/home-page.php');
 require_once('includes/tabs/blog-options.php');
 
-
 // additional functions
 require_once('includes/theme-functions.php');
 
