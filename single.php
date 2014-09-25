@@ -54,9 +54,11 @@ $cur_post = '';
 				<div class="newsletter-signup-container">
 					<h4 class="subscribe-header">Stay connected with Lolly</h4>
 					<p class="subscribe-copy">Sign up for Lolly's exclusive newsletter!</p>
-					<form action="" role="form" class="newsletter-subscribe-form">
-						<input type="email" class="form-control subscribe-email" placeholder="Email">
-						<button type="submit" class="btn subscribe-submit">Subscribe</button>
+					<form  method="post" action="http://dev.lollydaskal.com/" role="form" class="newsletter-subscribe-form">
+						<input type="hidden" name="sp_list" value="10275"/>
+						<input type="hidden" name="sendpress" value="post" />
+						<input type="email" class="form-control subscribe-email" name="sp_email" placeholder="Email">
+						<button type="submit" class="sendpress-submit btn subscribe-submit" type="submit" id="submit" name="submit">Subscribe</button>
 					</form>
 				</div>
 				<div class="post-reel-sidebar">

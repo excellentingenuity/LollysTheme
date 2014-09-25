@@ -13958,15 +13958,15 @@ Copyright (c) 2014 Daniel Eden
   margin-top: .5em;
   margin-bottom: .5em;
 }
-/* line 184, sass/pages/_single_post_dual_col.scss */
+/* line 183, sass/pages/_single_post_dual_col.scss */
 .single-post-dual-col .post-reel-sidebar .recent-post-link {
   color: #000000;
 }
-/* line 192, sass/pages/_single_post_dual_col.scss */
+/* line 191, sass/pages/_single_post_dual_col.scss */
 .single-post-dual-col .post-reel-sidebar .recent-post-link :visited {
   color: #000000;
 }
-/* line 195, sass/pages/_single_post_dual_col.scss */
+/* line 194, sass/pages/_single_post_dual_col.scss */
 .single-post-dual-col .post-reel-sidebar .more-recent-posts-button {
   color: white;
   background-color: #e84d0e;
@@ -13974,7 +13974,7 @@ Copyright (c) 2014 Daniel Eden
   padding: .5em;
   margin-top: -0.5em;
 }
-/* line 204, sass/pages/_single_post_dual_col.scss */
+/* line 203, sass/pages/_single_post_dual_col.scss */
 .single-post-dual-col .spacer-class {
   display: block;
   height: 100%;
